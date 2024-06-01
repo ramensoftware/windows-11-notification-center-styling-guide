@@ -3,7 +3,7 @@
 **Author**: [Undisputed00x](https://github.com/Undisputed00x)
 
 
-![video](https://github.com/Undisputed00x/windows-11-notification-center-styling-guide/assets/80290008/0e944926-0ea7-44a1-afc4-46b402d302f2)
+![Video](video.gif)
 
 
 
