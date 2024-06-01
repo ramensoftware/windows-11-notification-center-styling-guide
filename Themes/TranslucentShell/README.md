@@ -2,10 +2,7 @@
 
 **Author**: [Undisputed00x](https://github.com/Undisputed00x)
 
-
 ![Video](video.gif)
-
-
 
 ## Theme selection
 
@@ -86,3 +83,5 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[19].target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
   "controlStyles[19].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0"
 }
+```
+</details>

@@ -9,6 +9,7 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 ## Table of contents
 
 * [Introduction](#introduction)
+* [Themes](#themes)
 * [Work in progress](#work-in-progress)
 
 ## Introduction
