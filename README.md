@@ -41,6 +41,15 @@ issue](https://github.com/ramensoftware/windows-11-notification-center-styling-g
 If you have a notification center styling customization or theme that you would
 like to share, please submit a pull request.
 
+## Themes
+
+Themes are collections of styles that can be imported into the Windows 11
+Notification Center Styler mod. The following themes are available:
+
+| Link | Screenshot
+| ---- | ----------
+| [TranslucentShell](Themes/TranslucentShell/README.md) | [![TranslucentShell](Themes/TranslucentShell/screenshot-small.png)](Themes/TranslucentShell/video.gif)
+
 ## Work in progress
 
 *This document is a work in progress, contributions are welcome.* \
