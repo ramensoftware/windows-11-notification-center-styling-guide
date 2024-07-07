@@ -82,8 +82,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[18].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0",
   "controlStyles[18].styles[1]": "FocusVisualSecondaryThickness=0,0,0,0",
   "controlStyles[19].target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
-  "controlStyles[19].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0"
-  "controlStyles[20].target":  "ActionCenter.FlexibleItemView"
+  "controlStyles[19].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0",
+  "controlStyles[20].target":  "ActionCenter.FlexibleItemView",
   "controlStyles[20].styles[0]": "CornerRadius=15"
 }
 ```
