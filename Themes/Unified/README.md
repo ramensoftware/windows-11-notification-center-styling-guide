@@ -22,7 +22,8 @@ The theme is not integrated directly in the mod, so you need to manually install
 {
 "controlStyles[0].target":"ActionCenter.FocusSessionControl",
 "controlStyles[0].styles[0]":"Height=0",
-"controlStyles[1].target":"Windows.UI.Xaml.Controls.Grid#ControlCenterRegion","controlStyles[1].styles[0]":"CornerRadius=0",
+"controlStyles[1].target":"Windows.UI.Xaml.Controls.Grid#ControlCenterRegion",
+"controlStyles[1].styles[0]":"CornerRadius=0",
 "controlStyles[2].target":"Windows.UI.Xaml.Controls.Grid#CalendarCenterGrid",
 "controlStyles[2].styles[0]":"CornerRadius=0",
 "controlStyles[3].target":"Windows.UI.Xaml.Controls.Grid#NotificationCenterGrid",
