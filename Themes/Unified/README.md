@@ -3,7 +3,6 @@
 **Author**: [SandTechStuff](https://github.com/SandTechStuff)
 
 ![Calendar](screenshot-small.png)
-![ControlCenter](screenshot-small2.png)
 
 ## Theme selection
 
