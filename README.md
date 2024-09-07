@@ -10,6 +10,7 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 
 * [Introduction](#introduction)
 * [Themes](#themes)
+* [Style examples](#style-examples)
 * [Work in progress](#work-in-progress)
 
 ## Introduction
@@ -51,6 +52,36 @@ Notification Center Styler mod. The following themes are available:
 | ---- | ----------
 | [TranslucentShell](Themes/TranslucentShell/README.md) | [![TranslucentShell](Themes/TranslucentShell/screenshot-small.png)](Themes/TranslucentShell/video.gif)
 | [Unified](Themes/Unified/README.md) | [![Unified](Themes/Unified/screenshot-small.png)](Themes/Unified/screenshot.png)
+
+## Style examples
+
+### Hide the focus assist section
+**Target**: `ActionCenter.FocusSessionControl` \
+**Style**: `Height=0`
+
+### Square the corners of the notification center
+**Target**: `Windows.UI.Xaml.Controls.Grid#NotificationCenterGrid` \
+**Style**: `CornerRadius=0`
+
+### Square the corners of the calendar
+**Target**: `Windows.UI.Xaml.Controls.Grid#CalendarCenterGrid` \
+**Style**: `CornerRadius=0`
+
+### Square the corners of the quick action center
+**Target**: `Windows.UI.Xaml.Controls.Grid#ControlCenterRegion` \
+**Style**: `CornerRadius=0`
+
+### Calendar and notification titlebars: titles on the right, buttons on the left
+**Target**: `Windows.UI.Xaml.Controls.Grid#RootContent` \
+**Style**: `FlowDirection=1`
+
+### Add accelerator key (ALT+X) to clear all notifications
+**Target**: `Windows.UI.Xaml.Controls.Button#ClearAll` \
+**Style**: `AccessKey=x`
+
+### Add accelerator key (ALT+E) to expand/collapse the calendar
+**Target**: `Windows.UI.Xaml.Controls.Button#ExpandCollapseButton` \
+**Style**: `AccessKey=e`
 
 ## Work in progress
 
