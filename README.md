@@ -50,7 +50,7 @@ Notification Center Styler mod. The following themes are available:
 | Link | Screenshot
 | ---- | ----------
 | [TranslucentShell](Themes/TranslucentShell/README.md) | [![TranslucentShell](Themes/TranslucentShell/screenshot-small.png)](Themes/TranslucentShell/video.gif)
-| [Unified](Themes/Unified/README.md) | ![Unified](Themes/Unified/screenshot-small.png)
+| [Unified](Themes/Unified/README.md) | [![Unified](Themes/Unified/screenshot-small.png)](Themes/Unified/screenshot.png)
 
 ## Work in progress
 

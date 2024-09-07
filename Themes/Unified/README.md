@@ -2,7 +2,8 @@
 
 **Author**: [SandTechStuff](https://github.com/SandTechStuff)
 
-![Calendar](screenshot-large.png)
+![Calendar](screenshot.png) \
+![Quick actions](screenshot-quick-actions.png)
 
 ## Theme selection
 
