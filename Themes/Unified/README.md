@@ -2,7 +2,7 @@
 
 **Author**: [SandTechStuff](https://github.com/SandTechStuff)
 
-![Calendar](screenshot-small.png)
+![Calendar](screenshot-large.png)
 
 ## Theme selection
 
