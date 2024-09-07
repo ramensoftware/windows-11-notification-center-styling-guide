@@ -7,9 +7,16 @@
 
 ## Theme selection
 
-The theme is not integrated directly in the mod, so you need to manually install it.
+The theme is integrated into the mod, and can be simply selected from the mod's
+settings:
+
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
 
 ## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Advanced" tab.
