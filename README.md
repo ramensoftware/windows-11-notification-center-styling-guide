@@ -59,28 +59,32 @@ Notification Center Styler mod. The following themes are available:
 **Target**: `ActionCenter.FocusSessionControl` \
 **Style**: `Height=0`
 
+### Hide the notification center
+**Target**: `Grid#NotificationCenterGrid` \
+**Style**: `Visibility=Collapsed`
+
 ### Square the corners of the notification center
-**Target**: `Windows.UI.Xaml.Controls.Grid#NotificationCenterGrid` \
+**Target**: `Grid#NotificationCenterGrid` \
 **Style**: `CornerRadius=0`
 
 ### Square the corners of the calendar
-**Target**: `Windows.UI.Xaml.Controls.Grid#CalendarCenterGrid` \
+**Target**: `Grid#CalendarCenterGrid` \
 **Style**: `CornerRadius=0`
 
 ### Square the corners of the quick action center
-**Target**: `Windows.UI.Xaml.Controls.Grid#ControlCenterRegion` \
+**Target**: `Grid#ControlCenterRegion` \
 **Style**: `CornerRadius=0`
 
 ### Calendar and notification titlebars: titles on the right, buttons on the left
-**Target**: `Windows.UI.Xaml.Controls.Grid#RootContent` \
+**Target**: `Grid#RootContent` \
 **Style**: `FlowDirection=1`
 
-### Add accelerator key (ALT+X) to clear all notifications
-**Target**: `Windows.UI.Xaml.Controls.Button#ClearAll` \
+### Add accelerator key (Alt+X) to clear all notifications
+**Target**: `Button#ClearAll` \
 **Style**: `AccessKey=x`
 
-### Add accelerator key (ALT+E) to expand/collapse the calendar
-**Target**: `Windows.UI.Xaml.Controls.Button#ExpandCollapseButton` \
+### Add accelerator key (Alt+E) to expand/collapse the calendar
+**Target**: `Button#ExpandCollapseButton` \
 **Style**: `AccessKey=e`
 
 ## Work in progress
