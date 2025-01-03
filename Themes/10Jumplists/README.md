@@ -83,8 +83,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[18].target": "JumpViewUI.JumpListControl#JumpList",
 	"controlStyles[18].styles[0]": "Margin=0,0,0,0",
 	"controlStyles[19].target": "Windows.UI.Xaml.Controls.Button#PinButton > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Border#BackgroundBorder",
-	"controlStyles[19].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"#7d8787\" TintOpacity=\"0.5\" FallbackColor=\"#494949\" />",
-	"controlStyles[19].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"#788787\" TintOpacity=\"0.5\" FallbackColor=\"#5d5d5d\" />",
+	"controlStyles[19].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"#7d8787\" TintOpacity=\"0.3\" FallbackColor=\"#494949\" />",
+	"controlStyles[19].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"#788787\" TintOpacity=\"0.3\" FallbackColor=\"#5d5d5d\" />",
 	"controlStyles[19].styles[2]": "CornerRadius=0",
 	"controlStyles[4].styles[2]": "Padding=0,5,0,5"
 }
