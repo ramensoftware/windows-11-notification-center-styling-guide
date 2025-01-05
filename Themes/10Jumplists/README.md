@@ -87,7 +87,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[19].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"#788787\" TintOpacity=\"0.3\" FallbackColor=\"#5d5d5d\" />",
 	"controlStyles[19].styles[2]": "CornerRadius=0",
 	"controlStyles[4].styles[2]": "Padding=0,5,0,5",
-	"controlStyles[1].styles[2]": "BorderThickness=0,0,0,0"
+	"controlStyles[1].styles[2]": "BorderThickness=0,0,0,0",
+	"controlStyles[3].styles[1]": "RequestedTheme=2"
 }
 ```
 </details>
