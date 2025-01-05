@@ -1,4 +1,4 @@
-# 10Jumplists theme for Windows 11 Notification Center Styler
+# 10JumpLists theme for Windows 11 Notification Center Styler
 
 **Author**: [SandTechStuff](https://github.com/SandTechStuff)
 
@@ -96,7 +96,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ## Vertical Taskbar
 
-To line the jumplists up properly when using a vertical taskbar, you need to add an additional style manually.
+To line the jump lists up properly when using a vertical taskbar, you need to add an additional style manually.
 
 First, select the theme within the mod's settings. Then add the style that corresponds with your taskbar position.
 
