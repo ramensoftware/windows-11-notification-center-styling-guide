@@ -84,7 +84,29 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[19].target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
   "controlStyles[19].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0",
   "controlStyles[20].target": "ActionCenter.FlexibleItemView",
-  "controlStyles[20].styles[0]": "CornerRadius=15"
+  "controlStyles[20].styles[0]": "CornerRadius=15",
+  "controlStyles[21].target": "ControlCenter.MediaTransportControls#MediaTransportControls > Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion",
+  "controlStyles[21].styles[0]": "Height=470",
+  "controlStyles[22].target": "Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer",
+  "controlStyles[22].styles[0]": "Height=350",
+  "controlStyles[23].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage",
+  "controlStyles[23].styles[0]": "Width=300",
+  "controlStyles[23].styles[1]": "Height=300",
+  "controlStyles[23].styles[2]": "HorizontalAlignment=Center",
+  "controlStyles[23].styles[3]": "VerticalAlignment=Top",
+  "controlStyles[23].styles[4]": "Grid.Column=1",
+  "controlStyles[24].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border",
+  "controlStyles[24].styles[0]": "CornerRadius=10",
+  "controlStyles[25].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer",
+  "controlStyles[25].styles[0]": "VerticalAlignment=Bottom",
+  "controlStyles[25].styles[1]": "Grid.Column=0",
+  "controlStyles[26].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText",
+  "controlStyles[26].styles[0]": "TextAlignment=Center",
+  "controlStyles[27].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
+  "controlStyles[27].styles[0]": "TextAlignment=Center",
+  "theme": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": ""
 }
 ```
 </details>
