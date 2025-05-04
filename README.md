@@ -11,6 +11,12 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 * [Introduction](#introduction)
 * [Themes](#themes)
 * [Style examples](#style-examples)
+* [Transforms](#transforms)
+  * [Translate](#translate)
+  * [Rotate](#rotate)
+  * [Scale](#scale)
+  * [Skew](#skew)
+  * [Other Properties](#other-properties)
 * [Work in progress](#work-in-progress)
 
 ## Introduction
@@ -92,6 +98,60 @@ Makes panel non full-height when there are fewer notifications (fit to size). \
 ### Add accelerator key (Alt+E) to expand/collapse the calendar
 **Target**: `Button#ExpandCollapseButton` \
 **Style**: `AccessKey=e`
+
+## Transforms
+
+You can use transformation styles to translate, rotate, scale, or skew elements.
+
+> **Should I use `RenderTransform` or `Transform3D`?**
+>
+> For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
+
+> [!TIP]
+> You can mix and match transformations when using `Transform3D`! You can also use `RenderTransform` and `Transform3D` together.
+>
+> For example: `Transform3D:=<CompositeTransform3D TranslateY="-15" RotationZ="15" ScaleX="1.5" />`
+
+### Translate
+
+  `RenderTransform:=<TranslateTransform Y="-15" X="15" />`
+
+  -- or --
+
+  `Transform3D:=<CompositeTransform3D TranslateY="-15" TranslateX="15" TranslateZ="-15" />`
+
+### Rotate
+
+  `RenderTransform:=<RotateTransform Angle="15" />`
+
+  -- or --
+
+  `Transform3D:=<CompositeTransform3D RotationX="-15" RotationY="15" RotationZ="-15" />`
+
+  > X: 3D vertical rotation.
+  >
+  > Y: 3D horizontal rotation.
+  >
+  > Z: 2D rotation.
+
+
+### Scale
+
+  `RenderTransform:=<ScaleTransform ScaleX="1.5" ScaleY="-1.5" />`
+
+  -- or --
+
+  `Transform3D:=<CompositeTransform3D ScaleX="-1.5" ScaleY="1.5" ScaleZ="-1.5" />`
+
+### Skew
+
+  `RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />`
+
+### Other Properties
+- Rotate, Scale and Skew:
+  - `CenterX`: Offsets the transform's origin on the X axis.
+  - `CenterY`: Offsets the transform's origin on the Y axis.
+  - `CenterZ`: Offsets the transform's origin on the Z axis. (Only for `Transform3D`)
 
 ## Work in progress
 
