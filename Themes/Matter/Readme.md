@@ -12,6 +12,7 @@
 ## Windows Settings
 
 - Dark Mode
+- If you want same results you have to install 2 fonts, Tektur and Montserrat. You can find them on Google Fonts.
 ## Theme selection
 
 The theme is integrated into the mod, and can be simply selected from the mod's
