@@ -3,9 +3,10 @@
 
 **Author**: [ZoraizLajwer](https://github.com/ZoraizLajwer)
 
-![Notification Center](NotificationCenter.png) 
 
 ![Quick Actions Center](QuickActionCenter.png)
+
+![Notification Center](NotificationCenter.png) 
 
 ![Jump List](JumpList.png)
 
