@@ -16,7 +16,7 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Skew](#skew)
-  * [Other Properties](#other-properties)
+  * [Other properties](#other-properties)
 * [Colors](#colors)
   * [Solid color](#solid-color)
   * [Accent colors](#accent-colors)
