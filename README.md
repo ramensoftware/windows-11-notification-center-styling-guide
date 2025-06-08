@@ -225,7 +225,7 @@ Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="
 ```
 
 Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
- 
+
 The word `Light` or `Dark` is appended at end with
 a number ranging from 1-3. See [the official Microsoft
 docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
@@ -271,7 +271,7 @@ Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" Tin
 
 ### Mica effect as color
 
-> [!NOTE]  
+> [!NOTE]
 > Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods.
 
 ### Gradient as color
