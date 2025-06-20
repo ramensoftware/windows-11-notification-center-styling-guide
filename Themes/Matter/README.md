@@ -2,11 +2,13 @@
 
 **Author**: [ZoraizLajwer](https://github.com/ZoraizLajwer)
 
-![Quick Actions Center](QuickActionCenter.png)  ![Notification Center](NotificationCenter.png) 
-
-
-
+## Dark Mode
+![Notification Center](NotificationCenter.png)  ![Quick Actions Center](QuickActionCenter.png)  
 ![Jump List](JumpList.png)
+
+## Light Mode
+![Notification Center](NC_Light.png)  ![Quick Actions Center](AC_Light.png)  
+![Jump List](JP_Light.png)
 
 ## Better to know
 
