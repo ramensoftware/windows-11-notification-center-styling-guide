@@ -40,7 +40,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[3].styles[0]": "Background=Transparent",
   "controlStyles[4].target": "ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid",
   "controlStyles[4].styles[0]": "Background=Transparent",
-  "controlStyles[5].target": "MenuFlyoutPresenter",
+  "controlStyles[5].target": "MenuFlyoutPresenter > Border",
   "controlStyles[5].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#00000000\"/>",
   "controlStyles[5].styles[1]": "BorderThickness=0,0,0,0",
   "controlStyles[5].styles[2]": "CornerRadius=15",
