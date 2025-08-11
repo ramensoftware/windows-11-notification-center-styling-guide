@@ -92,7 +92,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[20].styles[0]": "Visibility=Visible",
 	"controlStyles[21].target": "Windows.UI.Xaml.Controls.Grid#SystemItemsContainer > Windows.UI.Xaml.Controls.Border#SystemItemsAcrylic",
 	"controlStyles[21].styles[0]": "Visibility=Visible",
-	"controlStyles[21].styles[1]": "Margin=0,-5,0,-5"
+	"controlStyles[21].styles[1]": "Margin=0,-5,0,-5",
+	"controlStyles[22].target": "Windows.UI.Xaml.Controls.MenuFlyoutPresenter > Windows.UI.Xaml.Controls.Border",
+	"controlStyles[22].styles[0]": "CornerRadius=0",
+	"controlStyles[23].target": "Windows.UI.Xaml.Controls.MenuFlyoutItem",
+	"controlStyles[23].styles[0]": "CornerRadius=0",
+	"controlStyles[24].target": "Windows.UI.Xaml.Controls.ContentPresenter#IconContent > Windows.UI.Xaml.Controls.FontIcon > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock",
+	"controlStyles[24].styles[0]": "FontFamily=Segoe MDL2 Assets, Segoe UI"
 }
 ```
 </details>
