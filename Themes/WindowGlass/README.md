@@ -1,9 +1,9 @@
-# WindowGlass theme for Windows 11 Taskbar Styler
+# WindowGlass theme for Windows 11 Notification Center Styler
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
 ## Action Center
-![Action Center](Action_Center.png)
+![Action Center](Action_C enter.png)
 
 ## Notification Center
 ![Notification Center](Notification_Center.png) 
