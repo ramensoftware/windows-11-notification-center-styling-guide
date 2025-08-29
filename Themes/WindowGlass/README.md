@@ -3,7 +3,7 @@
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
 ## Action Center
-![Action Center](Action_center.png)
+![Action Center](Action_Center.png)
 
 ## Notification Center
 ![Notification Center](Notification_Center.png) 
