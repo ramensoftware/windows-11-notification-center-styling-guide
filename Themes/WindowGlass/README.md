@@ -1,5 +1,7 @@
 # WindowGlass theme for Windows 11 Notification Center Styler
 
+A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windows 11's Notification and Action Center
+
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
 ## Action Center
