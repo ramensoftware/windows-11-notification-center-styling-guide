@@ -8,12 +8,12 @@
 ## Light Mode
 ![Notification Center](NC_Light.png)  ![Quick Actions Center](AC_Light.png)    ![Jump List](JP_Light.png)
 
-## Better to know
+## Good to know
 
-- Compatible with both Light/ Dark mod
-- If you want same results you have to install 2 fonts, [Tektur](https://fonts.google.com/specimen/Tektur) and [Montserrat](https://fonts.google.com/specimen/Montserrat).
+- Compatible with both light and dark modes
+- If you want the same results you have to install 2 fonts, [Tektur](https://fonts.google.com/specimen/Tektur) and [Montserrat](https://fonts.google.com/specimen/Montserrat).
 - The Quick Action Center button menu is still not compatible with versions newer than 23H2, such as 24H2.
-- **Alt+x** to _Clear all messages_, **Alt+e** to _Minimize/ Maximize Calendar View_
+- **Alt+x** to _Clear all messages_, **Alt+e** to _Minimize/Maximize Calendar View_
 
 ## Theme selection
 

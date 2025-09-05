@@ -48,8 +48,8 @@ If you're not familiar with Windhawk, here are the steps for installing the mod:
 After installing the mod, open its Settings tab and adjust the styles according
 to your preferences.
 
-Some customizations are best to be adjusted with other Windhawk mods. Links to
-those mods are provided where applicable.
+Some customizations are best adjusted with other Windhawk mods. Links to those
+mods are provided where applicable.
 
 ### Missing customizations
 
@@ -84,7 +84,7 @@ Notification Center Styler mod. The following themes are available:
 **Style**: `Visibility=Collapsed`
 
 ### Shrink the notification center height
-Makes panel non full-height when there are fewer notifications (fit to size). \
+Makes the panel non-full-height when there are fewer notifications (fit to size). \
 **Target**: `Grid#NotificationCenterGrid` \
 **Style**: `VerticalAlignment=2`
 
@@ -220,7 +220,7 @@ transparent background, use `Transparent` or `#00000000`.
 
 ### Accent colors
 
-A Color can also be a `ThemeResource` or `StaticResource`. There are many such
+A color can also be a `ThemeResource` or `StaticResource`. There are many such
 styles built into Windows.
 
 ```
@@ -229,8 +229,8 @@ Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="
 
 Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
 
-The word `Light` or `Dark` is appended at end with
-a number ranging from 1-3. See [the official Microsoft
+The word `Light` or `Dark` is appended at the end with a number ranging from 1
+to 3. See [the official Microsoft
 docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
 for more information.
 
@@ -266,7 +266,7 @@ Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
 
 `Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
 
-You can also set Acrylic to use an accent color for a more dynamic look, that fits current theme.
+You can also set Acrylic to use an accent color for a more dynamic look that fits the current theme.
 
 ```
 Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
