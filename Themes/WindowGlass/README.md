@@ -363,7 +363,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 This theme is also availabke with an alternate version that places the media controls on the top of the Action center, instead of the bottom.
 
 ## Action Center
-![Action Center](Action_Center2.png)
+![Action Center](Action_Center_2.png)
 
 
 <details>
