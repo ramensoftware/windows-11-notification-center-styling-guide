@@ -76,41 +76,106 @@ Notification Center Styler mod. The following themes are available:
 ## Style examples
 
 ### Hide the focus assist section
-**Target**: `ActionCenter.FocusSessionControl` \
-**Style**: `Height=0`
+
+Target:
+```
+ActionCenter.FocusSessionControl
+```
+
+Style: 
+```
+Height=0
+```
 
 ### Hide the notification center
-**Target**: `Grid#NotificationCenterGrid` \
-**Style**: `Visibility=Collapsed`
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+
+Style: 
+```
+Visibility=Collapsed
+```
 
 ### Shrink the notification center height
-Makes the panel non-full-height when there are fewer notifications (fit to size). \
-**Target**: `Grid#NotificationCenterGrid` \
-**Style**: `VerticalAlignment=2`
+Makes the panel non-full-height when there are fewer notifications (fit to size).
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style: 
+```
+VerticalAlignment=2
+```
 
 ### Square the corners of the notification center
-**Target**: `Grid#NotificationCenterGrid` \
-**Style**: `CornerRadius=0`
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style:
+```
+CornerRadius=0
+```
 
 ### Square the corners of the calendar
-**Target**: `Grid#CalendarCenterGrid` \
-**Style**: `CornerRadius=0`
+
+Target:
+```
+Grid#CalendarCenterGrid
+```
+Style:
+```
+CornerRadius=0
+```
 
 ### Square the corners of the quick action center
-**Target**: `Grid#ControlCenterRegion` \
-**Style**: `CornerRadius=0`
+
+Target:
+```
+Grid#ControlCenterRegion
+```
+Style:
+```
+CornerRadius=0
+```
 
 ### Calendar and notification titlebars: titles on the right, buttons on the left
-**Target**: `Grid#RootContent` \
-**Style**: `FlowDirection=1`
+
+Target:
+```
+Grid#RootContent
+```
+Style:
+```
+FlowDirection=1
+```
 
 ### Add accelerator key (Alt+X) to clear all notifications
-**Target**: `Button#ClearAll` \
-**Style**: `AccessKey=x`
+
+Target:
+```
+Button#ClearAll
+```
+Style:
+```
+AccessKey=x
+```
 
 ### Add accelerator key (Alt+E) to expand/collapse the calendar
-**Target**: `Button#ExpandCollapseButton` \
-**Style**: `AccessKey=e`
+
+Target:
+```
+Button#ExpandCollapseButton
+```
+Style:
+```
+AccessKey=e
+```
 
 ## Transforms
 
