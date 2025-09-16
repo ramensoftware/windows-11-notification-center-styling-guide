@@ -13,9 +13,14 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 * [Style examples](#style-examples)
   * [Hide the focus assist section](#hide-the-focus-assist-section)
   * [Hide the notification center](#hide-the-notification-center)
+  * [Hide control center PipsPager](#hide-control-center-pipspager-navigation-dots)
+  * [Hide control center footer](#hide-control-center-footer)
   * [Shrink the notification center height](#shrink-the-notification-center-height)
+  * [Variable volume mixer height](#variable-volume-mixer-height)
+  * [Remove shadows](#remove-shadows)
   * [Square the corners of the notification center](#square-the-corners-of-the-notification-center)
   * [Square the corners of the calendar](#square-the-corners-of-the-calendar)
+  * [Square the corners of the calendar buttons](#square-the-corners-of-the-calendar-buttons)
   * [Square the corners of the quick action center](#square-the-corners-of-the-quick-action-center)
   * [Calendar and notification titlebars: titles on the right, buttons on the left](#calendar-and-notification-titlebars-titles-on-the-right-buttons-on-the-left)
   * [Add accelerator key (Alt+X) to clear all notifications](#add-accelerator-key-altx-to-clear-all-notifications)
@@ -92,7 +97,6 @@ Target:
 ```
 ActionCenter.FocusSessionControl
 ```
-
 Style: 
 ```
 Height=0
@@ -104,7 +108,28 @@ Target:
 ```
 Grid#NotificationCenterGrid
 ```
+Style: 
+```
+Visibility=Collapsed
+```
 
+### Hide control center PipsPager (navigation dots)
+
+Target:
+```
+Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+### Hide control center footer
+
+Target:
+```
+Grid#FooterGrid
+```
 Style: 
 ```
 Visibility=Collapsed
@@ -120,6 +145,35 @@ Grid#NotificationCenterGrid
 Style: 
 ```
 VerticalAlignment=2
+```
+
+### Variable volume mixer height
+Makes the volume mixer grow or shrink depending on how many volume sliders are visible.
+
+Target:
+```
+QuickActions.ControlCenter.FrameWithContentChanged#L2Frame
+```
+Style:
+```
+Height=Auto
+```
+
+### Remove shadows
+
+Targets:
+```
+Grid#NotificationCenterGrid
+```
+```
+Grid#CalendarCenterGrid
+```
+```
+Grid#MediaTransportControlsRegion
+```
+Style:
+```
+Shadow:=
 ```
 
 ### Square the corners of the notification center
@@ -138,6 +192,26 @@ CornerRadius=0
 Target:
 ```
 Grid#CalendarCenterGrid
+```
+Style:
+```
+CornerRadius=0
+```
+
+### Square the corners of the calendar buttons
+
+Targets:
+```
+CalendarViewDayItem
+```
+```
+Control
+```
+```
+CalendarViewDayItem > Border
+```
+```
+Control > Border
 ```
 Style:
 ```
