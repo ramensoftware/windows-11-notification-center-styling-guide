@@ -13,7 +13,7 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 * [Style examples](#style-examples)
   * [Hide the focus assist section](#hide-the-focus-assist-section)
   * [Hide the notification center](#hide-the-notification-center)
-  * [Hide control center PipsPager](#hide-control-center-pipspager-navigation-dots)
+  * [Hide control center PipsPager (navigation dots)](#hide-control-center-pipspager-navigation-dots)
   * [Hide control center footer](#hide-control-center-footer)
   * [Shrink the notification center height](#shrink-the-notification-center-height)
   * [Variable volume mixer height](#variable-volume-mixer-height)
