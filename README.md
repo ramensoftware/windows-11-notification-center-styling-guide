@@ -150,7 +150,11 @@ VerticalAlignment=2
 ### Variable volume mixer height
 Makes the volume mixer grow or shrink depending on how many volume sliders are visible.
 
-Target:
+Target for newer Windows 11 versions:
+```
+ControlCenter.FrameWithContentChanged#L2Frame
+```
+Target for older Windows 11 versions:
 ```
 QuickActions.ControlCenter.FrameWithContentChanged#L2Frame
 ```
