@@ -1,524 +1,530 @@
-# The Windows 11 notification center styling guide
-
-*This document is a work in progress, contributions are welcome.* \
-***See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
-[The Windows 11 start menu styling
-guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/README.md).*
-
-## Table of contents
-
-* [Introduction](#introduction)
-* [Themes](#themes)
-* [Style examples](#style-examples)
-  * [Hide the focus assist section](#hide-the-focus-assist-section)
-  * [Hide the notification center](#hide-the-notification-center)
-  * [Hide control center PipsPager (navigation dots)](#hide-control-center-pipspager-navigation-dots)
-  * [Hide control center footer](#hide-control-center-footer)
-  * [Shrink the notification center height](#shrink-the-notification-center-height)
-  * [Variable volume mixer height](#variable-volume-mixer-height)
-  * [Remove shadows](#remove-shadows)
-  * [Square the corners of the notification center](#square-the-corners-of-the-notification-center)
-  * [Square the corners of the calendar](#square-the-corners-of-the-calendar)
-  * [Square the corners of the calendar buttons](#square-the-corners-of-the-calendar-buttons)
-  * [Square the corners of the quick action center](#square-the-corners-of-the-quick-action-center)
-  * [Calendar and notification titlebars: titles on the right, buttons on the left](#calendar-and-notification-titlebars-titles-on-the-right-buttons-on-the-left)
-  * [Add accelerator key (Alt+X) to clear all notifications](#add-accelerator-key-altx-to-clear-all-notifications)
-  * [Add accelerator key (Alt+E) to expand/collapse the calendar](#add-accelerator-key-alte-to-expandcollapse-the-calendar)
-* [Transforms](#transforms)
-  * [Translate](#translate)
-  * [Rotate](#rotate)
-  * [Scale](#scale)
-  * [Skew](#skew)
-  * [Other properties and attributes](#other-properties-and-attributes)
-* [Colors](#colors)
-  * [Solid color](#solid-color)
-  * [Accent colors](#accent-colors)
-  * [Clear transparent background](#clear-transparent-background)
-  * [Acrylic effect as color](#acrylic-effect-as-color)
-  * [WindhawkBlur effect as color](#windhawkblur-effect-as-color)
-    * [Hex color](#hex-color)
-    * [ThemeResource color](#themeresource-color)
-  * [Mica effect as color](#mica-effect-as-color)
-  * [Gradient as color](#gradient-as-color)
-  * [Image as color](#image-as-color)
-  * [Reveal as color](#reveal-as-color)
-* [Work in progress](#work-in-progress)
-
-## Introduction
-
-This is a collection of commonly requested notification center styling
-customizations for Windows 11. It is intended to be used with the [Windows 11
-Notification Center
-Styler](https://windhawk.net/mods/windows-11-notification-center-styler)
-Windhawk mod.
-
-If you're not familiar with Windhawk, here are the steps for installing the mod:
-
-* Download Windhawk from [windhawk.net](https://windhawk.net/) and install it.
-* Go to "Mods" in the upper right menu.
-* Find and install the "Windows 11 Notification Center Styler" mod.
-
-After installing the mod, open its Settings tab and adjust the styles according
-to your preferences.
-
-Some customizations are best adjusted with other Windhawk mods. Links to those
-mods are provided where applicable.
-
-### Missing customizations
-
-If you're looking for a customization that is not listed here, please [open an
-issue](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/issues/new).
-
-### Contributing
-
-If you have a notification center styling customization or theme that you would
-like to share, please submit a pull request.
-
-## Themes
-
-Themes are collections of styles that can be imported into the Windows 11
-Notification Center Styler mod. The following themes are available:
-
-| Link | Screenshot
-| ---- | ----------
-| [TranslucentShell](Themes/TranslucentShell/README.md) | [![TranslucentShell](Themes/TranslucentShell/screenshot-small.png)](Themes/TranslucentShell/video.gif)
-| [Unified](Themes/Unified/README.md) | [![Unified](Themes/Unified/screenshot-small.png)](Themes/Unified/screenshot.png)
-| [10JumpLists](Themes/10JumpLists/README.md) | [![10JumpLists](Themes/10JumpLists/screenshot-small.png)](Themes/10JumpLists/screenshot.png)
-| [Matter](Themes/Matter/README.md) | [![Matter](Themes/Matter/screenshot-small.png)](Themes/Matter/screenshot.png)
-| [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
-
-
-## Style examples
-
-### Hide the focus assist section
-
-Target:
-```
-ActionCenter.FocusSessionControl
-```
-Style: 
-```
-Height=0
-```
-
-### Hide the notification center
-
-Target:
-```
-Grid#NotificationCenterGrid
-```
-Style: 
-```
-Visibility=Collapsed
-```
-
-### Hide control center PipsPager (navigation dots)
-
-Target:
-```
-Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager
-```
-Style:
-```
-Visibility=Collapsed
-```
-
-### Hide control center footer
-
-Target:
-```
-Grid#FooterGrid
-```
-Style: 
-```
-Visibility=Collapsed
-```
-
-### Shrink the notification center height
-Makes the panel non-full-height when there are fewer notifications (fit to size).
-
-Target:
-```
-Grid#NotificationCenterGrid
-```
-Style: 
-```
-VerticalAlignment=2
-```
-
-### Variable volume mixer height
-Makes the volume mixer grow or shrink depending on how many volume sliders are visible.
-
-Target for newer Windows 11 versions:
-```
-ControlCenter.FrameWithContentChanged#L2Frame
-```
-Target for older Windows 11 versions:
-```
-QuickActions.ControlCenter.FrameWithContentChanged#L2Frame
-```
-Style:
-```
-Height=Auto
-```
-
-### Remove shadows
-
-Targets:
-```
-Grid#NotificationCenterGrid
-```
-```
-Grid#CalendarCenterGrid
-```
-```
-Grid#MediaTransportControlsRegion
-```
-Style:
-```
-Shadow:=
-```
-
-### Square the corners of the notification center
-
-Target:
-```
-Grid#NotificationCenterGrid
-```
-Style:
-```
-CornerRadius=0
-```
-
-### Square the corners of the calendar
-
-Target:
-```
-Grid#CalendarCenterGrid
-```
-Style:
-```
-CornerRadius=0
-```
-
-### Square the corners of the calendar buttons
-
-Targets:
-```
-CalendarViewDayItem
-```
-```
-Control
-```
-```
-CalendarViewDayItem > Border
-```
-```
-Control > Border
-```
-Style:
-```
-CornerRadius=0
-```
-
-### Square the corners of the quick action center
-
-Target:
-```
-Grid#ControlCenterRegion
-```
-Style:
-```
-CornerRadius=0
-```
-
-### Calendar and notification titlebars: titles on the right, buttons on the left
-
-Target:
-```
-Grid#RootContent
-```
-Style:
-```
-FlowDirection=1
-```
-
-### Add accelerator key (Alt+X) to clear all notifications
-
-Target:
-```
-Button#ClearAll
-```
-Style:
-```
-AccessKey=x
-```
-
-### Add accelerator key (Alt+E) to expand/collapse the calendar
-
-Target:
-```
-Button#ExpandCollapseButton
-```
-Style:
-```
-AccessKey=e
-```
-
-## Transforms
-
-You can use transformation styles to translate, rotate, scale, or skew elements.
-
-> [!TIP]
-> **Should I use `RenderTransform` or `Transform3D`?**
->
-> For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
-
-> [!TIP]
-> You can mix and match transformations when using `Transform3D`! You can also use `RenderTransform` and `Transform3D` together.
->
-> For example: `Transform3D:=<CompositeTransform3D ScaleX="1.5" TranslateY="-15" RotationZ="15" />`
-
-### Translate
-
-```
-RenderTransform:=<TranslateTransform X="15" Y="-15" />
-```
-
--- or --
-
-```
-Transform3D:=<CompositeTransform3D TranslateX="15" TranslateY="-15" TranslateZ="-15" />
-```
-
-### Rotate
-
-```
-RenderTransform:=<RotateTransform Angle="15" />
-```
-
--- or --
-
-```
-Transform3D:=<CompositeTransform3D RotationX="-15" RotationY="15" RotationZ="-15" />
-```
-
-- `X`: 3D vertical rotation.
-- `Y`: 3D horizontal rotation.
-- `Z`: 2D rotation.
-
-### Scale
-
-```
-RenderTransform:=<ScaleTransform ScaleX="1.5" ScaleY="-1.5" />
-```
-
--- or --
-
-```
-Transform3D:=<CompositeTransform3D ScaleX="-1.5" ScaleY="1.5" ScaleZ="-1.5" />
-```
-
-### Skew
-
-```
-RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
-```
-
-### Other properties and attributes
-- Applies to Rotate, Scale and Skew:
-  - `CenterX`: Offsets the transform's origin on the X axis.
-  - `CenterY`: Offsets the transform's origin on the Y axis.
-  - `CenterZ`: Offsets the transform's origin on the Z axis. (Only for `Transform3D`)
-
-  Example:
-  ```
-  RenderTransform:=<RotateTransform Angle="15" CenterX="10" CenterY="20" />
-  ```
-- `RenderTransformOrigin`
-  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a separate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
-  - Sets the transform origin relative to its target's width and height. Format is `X,Y` and both numbers range from 0-1.
-
-  Example:
+# "Oversimplified & Accentuated" Theme for "Windows 11 Notification Center Styler"
+
+A cleaner, more refined Windows Notification Center (& Control Center) theme - removing unnecessary elements and offering better **Accent Color** integration.
+
+> ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
+
+### ✨ Features
+- Removed unnecessary text and lines
+- Enlarged icons  
+- Enhanced accent color Presence
+- Added subtle, neat border reveal effects
+- Added useful Accesss Keys ([ Alt + Key ] Shorcuts):
+  - Notification Center
+    - Toggle DoNotDisturb → [ Alt + D ]
+    - "Clear All" Button → [ Alt + C ]
+    - Expand/Collapse Calender → [ Alt + E ]
+   - Control Center
+     - Button in Position #1 → [ Alt + 1 ]
+     - Button in Position #2 → [ Alt + 2 ]
+     - Button in Position #3 → [ Alt + 3 ]
+     - Button in Position #4 → [ Alt + 4 ]
+     - Button in Position #5 → [ Alt + 5 ]
+     - Button in Position #6 → [ Alt + 6 ]
+     - Button in Position #7 → [ Alt + 7 ]
+     - Button in Position #8 → [ Alt + 8 ]
+     - Button in Position #9 → [ Alt + 9 ]
+     - Button in Position #10 → [ Alt + 0 ]
+     - Button in Position #11 → [ Alt + - ]
+
+**Author:** [OsamaJT](https://github.com/OsamaHJT)
+
+![Screenshot](Nofication%20Center.png)
+
+---
+
+## 🎨 Elements Modified
+- Notification Center
+- Notifications (Active & in Control Center)
+- Calender
+- Control Center
+- Media Panel in Control Center
+- Left Click Menus (Jumplists) for Taskbar Apps
   
-  ```
-  RenderTransformOrigin=0.5,0.5
-  ```
-  This centers the transform's origin.
-- `TransformGroup`
-  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a separate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
-  - Allows you to combine RenderTransforms together into one style, mimicking Transform3D's functionality.
+---
 
-  Example:
-  ```
-  RenderTransform:=<TransformGroup><RotateTransform Angle="15" /><TranslateTransform X="15" Y="-15" /></TransformGroup>
-  ```
-## Colors
+## 🧩 Installation
 
-In the following examples, we will use `Background` as our style, but this
-also works for other properties that accept colors, such as `Fill`.
+1. Download **[Windhawk](https://windhawk.net/)**.  
+2. Install the **“[Windows 11 Notification Center Styler](https://windhawk.net/mods/windows-11-notification-center-styler)”** plugin.  
+3. Choose the **“Oversimplified & Accentuated”** theme from the integrated themes list.  
+   **OR**  
+   Copy the JSON code below and go to:  
+   **Windows 11 Taskbar Styler → Details → Advanced → Mod Settings**  
+   Paste the code into the "**Mod settings**" box and click **Save**.
 
-### Solid color
 
+---
+
+## 🛠️ Modification Notes
+
+I added an extra comment line at the end of each style group to indicate the target object with common language.  
+The aim is to make it easier to modify or debug the theme in the future.
+
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+  "controlStyles[0].target": "MenuFlyoutPresenter",
+  "controlStyles[0].styles[0]": "Background:=$DarkAccent",
+  "controlStyles[0].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[0].styles[2]": "CornerRadius=12",
+  "controlStyles[0].styles[3]": "Shadow:=",
+  "controlStyles[0].styles[4]": "//Target= Context Menu",
+
+  "controlStyles[1].target": "Grid#NotificationCenterGrid",
+  "controlStyles[1].styles[0]": "Background:=$Alt",
+  "controlStyles[1].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[1].styles[2]": "Shadow:=",
+  "controlStyles[1].styles[3]": "//Target= Notification Center Box",
+
+  "controlStyles[2].target": "TextBlock#NotificationsTextBlock",
+  "controlStyles[2].styles[0]": "Visibility=Collapsed",
+  "controlStyles[2].styles[1]": "//Target= Notification Center > \"Notifications\" Text",
+
+  "controlStyles[3].target": "Button#ClearAll",
+  "controlStyles[3].styles[0]": "AccessKey=C",
+  "controlStyles[3].styles[1]": "//Target= \"ClearAll\" Button",
+
+  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton",
+  "controlStyles[4].styles[0]": "AccessKey=D",
+  "controlStyles[4].styles[1]": "//Target= Notifcation Center > DoNotDisturb Button",
+
+  "controlStyles[5].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#DoNotDisturbButtonIcon",
+  "controlStyles[5].styles[0]": "Height=16",
+  "controlStyles[5].styles[1]": "Width=16",
+  "controlStyles[5].styles[2]": "//Target= Notifcation Center > DoNotDisturb Button icon",
+
+  "controlStyles[6].target": "Grid#DoNotDisturbSubtext",
+  "controlStyles[6].styles[0]": "Background:=$Accent",
+  "controlStyles[6].styles[1]": "BorderBrush:=$Reveal",
+  "controlStyles[6].styles[2]": "BorderThickness=2",
+  "controlStyles[6].styles[3]": "CornerRadius=5",
+  "controlStyles[6].styles[4]": "Margin=0,0,0,10",
+  "controlStyles[6].styles[5]": "//Target= Notifcation Center > DoNotDisturb Activated Plate",
+
+  "controlStyles[7].target": "Grid#DoNotDisturbSubtext > TextBlock[1]",
+  "controlStyles[7].styles[0]": "Visibility=Collapsed",
+  "controlStyles[7].styles[1]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > DoNotDisturb icon",
+
+  "controlStyles[8].target": "Grid#DoNotDisturbSubtext > TextBlock[2]",
+  "controlStyles[8].styles[0]": "HorizontalAlignment=Center",
+  "controlStyles[8].styles[1]": "FontSize=18",
+  "controlStyles[8].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"Donotdisturbison\" Text",
+
+  "controlStyles[9].target": "Grid#DoNotDisturbSubtext > TextBlock[3]",
+  "controlStyles[9].styles[0]": "TextAlignment=Center",
+  "controlStyles[9].styles[1]": "FontSize=11",
+  "controlStyles[9].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"You'll onlyseebannersforprioritynotificationsandalarams.\" text",
+
+  "controlStyles[10].target": "Grid#DoNotDisturbSubtext > Button",
+  "controlStyles[10].styles[0]": "HorizontalAlignment=Center",
+  "controlStyles[10].styles[1]": "Margin= 0,0,0,0",
+  "controlStyles[10].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Button in Do Not Disturb Banner",
+
+  "controlStyles[11].target": "TextBlock#NotificationSettingsButtonText",
+  "controlStyles[11].styles[0]": "Text=Settings",
+  "controlStyles[11].styles[1]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Text in Do Not Disturb Banner",
+
+  "controlStyles[12].target": "Border#ItemOpaquePlating",
+  "controlStyles[12].styles[0]": "BorderBrush:=$Reveal",
+  "controlStyles[12].styles[1]": "//Target= Notification Center > Notifcation Plate",
+
+  "controlStyles[13].target": "Border#StandardImageBorder",
+  "controlStyles[13].styles[0]": "Height=30",
+  "controlStyles[13].styles[1]": "Width=30",
+  "controlStyles[13].styles[2]": "//Target= Notification Center > Notifcation App Icon",
+
+  "controlStyles[14].target": "Grid#GroupTitleGrid > TextBlock#Title",
+  "controlStyles[14].styles[0]": "Visibility=Collapsed",
+  "controlStyles[14].styles[1]": "//Target= Notification Center > Notifcation App Name",
+
+  "controlStyles[15].target": "Grid > Button#VerbButton",
+  "controlStyles[15].styles[0]": "BorderBrush=Transparent",
+  "controlStyles[15].styles[1]": "//Target= Notification Center > Notifcation App Buttons",
+
+  "controlStyles[16].target": "Border#PopupBorder",
+  "controlStyles[16].styles[0]": "Background:=$DarkAccent",
+  "controlStyles[16].styles[1]": "Shadow:=",
+  "controlStyles[16].styles[2]": "//Target= Notification-In Context Menu",
+
+  "controlStyles[17].target": "Border#ToastBackgroundBorder2",
+  "controlStyles[17].styles[0]": "Background:=$Alt",
+  "controlStyles[17].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[17].styles[2]": "CornerRadius=15",
+  "controlStyles[17].styles[3]": "Shadow:=",
+  "controlStyles[17].styles[4]": "//Target= Active Notification > Notification Plate",
+
+  "controlStyles[18].target": "Border#AppLogoBorder2",
+  "controlStyles[18].styles[0]": "Height=30",
+  "controlStyles[18].styles[1]": "Width=30",
+  "controlStyles[18].styles[2]": "//Target= Active Notification > App icon's Container",
+
+  "controlStyles[19].target": "Border#AppLogoBorder",
+  "controlStyles[19].styles[0]": "Height=30",
+  "controlStyles[19].styles[1]": "Width=30",
+  "controlStyles[19].styles[2]": "//Target= Active Notification > App icon (Before 24H2 I think)",
+
+  "controlStyles[20].target": "Image#AppLogo2",
+  "controlStyles[20].styles[0]": "Height=30",
+  "controlStyles[20].styles[1]": "Width=30",
+  "controlStyles[20].styles[2]": "//Target= Active Notification > App icon",
+
+  "controlStyles[21].target": "Grid#ToastTitleBar > TextBlock#SenderName",
+  "controlStyles[21].styles[0]": "Visibility=Collapsed",
+  "controlStyles[21].styles[1]": "//Target= Active Notification > App Name",
+
+  "controlStyles[22].target": "ProgressBar#progressBar > Grid > Border#DeterminateRoot",
+  "controlStyles[22].styles[0]": "Background=Transparent",
+  "controlStyles[22].styles[1]": "//Target= Active Notification > Progress Bar > Empty Track",
+
+  "controlStyles[23].target": "Button#VerbButton > ContentPresenter#ContentPresenter",
+  "controlStyles[23].styles[0]": "CornerRadius=10",
+  "controlStyles[23].styles[1]": "//Target= Active Notification - Call Notification > Buttons",
+
+  "controlStyles[24].target": "Grid#CalendarCenterGrid",
+  "controlStyles[24].styles[0]": "Background:=$Alt",
+  "controlStyles[24].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[24].styles[2]": "CornerRadius=20",
+  "controlStyles[24].styles[3]": "Shadow:=",
+  "controlStyles[24].styles[4]": "//Target= Calender Box",
+
+  "controlStyles[25].target": "Border#CalendarHeaderMinimizedOverlay",
+  "controlStyles[25].styles[0]": "Background=Transparent",
+  "controlStyles[25].styles[1]": "//Target= Calender's Header (When Minimized)",
+
+  "controlStyles[26].target": "Button#ExpandCollapseButton",
+  "controlStyles[26].styles[0]": "Background=Transparent",
+  "controlStyles[26].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[26].styles[2]": "AccessKey=E",
+  "controlStyles[26].styles[3]": "//Target= Calender > Header > Expand/Collapse Button",
+
+  "controlStyles[27].target": "ScrollViewer#CalendarControlScrollViewer",
+  "controlStyles[27].styles[0]": "Background=Transparent",
+  "controlStyles[27].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[27].styles[2]": "//Target= Calender's Body",
+
+  "controlStyles[28].target": "CalendarViewDayItem",
+  "controlStyles[28].styles[0]": "CornerRadius=10",
+  "controlStyles[28].styles[1]": "//Target= Calender's Day Container",
+
+  "controlStyles[29].target": "CalendarViewDayItem > Windows.UI.Xaml.Controls.Border",
+  "controlStyles[29].styles[0]": "BorderBrush:= <RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />",
+  "controlStyles[29].styles[1]": "CornerRadius=10",
+  "controlStyles[29].styles[2]": "//Target= Calender's Day",
+
+  "controlStyles[30].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Windows.UI.Xaml.Controls.Primitives.CalendarViewItem",
+  "controlStyles[30].styles[0]": "Background:=$Reveal",
+  "controlStyles[30].styles[1]": "CornerRadius=0",
+  "controlStyles[30].styles[2]": "//Target= Calender's Month",
+
+  "controlStyles[31].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Windows.UI.Xaml.Controls.Primitives.CalendarViewItem",
+  "controlStyles[31].styles[0]": "Background:=$Reveal",
+  "controlStyles[31].styles[1]": "//Target= Calender's Year",
+
+  "controlStyles[32].target": "Grid#FocusGrid",
+  "controlStyles[32].styles[0]": "Background=Transparent",
+  "controlStyles[32].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[32].styles[2]": "//Target= Calender > Focus Grid (Calender's Footer)",
+
+  "controlStyles[33].target": "Button#IncreaseTimeButton",
+  "controlStyles[33].styles[0]": "Background=Transparent",
+  "controlStyles[33].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[33].styles[2]": "//Target= Calender > Focus Grid > Increase Time Button",
+
+  "controlStyles[34].target": "Button#DecreaseTimeButton",
+  "controlStyles[34].styles[0]": "Background=Transparent",
+  "controlStyles[34].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[34].styles[2]": "//Target= Calender > Focus Grid > Decrease Time Button",
+
+  "controlStyles[35].target": "Button#StartButton",
+  "controlStyles[35].styles[0]": "Background=Transparent",
+  "controlStyles[35].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[35].styles[2]": "//Target= Calender > Focus Grid > Focus Button ",
+
+  "controlStyles[36].target": "Grid#ControlCenterRegion",
+  "controlStyles[36].styles[0]": "Background=Transparent",
+  "controlStyles[36].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[36].styles[2]": "CornerRadius=20",
+  "controlStyles[36].styles[3]": "Shadow:=",
+  "controlStyles[36].styles[4]": "//Target= Control Center Container",
+
+  "controlStyles[37].target": "Grid#L1Grid > Border",
+  "controlStyles[37].styles[0]": "Background=Transparent",
+  "controlStyles[37].styles[1]": "//Target= Control Center's Overlay Layer",
+
+  "controlStyles[38].target": "Grid#L1Grid",
+  "controlStyles[38].styles[0]": "Background:=$Alt",
+  "controlStyles[38].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[38].styles[2]": "CornerRadius=20",
+  "controlStyles[38].styles[3]": "//Target= Control Center's Body",
+
+  "controlStyles[39].target": "ControlCenter.PaginatedGridView > Grid > GridView#RootGridView",
+  "controlStyles[39].styles[0]": "Height=auto",
+  "controlStyles[39].styles[1]": "//Target= Control Center's Page (This is to make all buttons in one Page)",
+
+  "controlStyles[40].target": "Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager",
+  "controlStyles[40].styles[0]": "Visibility=Collapsed",
+  "controlStyles[40].styles[1]": "//Target= Control Center's Page Indicator",
+
+  "controlStyles[41].target": "ContentPresenter#ContentPresenter",
+  "controlStyles[41].styles[0]": "BorderBrush=Transparent",
+  "controlStyles[41].styles[1]": "//Target= Control Center Buttons' Container",
+
+  "controlStyles[42].target": "ControlCenter.PaginatedToggleButton",
+  "controlStyles[42].styles[0]": "Height=60",
+  "controlStyles[42].styles[1]": "//Target= Control Center's Buttons",
+
+  "controlStyles[43].target": "ContentControl > ContentPresenter > Grid > Grid",
+  "controlStyles[43].styles[0]": "CornerRadius=12",
+  "controlStyles[43].styles[1]": "//Target= Control Center's Buttons",
+
+  "controlStyles[44].target": "ControlCenter.PaginatedToggleButton > ContentPresenter#ContentPresenter@CommonStates",
+  "controlStyles[44].styles[0]": "Background@Normal:= <AcrylicBrush TintColor=\"{ThemeResource SystemAltHighColor}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" />",
+  "controlStyles[44].styles[1]": "//Background@PointerOver:= </>",
+  "controlStyles[44].styles[2]": "//Background@Pressed:= </>",
+  "controlStyles[44].styles[3]": "//Background@Disabled= </>",
+  "controlStyles[44].styles[4]": "Background@Checked:=$Accent",
+  "controlStyles[44].styles[5]": "Background@CheckedPointerOver:= <AcrylicBrush TintColor=\"{ThemeResource SystemAccentColorLight1}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"{ThemeResource SystemAccentColorLight1}\" />",
+  "controlStyles[44].styles[6]": "Background@CheckedPressed:= <AcrylicBrush TintColor=\"{ThemeResource SystemAccentColorDark1}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"{ThemeResource SystemAccentColorDark1}\" />",
+  "controlStyles[44].styles[7]": "Background@CheckedDisabled:= <AcrylicBrush TintColor=\"red\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"red\" />",
+  "controlStyles[44].styles[8]": "//Target= Control Center > Buttons States Coloring",
+
+  "controlStyles[45].target": "Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+  "controlStyles[45].styles[0]": "Height=30",
+  "controlStyles[45].styles[1]": "Width=30",
+  "controlStyles[45].styles[2]": "//Target= Control Center Buttons' icons",
+
+  "controlStyles[46].target": "ContentPresenter#Content > StackPanel > TextBlock",
+  "controlStyles[46].styles[0]": "Visibility=Collapsed",
+  "controlStyles[46].styles[1]": "//Target= Control Center > Text Under Buttons",
+
+  "controlStyles[47].target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Accessibility]",
+  "controlStyles[47].styles[0]": "CornerRadius=10",
+  "controlStyles[47].styles[1]": "//Target= Control Center > Accessibility Button",
+
+  "controlStyles[48].target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Cast]",
+  "controlStyles[48].styles[0]": "CornerRadius=10",
+  "controlStyles[48].styles[1]": "//Target= Control Center > Cast Button",
+
+  "controlStyles[49].target": "ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.Name=Project]",
+  "controlStyles[49].styles[0]": "CornerRadius=10",
+  "controlStyles[49].styles[1]": "//Target= Control Center > Project Button",
+
+  "controlStyles[50].target": "ControlCenter.PaginatedGridView > Grid",
+  "controlStyles[50].styles[0]": "BorderBrush=Transparent",
+  "controlStyles[50].styles[1]": "//Target= Control Center > Volume & Brightness area > Top Border",
+
+  "controlStyles[51].target": "Rectangle#HorizontalTrackRect",
+  "controlStyles[51].styles[0]": "Opacity=0",
+  "controlStyles[51].styles[1]": "//Target= Control Center > Brightness & Volume Empty Track",
+
+  "controlStyles[52].target": "Rectangle#HorizontalDecreaseRect",
+  "controlStyles[52].styles[0]": "Fill:=$Accent",
+  "controlStyles[52].styles[1]": "Height=6",
+  "controlStyles[52].styles[2]": "//Target= Control Center > Volume & Brightness Fill Track",
+
+  "controlStyles[53].target": "Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Border",
+  "controlStyles[53].styles[0]": "Visibility=Collapsed",
+  "controlStyles[53].styles[1]": "//Target= Control Center > Brightness And Volume Knobs",
+
+  "controlStyles[54].target": "Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb",
+  "controlStyles[54].styles[0]": "Width=0",
+  "controlStyles[54].styles[1]": "//Target= Control Center > Brightness and Volume Tracks Thumb (This may seem not so important but it is)",
+
+  "controlStyles[55].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#BrightnessPlayer",
+  "controlStyles[55].styles[0]": "Height=25",
+  "controlStyles[55].styles[1]": "Width=25",
+  "controlStyles[55].styles[2]": "//Target= Control Center > Brightness Animated icon",
+
+  "controlStyles[56].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#FooterButtonIcon",
+  "controlStyles[56].styles[0]": "Height=25",
+  "controlStyles[56].styles[1]": "Width=25",
+  "controlStyles[56].styles[2]": "//Target= Control Center > Volume Animated  icon",
+
+  "controlStyles[57].target": "Button#VolumeL2Button > ContentPresenter > StackPanel > FontIcon[1]",
+  "controlStyles[57].styles[0]": "FontSize=20",
+  "controlStyles[57].styles[1]": "//Target= Control Center > Sound Output Button icon",
+
+  "controlStyles[58].target": "StackPanel > ContentPresenter > ContentControl > ContentPresenter > Button > ContentPresenter > StackPanel > TextBlock#Icon",
+  "controlStyles[58].styles[0]": "FontSize=25",
+  "controlStyles[58].styles[1]": "//Target= Control Center > Battery icon",
+
+  "controlStyles[59].target": "StackPanel > ContentPresenter > ContentControl > ContentPresenter > Button > ContentPresenter > StackPanel > TextBlock[2]",
+  "controlStyles[59].styles[0]": "FontSize=16",
+  "controlStyles[59].styles[1]": "//Target= Control Center > Battery Percentage Text",
+
+  "controlStyles[60].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton > ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+  "controlStyles[60].styles[0]": "Height=25",
+  "controlStyles[60].styles[1]": "Width=25",
+  "controlStyles[60].styles[2]": "//Target= Control Center > Settings Animated icon",
+
+  "controlStyles[61].target": "Grid#L1Grid > Grid",
+  "controlStyles[61].styles[0]": "BorderBrush=Transparent",
+  "controlStyles[61].styles[1]": "//Target= Control Center's Fotter's Top Border",
+
+  "controlStyles[62].target": "ContentPresenter#PageHeader",
+  "controlStyles[62].styles[0]": "Background=Transparent",
+  "controlStyles[62].styles[1]": "//Target= Control Center > Sub-Menus' Header",
+
+  "controlStyles[63].target": "ContentPresenter > Grid#FullScreenPageRoot",
+  "controlStyles[63].styles[0]": "Background:=$DarkAccent",
+  "controlStyles[63].styles[1]": "//Target= Control Center > Sub-Menus' Box",
+
+  "controlStyles[64].target": "ContentPresenter#PageContent > Grid > Border",
+  "controlStyles[64].styles[0]": "Background=Transparent",
+  "controlStyles[64].styles[1]": "//Target= Control Center > Sub-Menus' Bodys (Part1)",
+
+  "controlStyles[65].target": "Grid > ScrollViewer#ListContent",
+  "controlStyles[65].styles[0]": "Background=Transparent",
+  "controlStyles[65].styles[1]": "//Target= Control Center > Sub-Menus' Bodys (Part2)",
+
+  "controlStyles[66].target": "Border#SwitchKnobOn",
+  "controlStyles[66].styles[0]": "Background=",
+  "controlStyles[66].styles[1]": "//Target= Control Center > Wifi & Bluetooth Sub-Menus > On/Off Switch (This used to solve an issue before 24H2)",
+
+  "controlStyles[67].target": "StackPanel > ContentPresenter > Border",
+  "controlStyles[67].styles[0]": "BorderBrush=Transparent",
+  "controlStyles[67].styles[1]": "//Target= Control Center > Sub-Menus > Footer's Top Border",
+
+  "controlStyles[68].target": "Grid#MediaTransportControlsRoot",
+  "controlStyles[68].styles[0]": "Background=Transparent",
+  "controlStyles[68].styles[1]": "//Target= Control Center > Media Panel > Overlay Layer",
+
+  "controlStyles[69].target": "Grid#MediaTransportControlsRegion",
+  "controlStyles[69].styles[0]": "Background:=$DarkAccent",
+  "controlStyles[69].styles[1]": "BorderBrush=Transparent",
+  "controlStyles[69].styles[2]": "CornerRadius=20",
+  "controlStyles[69].styles[3]": "Height=Auto",
+  "controlStyles[69].styles[4]": "Shadow:=",
+  "controlStyles[69].styles[5]": "//Target= Control Center > Media Panel",
+
+  "controlStyles[70].target": "Grid#MediaTransportControlsRoot > Grid[2]",
+  "controlStyles[70].styles[0]": "Margin=-8,0,0,12",
+  "controlStyles[70].styles[1]": "//Target= Control Center > Media Panel > App Name & icon",
+
+  "controlStyles[71].target": "StackPanel#PrimaryAndSecondaryTextContainer",
+  "controlStyles[71].styles[0]": "Visibility=Collapsed",
+  "controlStyles[71].styles[1]": "//Target= Control Center > Media Panel > Media Name & Subtitles",
+
+  "controlStyles[72].target": "Grid#AlbumTextAndArtContainer",
+  "controlStyles[72].styles[0]": "HorizontalAlignment=Center",
+  "controlStyles[72].styles[1]": "//Target= Control Center > Media Panel > Media Name & Thumbnail Container",
+
+  "controlStyles[73].target": "Grid#ThumbnailImage",
+  "controlStyles[73].styles[0]": "CornerRadius=15",
+  "controlStyles[73].styles[1]": "Height=300",
+  "controlStyles[73].styles[2]": "Width=300",
+  "controlStyles[73].styles[3]": "//Target= Control Center > Media Panel > Media Thumbnail",
+
+  "controlStyles[74].target": "Border#JumpListRestyledAcrylic",
+  "controlStyles[74].styles[0]": "Background:=$DarkAccent",
+  "controlStyles[74].styles[1]": "CornerRadius=15",
+  "controlStyles[74].styles[2]": "Shadow:=",
+  "controlStyles[74].styles[3]": "//Target= Taskbar Apps > Left Click Menu (Jumplist)",
+
+  "controlStyles[75].target": "GridViewItem[1] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[75].styles[0]": "AccessKey=1",
+  "controlStyles[75].styles[1]": "//Target= Control Center Button#1",
+
+  "controlStyles[76].target": "GridViewItem[2] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[76].styles[0]": "AccessKey=2",
+  "controlStyles[76].styles[1]": "//Target= Control Center Button#2",
+
+  "controlStyles[77].target": "GridViewItem[3] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[77].styles[0]": "AccessKey=3",
+  "controlStyles[77].styles[1]": "//Target= Control Center Button#3",
+
+  "controlStyles[78].target": "GridViewItem[4] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[78].styles[0]": "AccessKey=4",
+  "controlStyles[78].styles[1]": "//Target= Control Center Button#4",
+
+  "controlStyles[79].target": "GridViewItem[5] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[79].styles[0]": "AccessKey=5",
+  "controlStyles[79].styles[1]": "//Target= Control Center Button#5",
+
+  "controlStyles[80].target": "GridViewItem[6] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[80].styles[0]": "AccessKey=6",
+  "controlStyles[80].styles[1]": "//Target= Control Center Button#6",
+
+  "controlStyles[81].target": "GridViewItem[7] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[81].styles[0]": "AccessKey=7",
+  "controlStyles[81].styles[1]": "//Target= Control Center Button#7",
+
+  "controlStyles[82].target": "GridViewItem[8] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[82].styles[0]": "AccessKey=8",
+  "controlStyles[82].styles[1]": "//Target= Control Center Button#8",
+
+  "controlStyles[83].target": "GridViewItem[9] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[83].styles[0]": "AccessKey=9",
+  "controlStyles[83].styles[1]": "//Target= Control Center Button#9",
+
+  "controlStyles[84].target": "GridViewItem[10] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[84].styles[0]": "AccessKey=0",
+  "controlStyles[84].styles[1]": "//Target= Control Center Button#10",
+
+  "controlStyles[85].target": "GridViewItem[11] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[85].styles[0]": "AccessKey=-",
+  "controlStyles[85].styles[1]": "//Target= Control Center Button#11",
+
+  "controlStyles[86].target": "GridViewItem[1] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[86].styles[0]": "AccessKey=1",
+  "controlStyles[86].styles[1]": "//Target= Control Center Button#1",
+
+  "controlStyles[87].target": "GridViewItem[2] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[87].styles[0]": "AccessKey=2",
+  "controlStyles[87].styles[1]": "//Target= Control Center Button#2",
+
+  "controlStyles[88].target": "GridViewItem[3] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[88].styles[0]": "AccessKey=3",
+  "controlStyles[88].styles[1]": "//Target= Control Center Button#3",
+
+  "controlStyles[89].target": "GridViewItem[4] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[89].styles[0]": "AccessKey=4",
+  "controlStyles[89].styles[1]": "//Target= Control Center Button#4",
+
+  "controlStyles[90].target": "GridViewItem[5] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[90].styles[0]": "AccessKey=5",
+  "controlStyles[90].styles[1]": "//Target= Control Center Button#5",
+
+  "controlStyles[91].target": "GridViewItem[6] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[91].styles[0]": "AccessKey=6",
+  "controlStyles[91].styles[1]": "//Target= Control Center Button#6",
+
+  "controlStyles[92].target": "GridViewItem[7] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[92].styles[0]": "AccessKey=7",
+  "controlStyles[92].styles[1]": "//Target= Control Center Button#7",
+
+  "controlStyles[93].target": "GridViewItem[8] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[93].styles[0]": "AccessKey=8",
+  "controlStyles[93].styles[1]": "//Target= Control Center Button#8",
+
+  "controlStyles[94].target": "GridViewItem[9] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[94].styles[0]": "AccessKey=9",
+  "controlStyles[94].styles[1]": "//Target= Control Center Button#9",
+
+  "controlStyles[95].target": "GridViewItem[10] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[95].styles[0]": "AccessKey=0",
+  "controlStyles[95].styles[1]": "//Target= Control Center Button#10",
+
+  "controlStyles[96].target": "GridViewItem[11] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > ContentControl > ContentPresenter > Grid > ControlCenter.PaginatedToggleButton#ToggleButton",
+  "controlStyles[96].styles[0]": "AccessKey=-",
+  "controlStyles[96].styles[1]": "//Target= Control Center Button#11",
+
+  "controlStyles[97].target": "Grid#RootGrid > QuickActions.ControlCenter.FrameWithContentChanged#L2Frame",
+  "controlStyles[97].styles[0]": "Background=Transparent",
+  "controlStyles[97].styles[1]": "//Target= (No Idea, used to solve an issue before 24H2)",
+
+  "controlStyles[98].target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow",
+  "controlStyles[98].styles[0]": "Background=Transparent",
+  "controlStyles[98].styles[1]": "//Target= (No Idea, used to solve an issue before 24H2)",
+
+  "styleConstants[0]": "Alt = <AcrylicBrush TintColor=\"{ThemeResource SystemAltHighColor}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"{ThemeResource SystemAltHighColor}\" />",
+  "styleConstants[1]": "Accent = <AcrylicBrush TintColor=\"{ThemeResource SystemAccentColor}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"{ThemeResource SystemAccentColor}\" />",
+  "styleConstants[2]": "DarkAccent = <AcrylicBrush TintColor=\"{ThemeResource SystemAccentColorDark1}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.3\" FallbackColor=\"{ThemeResource SystemAccentColorDark1}\" />",
+  "styleConstants[3]": "SolidAccent = <SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\"1\"/>",
+  "styleConstants[4]": "Reveal = <RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />"
+}
 ```
-Background=<color>
-```
-
-Replace `<color>` with the desired color.
-
-A color can be a name (e.g. `Red`) or a hex code (e.g. `#FF0000`).
-
-The color can be semi-transparent (e.g. `#80FF0000`). To have a fully
-transparent background, use `Transparent` or `#00000000`.
-
-### Accent colors
-
-A color can also be a `ThemeResource` or `StaticResource`. There are many such
-styles built into Windows.
-
-```
-Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
-```
-
-Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
-
-The word `Light` or `Dark` is appended at the end with a number ranging from 1
-to 3. See [the official Microsoft
-docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
-for more information.
-
-```
-Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opacity="0.5" />
-```
-
-### Clear Transparent Background
-
-To have a fully transparent background:
-
-Style:
-```
-Background=Transparent
-```
-
-### Acrylic effect as color
-
-In order to use the acrylic effect (a blurred background) you can use the
-`AcrylicBrush`.
-
-```
-Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
-```
-
-`TintColor` - Required. Defines what color to use.
-
-`TintOpacity` - Defines the strength of the chosen color.
-
-`TintLuminosityOpacity` - Defines the brightness of the acrylic effect.
-
-`BackgroundSource` - Defines what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper.
-
-`Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
-
-You can also set Acrylic to use an accent color for a more dynamic look that fits the current theme.
-
-```
-Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
-```
-
-### WindhawkBlur effect as color
-
-An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic because it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
-
-> [!NOTE]
-> WindhawkBlur does not currently support color names (e.g. `Red`) or the `FallbackColor` property.
-
-- `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
-#### Hex color
-
-```
-Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
-```
-```
-Fill:=<WindhawkBlur BlurAmount="10" TintColor="#ff0000" TintOpacity="0.5" />
-```
-_These examples set a blur that is tinted with red at 50% opacity. Both versions have the same effect._
-
-- `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
-- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`.
-
-> [!TIP]
-> There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
-
-#### ThemeResource color
-
-```
-<WindhawkBlur BlurAmount="10" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.5"/>
-```
-
-- `TintColor`: ThemeResource color, such as `SystemAccentColor`.
-- `TintOpacity`: Overrides the opacity of the ThemeResource color.
-
-### Mica effect as color
-
-> [!NOTE]
-> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods.
-
-### Gradient as color
-
-The background can also be a gradient. For example, to have a gradient from
-yellow to red to blue to lime green, use the following style:
-
-```
-Background:=<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5"><GradientStop Color="Yellow" Offset="0.0" /><GradientStop Color="Red" Offset="0.25" /><GradientStop Color="Blue" Offset="0.75" /><GradientStop Color="LimeGreen" Offset="1.0" /></LinearGradientBrush>
-```
-
-### Image as color
-
-The background can also be an image:
-
-```
-Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
-```
-
-Replace `<image>` with your own image, a URL or a local file path.
-If you only see a fully transparent background when using a local file path, you must set a URL instead.
-Images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
-
-Stretch can be set to the following values:
-
-`None` - Image is rendered at its native resolution and aspect ratio.
-
-`Fill` - Image is stretched or squished to fill the size of the element.
-
-`Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
-
-`UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
-
-### Reveal as color
-
-> [!NOTE]
-> Reveal is a deprecated XAML feature. It may have issues
-> or stop working at any time.
-
-Reveal is the cursor-based illumination effect from Windows 10.
-
-```
-Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
-```
-
-```
-BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
-```
-
-**Only** `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
-
-`Opacity` can be changed to increase or decrease the intensity of the effect.
-
-## Work in progress
-
-*This document is a work in progress, contributions are welcome.* \
-***See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
-[The Windows 11 start menu styling
-guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/README.md).*
