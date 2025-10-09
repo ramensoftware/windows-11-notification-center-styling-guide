@@ -182,9 +182,9 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[22].styles[0]": "Background=Transparent",
   "controlStyles[22].styles[1]": "//Target= Active Notification > Progress Bar > Empty Track",
 
-  "controlStyles[23].target": "Button#VerbButton > ContentPresenter#ContentPresenter",
+  "controlStyles[23].target": "//Button#VerbButton > ContentPresenter#ContentPresenter",
   "controlStyles[23].styles[0]": "CornerRadius=10",
-  "controlStyles[23].styles[1]": "//Target= Active Notification - Call Notification > Buttons",
+  "controlStyles[23].styles[1]": "//Target= Active Notification - Call Notification > Buttons (Disabled this, marked for deletion)",
 
   "controlStyles[24].target": "Grid#CalendarCenterGrid",
   "controlStyles[24].styles[0]": "Background:=$Alt",
