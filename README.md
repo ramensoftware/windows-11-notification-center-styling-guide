@@ -7,8 +7,9 @@ A cleaner, more refined Windows Notification Center (& Control Center) theme - r
 ### ✨ Features
 - Removed unnecessary text and lines
 - Enlarged icons  
-- Enhanced accent color Presence
-- Added subtle, neat border reveal effects
+- Enhanced Accent Color Presence (Automatically Updates with Windows Accent Color)  
+- Added Subtle, Neat Border Reveal Effects
+- Took Fallback Colors (Colors in Battery Mode) into consideration
 - Added useful Accesss Keys ([ Alt + Key ] Shorcuts):
   - Notification Center
     - Toggle DoNotDisturb → [ Alt + D ]
