@@ -83,7 +83,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[0].styles[3]": "Shadow:=",
   "controlStyles[0].styles[4]": "//Target= Context Menu",
 
-  "controlStyles[1].target": "ContentPresenter#LayoutRoot@Opened",
+  "controlStyles[1].target": "ToolTip > ContentPresenter#LayoutRoot",
   "controlStyles[1].styles[0]": "Background:=$DarkAccent",
   "controlStyles[1].styles[1]": "BorderBrush:=$Reveal",
   "controlStyles[1].styles[2]": "Shadow:=",
