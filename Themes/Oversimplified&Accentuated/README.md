@@ -30,6 +30,9 @@ A cleaner, more refined Windows Notification Center (& Control Center) theme - r
      - Button in Position #9 → [ Alt + 9 ]
      - Button in Position #10 → [ Alt + 0 ]
      - Button in Position #11 → [ Alt + - ]
+> ⚠️ **Note:** I am aware that the **Access Key** for the **Nearby Sharing** button in **Control Center** windows is not functional, this is because this button in particular has a slightly different JSON Selector than the rest of the buttons, I'm looking for a work-around for this problem.
+
+> ⚠️ **Note:** if you change the position of a button in **Control Center** you need to restart **ShellHost.exe** for the **Access Keys** to change according to the new buttons layout.
 
 **Author:** [OsamaJT](https://github.com/OsamaHJT)
 
