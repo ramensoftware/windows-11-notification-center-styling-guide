@@ -1,6 +1,6 @@
 # WindowGlass theme for Windows 11 Notification Center Styler
 
-A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windows 11's Notification and Action Center
+A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windows 11's Notification and Action Center.
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
@@ -10,21 +10,20 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
 ## Notification Center
 ![Notification Center](Notification_Center.png) 
 
-
 ## Notes
-- Theme is designed on Windows 11 - 24H2
-- Not fully Compatible with Light mode yet
+- Designed for Windows 11 24H2.
+- Not fully compatible with light mode yet.
 
-## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
-- Windows 11 TaskBar Styler – for styling the Taskbar.
-- Windows 11 Start Menu Styler - for styling the Notification Center and Action Center
-- Windows 11 File Explorer Styler - for styling Windows Explorer windows
+## For a complete WindowGlass-themed UI, download the following mods and use the 'WindowGlass' theme:
+- Windows 11 TaskBar Styler - for styling the taskbar.
+- Windows 11 Start Menu Styler - for styling the Windows Start menu.
+- Windows 11 File Explorer Styler - for styling Windows Explorer windows.
 
 ---
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
@@ -43,7 +42,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```json
-
 {
   "controlStyles[0].target": "Grid#NotificationCenterGrid",
   "controlStyles[0].styles[0]": "Background:=$Background",
@@ -360,23 +358,20 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "styleConstants[17]": "ElementSysColor3=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight3}\" Opacity=\"1\" />",
   "styleConstants[18]": "ElementSysColor4=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorDark1}\" Opacity=\"1\" />"
 }
-
 ```
 </details>
 
 ## Alternate Version
 
-This theme is also availabke with an alternate version that places the media controls on the top of the Action center, instead of the bottom.
+This theme is also available with an alternate version that places the media controls on the top of the Action Center, instead of the bottom.
 
 ## Action Center
 ![Action Center](Action_Center_2.png)
-
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
 ```json
-
 {
   "controlStyles[0].target": "Grid#NotificationCenterGrid",
   "controlStyles[0].styles[0]": "Background:=$Background",
@@ -686,6 +681,5 @@ This theme is also availabke with an alternate version that places the media con
   "styleConstants[17]": "ElementSysColor3=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight3}\" Opacity=\"1\" />",
   "styleConstants[18]": "ElementSysColor4=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorDark1}\" Opacity=\"1\" />"
 }
-
 ```
 </details>

@@ -88,7 +88,6 @@ Notification Center Styler mod. The following themes are available:
 | [Matter](Themes/Matter/README.md) | [![Matter](Themes/Matter/screenshot-small.png)](Themes/Matter/screenshot.png)
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 
-
 ## Style examples
 
 ### Hide the focus assist section
