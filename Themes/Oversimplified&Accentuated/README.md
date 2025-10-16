@@ -228,8 +228,7 @@ The aim is to make it easier to modify or debug the theme in the future.
 
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Windows.UI.Xaml.Controls.Primitives.CalendarViewItem",
   "controlStyles[30].styles[0]": "Background:=$Reveal",
-  "controlStyles[30].styles[1]": "CornerRadius=0",
-  "controlStyles[30].styles[2]": "//Target= Calender's Month",
+  "controlStyles[30].styles[1]": "//Target= Calender's Month",
 
   "controlStyles[31].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Windows.UI.Xaml.Controls.Primitives.CalendarViewItem",
   "controlStyles[31].styles[0]": "Background:=$Reveal",
