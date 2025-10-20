@@ -220,27 +220,27 @@ The aim is to make it easier to modify or debug the theme in the future.
   
   "controlStyles[29].target": "CalendarViewDayItem > Border",
   "controlStyles[29].styles[0]": "BorderBrush:= <RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />",
-  "controlStyles[29].styles[1]": "CornerRadius=10",
+  "controlStyles[29].styles[1]": "CornerRadius=12",
   "controlStyles[29].styles[2]": "//Target= Calender's Day",
   
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Control",
-  "controlStyles[30].styles[0]": "CornerRadius=10",
+  "controlStyles[30].styles[0]": "CornerRadius=12",
   "controlStyles[30].styles[1]": "//Target= Target= Calender's Month's Container",
   
   "controlStyles[31].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Control > Border",
   "controlStyles[31].styles[0]": "BorderBrush:=$Reveal",
   "controlStyles[31].styles[1]": "BorderThickness=2",
-  "controlStyles[31].styles[2]": "CornerRadius=10",
+  "controlStyles[31].styles[2]": "CornerRadius=12",
   "controlStyles[31].styles[3]": "//Target= Calender's Month",
   
   "controlStyles[32].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Control",
-  "controlStyles[32].styles[0]": "CornerRadius=10",
+  "controlStyles[32].styles[0]": "CornerRadius=12",
   "controlStyles[32].styles[1]": "//Target= Target= Calender's Year's Container",
   
   "controlStyles[33].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Control > Border",
   "controlStyles[33].styles[0]": "BorderBrush:=$Reveal",
   "controlStyles[33].styles[1]": "BorderThickness=2",
-  "controlStyles[33].styles[2]": "CornerRadius=10",
+  "controlStyles[33].styles[2]": "CornerRadius=12",
   "controlStyles[33].styles[3]": "//Target= Calender's Year",
   
   "controlStyles[34].target": "Grid#FocusGrid",
