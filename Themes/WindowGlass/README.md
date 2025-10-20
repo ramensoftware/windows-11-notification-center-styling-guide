@@ -13,7 +13,11 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
 
 ## Notes
 - Theme is designed on Windows 11 - 24H2
-- Not fully Compatible with Light mode yet
+- This theme consists of **three** backgrounds:
+    - Glass
+    - Frosted
+    - Acrylic
+  In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
 
 ## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
 - Windows 11 TaskBar Styler – for styling the Taskbar.
