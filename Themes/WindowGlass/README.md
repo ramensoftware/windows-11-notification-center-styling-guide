@@ -18,7 +18,7 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
     - Glass
     - Frosted
     - Acrylic
-  In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
+  - In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
 
 ## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
 - Windows 11 TaskBar Styler – for styling the Taskbar.
