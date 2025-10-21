@@ -12,7 +12,8 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
 
 
 ## Notes
-- Theme is designed on Windows 11 - 24H2
+- Works best on devices running windows 11 24H2 and above.
+- Works best on devices with a screen resolution of 1930x1200 and above.
 - This theme consists of **three** backgrounds:
     - Glass
     - Frosted
