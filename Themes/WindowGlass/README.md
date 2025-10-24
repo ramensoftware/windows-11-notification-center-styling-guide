@@ -8,7 +8,7 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
 ![Action Center](Action_Center.png)
 
 ## Notification Center
-![Notification Center](Notification_Center.png) 
+![Notification Center](Notification_Center.png)
 
 ## Notes
 - Designed for Windows 11 24H2.
@@ -168,7 +168,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[29].styles[2]": "BorderThickness=$BorderThickness",
   "controlStyles[29].styles[3]": "Background:=$Background",
   "controlStyles[29].styles[4]": "Margin=0,10,0,10",
-  "controlStyles[29].styles[5]": "BorderBrush:=$BorderBrush", 
+  "controlStyles[29].styles[5]": "BorderBrush:=$BorderBrush",
   "controlStyles[29].styles[6]": "Grid.Row=1",
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer",
   "controlStyles[30].styles[0]": "Height=55",
@@ -334,8 +334,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[79].target": "ControlCenter.MediaTransportControls",
   "controlStyles[79].styles[0]": "VerticalAlignment=2",
   "controlStyles[79].styles[1]": "Grid.Row=1",
-  "controlStyles[79].styles[2]": "Canvas.ZIndex=1", 
-  "controlStyles[80].target": "Grid#RootGrid", 
+  "controlStyles[79].styles[2]": "Canvas.ZIndex=1",
+  "controlStyles[80].target": "Grid#RootGrid",
   "controlStyles[80].styles[0]": "VerticalAlignment=3",
   "controlStyles[80].styles[1]": "MinHeight=0",
   "styleConstants[0]": "transparent=<SolidColorBrush Color=\"Transparent\"/>",

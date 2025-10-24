@@ -96,7 +96,7 @@ Target:
 ```
 ActionCenter.FocusSessionControl
 ```
-Style: 
+Style:
 ```
 Height=0
 ```
@@ -107,7 +107,7 @@ Target:
 ```
 Grid#NotificationCenterGrid
 ```
-Style: 
+Style:
 ```
 Visibility=Collapsed
 ```
@@ -129,7 +129,7 @@ Target:
 ```
 Grid#FooterGrid
 ```
-Style: 
+Style:
 ```
 Visibility=Collapsed
 ```
@@ -141,7 +141,7 @@ Target:
 ```
 Grid#NotificationCenterGrid
 ```
-Style: 
+Style:
 ```
 VerticalAlignment=2
 ```
@@ -340,7 +340,7 @@ RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
   - Sets the transform origin relative to its target's width and height. Format is `X,Y` and both numbers range from 0-1.
 
   Example:
-  
+
   ```
   RenderTransformOrigin=0.5,0.5
   ```
