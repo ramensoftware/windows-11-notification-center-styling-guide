@@ -389,7 +389,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[64].styles[1]": "//Target= Control Center > Sub-Menus' Header",
   
   "controlStyles[65].target": "Grid#FullScreenPageRoot > ContentPresenter#PageHeader > Border > Grid > Button#BackButton",
-  "controlStyles[65].styles[0]": "CornerRadius=14,8,8,8",
+  "controlStyles[65].styles[0]": "CornerRadius=14",
   "controlStyles[65].styles[1]": "//Target= Control Center > Sub-Menu > Header > Back Button",
   
   "controlStyles[66].target": "ContentPresenter > Grid#FullScreenPageRoot",
