@@ -136,7 +136,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[11].styles[1]": "Margin= 0,0,0,0",
   "controlStyles[11].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Button in Do Not Disturb Banner",
   
-  "controlStyles[12].target": "TextBlock#NotificationSettingsButtonText",
+  "controlStyles[12].target": "TextBlock#NotificationSettingsButtonText[Text=Notification settings]",
   "controlStyles[12].styles[0]": "Text=Settings",
   "controlStyles[12].styles[1]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Text in Do Not Disturb Banner",
   
