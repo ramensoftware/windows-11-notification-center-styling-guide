@@ -1,73 +1,75 @@
-# "Oversimplified & Accentuated" Theme for "Windows 11 Notification Center Styler"
+# Oversimplified&Accentuated theme for Windows 11 Notification Center Styler
 
-A cleaner, more refined Windows Notification Center (& Control Center) theme - removing unnecessary elements and offering better **Accent Color** integration.
+A cleaner, more refined Windows Notification Center (& Control Center) theme - removing unnecessary elements and offering better **accent color** integration.
 
-> ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
+> [!NOTE]
+> This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
 
 ### ✨ Features
 - Removed unnecessary text and lines
-- Enlarged icons  
-- Enhanced Accent Color Presence (Automatically Updates with Windows Accent Color)
-- Improved Transparency Effects
-- Added Subtle, Neat Border Reveal Effects
-- Took Fallback Colors (Colors in Battery Mode) into consideration
-- Added useful Accesss Keys ([ Alt + Key ] Shorcuts):
+- Enlarged icons
+- Enhanced Accent Color presence (automatically updates with Windows Accent Color)
+- Improved transparency effects
+- Added subtle, neat border reveal effects
+- Took fallback colors (colors in battery mode) into consideration
+- Added useful access keys ([ Alt + Key ] shortcuts):
   - Notification Center
     - Toggle DoNotDisturb → [ Alt + D ]
-    - "Clear All" Button → [ Alt + C ]
-    - Expand/Collapse Calender → [ Alt + E ]
-   - Control Center
-     - Button in Position #1 → [ Alt + 1 ]
-     - Button in Position #2 → [ Alt + 2 ]
-     - Button in Position #3 → [ Alt + 3 ]
-     - Button in Position #4 → [ Alt + 4 ]
-     - Button in Position #5 → [ Alt + 5 ]
-     - Button in Position #6 → [ Alt + 6 ]
-     - Button in Position #7 → [ Alt + 7 ]
-     - Button in Position #8 → [ Alt + 8 ]
-     - Button in Position #9 → [ Alt + 9 ]
-     - Button in Position #10 → [ Alt + 0 ]
-     - Button in Position #11 → [ Alt + - ]
-> ⚠️ **Note:** I am aware that the **Access Key** for the **Nearby Sharing** button in **Control Center** windows is not functional, this is because this button in particular has a slightly different JSON Selector than the rest of the buttons, I'm looking for a work-around for this problem.
+    - "Clear all" button → [ Alt + C ]
+    - Expand/Collapse calendar → [ Alt + E ]
+  - Control Center
+    - Button in position #1 → [ Alt + 1 ]
+    - Button in position #2 → [ Alt + 2 ]
+    - Button in position #3 → [ Alt + 3 ]
+    - Button in position #4 → [ Alt + 4 ]
+    - Button in position #5 → [ Alt + 5 ]
+    - Button in position #6 → [ Alt + 6 ]
+    - Button in position #7 → [ Alt + 7 ]
+    - Button in position #8 → [ Alt + 8 ]
+    - Button in position #9 → [ Alt + 9 ]
+    - Button in position #10 → [ Alt + 0 ]
+    - Button in position #11 → [ Alt + - ]
 
-> ⚠️ **Note:** if you change the position of a button in **Control Center** you need to restart `ShellHost.exe` for the **Access Keys** to change according to the new buttons layout.
+> [!NOTE]
+> I am aware that the **Access Key** for the **Nearby Sharing** button in **Control Center** windows is not functional, this is because this button in particular has a slightly different JSON Selector than the rest of the buttons, I'm looking for a work-around for this problem.
+
+> [!NOTE]
+> If you change the position of a button in **Control Center**, you need to restart `ShellHost.exe` for the **Access Keys** to change according to the new buttons' layout.
 
 **Author:** [OsamaJT](https://github.com/OsamaHJT)
 
-![Screenshot](Nofication%20Center.png)
+![Screenshot](Notification%20Center.png)
 
 ---
 
-## 🎨 Elements Modified
+## 🎨 Elements modified
 - Notification Center
-- Notifications (Active & in Control Center)
-- Calender
+- Notifications (active & in Control Center)
+- Calendar
 - Control Center
-- Media Panel in Control Center
-- Left Click Menus (Jumplists) for Taskbar Apps
-- Context Menu
-- ToolTip Popup
-  
----
-
-## 🧩 Installation
-
-1. Download **[Windhawk](https://windhawk.net/)**.  
-2. Install the **“[Windows 11 Notification Center Styler](https://windhawk.net/mods/windows-11-notification-center-styler)”** plugin.  
-3. Choose the **“Oversimplified & Accentuated”** theme from the integrated themes list.  
-   **OR**  
-   Copy the JSON code below and go to:  
-   **Windows 11 Taskbar Styler → Details → Advanced → Mod Settings**  
-   Paste the code into the "**Mod settings**" box and click **Save**.
-
+- Media panel in Control Center
+- Left click menus (Jumplists) for taskbar apps
+- Context menu
+- Tooltip popup
 
 ---
 
-## 🛠️ Modification Notes
+## Theme selection
 
-I added an extra comment line at the end of each style group to indicate the target object with common language.  
-The aim is to make it easier to modify or debug the theme in the future.
+The theme is integrated into the mod and can simply be selected from the mod's
+settings:
 
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
+
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
 <summary>Content to import (click to expand)</summary>
@@ -102,12 +104,12 @@ The aim is to make it easier to modify or debug the theme in the future.
   
   "controlStyles[5].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton",
   "controlStyles[5].styles[0]": "AccessKey=D",
-  "controlStyles[5].styles[1]": "//Target= Notifcation Center > DoNotDisturb Button",
+  "controlStyles[5].styles[1]": "//Target= Notification Center > DoNotDisturb Button",
   
   "controlStyles[6].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#DoNotDisturbButtonIcon",
   "controlStyles[6].styles[0]": "Height=16",
   "controlStyles[6].styles[1]": "Width=16",
-  "controlStyles[6].styles[2]": "//Target= Notifcation Center > DoNotDisturb Button icon",
+  "controlStyles[6].styles[2]": "//Target= Notification Center > DoNotDisturb Button icon",
   
   "controlStyles[7].target": "Grid#DoNotDisturbSubtext",
   "controlStyles[7].styles[0]": "Background:=$Accent",
@@ -115,47 +117,47 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[7].styles[2]": "BorderThickness=2",
   "controlStyles[7].styles[3]": "CornerRadius=5",
   "controlStyles[7].styles[4]": "Margin=0,0,0,10",
-  "controlStyles[7].styles[5]": "//Target= Notifcation Center > DoNotDisturb Activated Plate",
+  "controlStyles[7].styles[5]": "//Target= Notification Center > DoNotDisturb Activated Plate",
   
   "controlStyles[8].target": "Grid#DoNotDisturbSubtext > TextBlock[1]",
   "controlStyles[8].styles[0]": "Visibility=Collapsed",
-  "controlStyles[8].styles[1]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > DoNotDisturb icon",
+  "controlStyles[8].styles[1]": "//Target= Notification Center > DoNotDisturb Activated Plate > DoNotDisturb icon",
   
   "controlStyles[9].target": "Grid#DoNotDisturbSubtext > TextBlock[2]",
   "controlStyles[9].styles[0]": "HorizontalAlignment=Center",
   "controlStyles[9].styles[1]": "FontSize=18",
-  "controlStyles[9].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"Donotdisturbison\" Text",
+  "controlStyles[9].styles[2]": "//Target= Notification Center > DoNotDisturb Activated Plate > \"Donotdisturbison\" Text",
   
   "controlStyles[10].target": "Grid#DoNotDisturbSubtext > TextBlock[3]",
   "controlStyles[10].styles[0]": "TextAlignment=Center",
   "controlStyles[10].styles[1]": "FontSize=11",
-  "controlStyles[10].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"You'll onlyseebannersforprioritynotificationsandalarams.\" text",
+  "controlStyles[10].styles[2]": "//Target= Notification Center > DoNotDisturb Activated Plate > \"You'll onlyseebannersforprioritynotificationsandalarams.\" text",
   
   "controlStyles[11].target": "Grid#DoNotDisturbSubtext > Button",
   "controlStyles[11].styles[0]": "HorizontalAlignment=Center",
   "controlStyles[11].styles[1]": "Margin= 0,0,0,0",
-  "controlStyles[11].styles[2]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Button in Do Not Disturb Banner",
+  "controlStyles[11].styles[2]": "//Target= Notification Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Button in Do Not Disturb Banner",
   
   "controlStyles[12].target": "TextBlock#NotificationSettingsButtonText[Text=Notification settings]",
   "controlStyles[12].styles[0]": "Text=Settings",
-  "controlStyles[12].styles[1]": "//Target= Notifcation Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Text in Do Not Disturb Banner",
+  "controlStyles[12].styles[1]": "//Target= Notification Center > DoNotDisturb Activated Plate > \"NotificationSettings\" Text in Do Not Disturb Banner",
   
   "controlStyles[13].target": "Border#ItemOpaquePlating",
   "controlStyles[13].styles[0]": "BorderBrush:=$Reveal",
-  "controlStyles[13].styles[1]": "//Target= Notification Center > Notifcation Plate",
+  "controlStyles[13].styles[1]": "//Target= Notification Center > Notification Plate",
   
   "controlStyles[14].target": "Border#StandardImageBorder",
   "controlStyles[14].styles[0]": "Height=30",
   "controlStyles[14].styles[1]": "Width=30",
-  "controlStyles[14].styles[2]": "//Target= Notification Center > Notifcation App Icon",
+  "controlStyles[14].styles[2]": "//Target= Notification Center > Notification App Icon",
   
   "controlStyles[15].target": "Grid#GroupTitleGrid > TextBlock#Title",
   "controlStyles[15].styles[0]": "Visibility=Collapsed",
-  "controlStyles[15].styles[1]": "//Target= Notification Center > Notifcation App Name",
+  "controlStyles[15].styles[1]": "//Target= Notification Center > Notification App Name",
   
   "controlStyles[16].target": "Grid > Button#VerbButton",
   "controlStyles[16].styles[0]": "BorderBrush=Transparent",
-  "controlStyles[16].styles[1]": "//Target= Notification Center > Notifcation App Buttons",
+  "controlStyles[16].styles[1]": "//Target= Notification Center > Notification App Buttons",
   
   "controlStyles[17].target": "Border#PopupBorder",
   "controlStyles[17].styles[0]": "Background:=$DarkAccent",
@@ -197,71 +199,71 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[24].styles[1]": "BorderBrush=Transparent",
   "controlStyles[24].styles[2]": "CornerRadius=20",
   "controlStyles[24].styles[3]": "Shadow:=",
-  "controlStyles[24].styles[4]": "//Target= Calender Box",
+  "controlStyles[24].styles[4]": "//Target= Calendar Box",
   
   "controlStyles[25].target": "Border#CalendarHeaderMinimizedOverlay",
   "controlStyles[25].styles[0]": "Background=Transparent",
-  "controlStyles[25].styles[1]": "//Target= Calender's Header (When Minimized)",
+  "controlStyles[25].styles[1]": "//Target= Calendar's Header (When Minimized)",
   
   "controlStyles[26].target": "Button#ExpandCollapseButton",
   "controlStyles[26].styles[0]": "Background=Transparent",
   "controlStyles[26].styles[1]": "BorderBrush=Transparent",
   "controlStyles[26].styles[2]": "AccessKey=E",
-  "controlStyles[26].styles[3]": "//Target= Calender > Header > Expand/Collapse Button",
+  "controlStyles[26].styles[3]": "//Target= Calendar > Header > Expand/Collapse Button",
   
   "controlStyles[27].target": "ScrollViewer#CalendarControlScrollViewer",
   "controlStyles[27].styles[0]": "Background=Transparent",
   "controlStyles[27].styles[1]": "BorderBrush=Transparent",
-  "controlStyles[27].styles[2]": "//Target= Calender's Body",
+  "controlStyles[27].styles[2]": "//Target= Calendar's Body",
   
   "controlStyles[28].target": "CalendarViewDayItem",
   "controlStyles[28].styles[0]": "CornerRadius=10",
-  "controlStyles[28].styles[1]": "//Target= Calender's Day Container",
+  "controlStyles[28].styles[1]": "//Target= Calendar's Day Container",
   
   "controlStyles[29].target": "CalendarViewDayItem > Border",
   "controlStyles[29].styles[0]": "BorderBrush:= <RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />",
   "controlStyles[29].styles[1]": "CornerRadius=12",
-  "controlStyles[29].styles[2]": "//Target= Calender's Day",
+  "controlStyles[29].styles[2]": "//Target= Calendar's Day",
   
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Control",
   "controlStyles[30].styles[0]": "CornerRadius=12",
-  "controlStyles[30].styles[1]": "//Target= Target= Calender's Month's Container",
+  "controlStyles[30].styles[1]": "//Target= Target= Calendar's Month's Container",
   
   "controlStyles[31].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Control > Border",
   "controlStyles[31].styles[0]": "BorderBrush:=$Reveal",
   "controlStyles[31].styles[1]": "BorderThickness=2",
   "controlStyles[31].styles[2]": "CornerRadius=12",
-  "controlStyles[31].styles[3]": "//Target= Calender's Month",
+  "controlStyles[31].styles[3]": "//Target= Calendar's Month",
   
   "controlStyles[32].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Control",
   "controlStyles[32].styles[0]": "CornerRadius=12",
-  "controlStyles[32].styles[1]": "//Target= Target= Calender's Year's Container",
+  "controlStyles[32].styles[1]": "//Target= Target= Calendar's Year's Container",
   
   "controlStyles[33].target": "Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Control > Border",
   "controlStyles[33].styles[0]": "BorderBrush:=$Reveal",
   "controlStyles[33].styles[1]": "BorderThickness=2",
   "controlStyles[33].styles[2]": "CornerRadius=12",
-  "controlStyles[33].styles[3]": "//Target= Calender's Year",
+  "controlStyles[33].styles[3]": "//Target= Calendar's Year",
   
   "controlStyles[34].target": "Grid#FocusGrid",
   "controlStyles[34].styles[0]": "Background=Transparent",
   "controlStyles[34].styles[1]": "BorderBrush=Transparent",
-  "controlStyles[34].styles[2]": "//Target= Calender > Focus Grid (Calender's Footer)",
+  "controlStyles[34].styles[2]": "//Target= Calendar > Focus Grid (Calendar's Footer)",
   
   "controlStyles[35].target": "Button#IncreaseTimeButton",
   "controlStyles[35].styles[0]": "Background=Transparent",
   "controlStyles[35].styles[1]": "BorderBrush=Transparent",
-  "controlStyles[35].styles[2]": "//Target= Calender > Focus Grid > Increase Time Button",
+  "controlStyles[35].styles[2]": "//Target= Calendar > Focus Grid > Increase Time Button",
   
   "controlStyles[36].target": "Button#DecreaseTimeButton",
   "controlStyles[36].styles[0]": "Background=Transparent",
   "controlStyles[36].styles[1]": "BorderBrush=Transparent",
-  "controlStyles[36].styles[2]": "//Target= Calender > Focus Grid > Decrease Time Button",
+  "controlStyles[36].styles[2]": "//Target= Calendar > Focus Grid > Decrease Time Button",
   
   "controlStyles[37].target": "Button#StartButton",
   "controlStyles[37].styles[0]": "Background=Transparent",
   "controlStyles[37].styles[1]": "BorderBrush=Transparent",
-  "controlStyles[37].styles[2]": "//Target= Calender > Focus Grid > Focus Button ",
+  "controlStyles[37].styles[2]": "//Target= Calendar > Focus Grid > Focus Button ",
   
   "controlStyles[38].target": "Grid#ControlCenterRegion",
   "controlStyles[38].styles[0]": "Background=Transparent",
@@ -382,7 +384,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   
   "controlStyles[63].target": "Grid#L1Grid > Grid",
   "controlStyles[63].styles[0]": "BorderBrush=Transparent",
-  "controlStyles[63].styles[1]": "//Target= Control Center's Fotter's Top Border",
+  "controlStyles[63].styles[1]": "//Target= Control Center's Footer's Top Border",
   
   "controlStyles[64].target": "ContentPresenter#PageHeader",
   "controlStyles[64].styles[0]": "Background=Transparent",
@@ -555,3 +557,9 @@ The aim is to make it easier to modify or debug the theme in the future.
   "styleConstants[4]": "Reveal = <RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />"
 }
 ```
+</details>
+
+### Modification notes
+
+I added an extra comment line at the end of each style group to indicate the target object with common language.  
+The aim is to make it easier to modify or debug the theme in the future.
