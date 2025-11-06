@@ -11,6 +11,20 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 * [Introduction](#introduction)
 * [Themes](#themes)
 * [Style examples](#style-examples)
+  * [Hide the focus assist section](#hide-the-focus-assist-section)
+  * [Hide the notification center](#hide-the-notification-center)
+  * [Hide control center PipsPager (navigation dots)](#hide-control-center-pipspager-navigation-dots)
+  * [Hide control center footer](#hide-control-center-footer)
+  * [Shrink the notification center height](#shrink-the-notification-center-height)
+  * [Variable volume mixer height](#variable-volume-mixer-height)
+  * [Remove shadows](#remove-shadows)
+  * [Square the corners of the notification center](#square-the-corners-of-the-notification-center)
+  * [Square the corners of the calendar](#square-the-corners-of-the-calendar)
+  * [Square the corners of the calendar buttons](#square-the-corners-of-the-calendar-buttons)
+  * [Square the corners of the quick action center](#square-the-corners-of-the-quick-action-center)
+  * [Calendar and notification titlebars: titles on the right, buttons on the left](#calendar-and-notification-titlebars-titles-on-the-right-buttons-on-the-left)
+  * [Add accelerator key (Alt+X) to clear all notifications](#add-accelerator-key-altx-to-clear-all-notifications)
+  * [Add accelerator key (Alt+E) to expand/collapse the calendar](#add-accelerator-key-alte-to-expandcollapse-the-calendar)
 * [Transforms](#transforms)
   * [Translate](#translate)
   * [Rotate](#rotate)
@@ -48,8 +62,8 @@ If you're not familiar with Windhawk, here are the steps for installing the mod:
 After installing the mod, open its Settings tab and adjust the styles according
 to your preferences.
 
-Some customizations are best to be adjusted with other Windhawk mods. Links to
-those mods are provided where applicable.
+Some customizations are best adjusted with other Windhawk mods. Links to those
+mods are provided where applicable.
 
 ### Missing customizations
 
@@ -69,50 +83,188 @@ Notification Center Styler mod. The following themes are available:
 | Link | Screenshot
 | ---- | ----------
 | [TranslucentShell](Themes/TranslucentShell/README.md) | [![TranslucentShell](Themes/TranslucentShell/screenshot-small.png)](Themes/TranslucentShell/video.gif)
+| [Matter](Themes/Matter/README.md) | [![Matter](Themes/Matter/screenshot-small.png)](Themes/Matter/screenshot.png)
 | [Unified](Themes/Unified/README.md) | [![Unified](Themes/Unified/screenshot-small.png)](Themes/Unified/screenshot.png)
 | [10JumpLists](Themes/10JumpLists/README.md) | [![10JumpLists](Themes/10JumpLists/screenshot-small.png)](Themes/10JumpLists/screenshot.png)
-| [Matter](Themes/Matter/README.md) | [![Matter](Themes/Matter/screenshot-small.png)](Themes/Matter/screenshot.png)
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
-
+| [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
 
 ## Style examples
 
 ### Hide the focus assist section
-**Target**: `ActionCenter.FocusSessionControl` \
-**Style**: `Height=0`
+
+Target:
+```
+ActionCenter.FocusSessionControl
+```
+Style:
+```
+Height=0
+```
 
 ### Hide the notification center
-**Target**: `Grid#NotificationCenterGrid` \
-**Style**: `Visibility=Collapsed`
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+### Hide control center PipsPager (navigation dots)
+
+Target:
+```
+Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+### Hide control center footer
+
+Target:
+```
+Grid#FooterGrid
+```
+Style:
+```
+Visibility=Collapsed
+```
 
 ### Shrink the notification center height
-Makes panel non full-height when there are fewer notifications (fit to size). \
-**Target**: `Grid#NotificationCenterGrid` \
-**Style**: `VerticalAlignment=2`
+Makes the panel non-full-height when there are fewer notifications (fit to size).
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style:
+```
+VerticalAlignment=2
+```
+
+### Variable volume mixer height
+Makes the volume mixer grow or shrink depending on how many volume sliders are visible.
+
+Target for newer Windows 11 versions:
+```
+ControlCenter.FrameWithContentChanged#L2Frame
+```
+Target for older Windows 11 versions:
+```
+QuickActions.ControlCenter.FrameWithContentChanged#L2Frame
+```
+Style:
+```
+Height=Auto
+```
+
+### Remove shadows
+
+Targets:
+```
+Grid#NotificationCenterGrid
+```
+```
+Grid#CalendarCenterGrid
+```
+```
+Grid#MediaTransportControlsRegion
+```
+Style:
+```
+Shadow:=
+```
 
 ### Square the corners of the notification center
-**Target**: `Grid#NotificationCenterGrid` \
-**Style**: `CornerRadius=0`
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style:
+```
+CornerRadius=0
+```
 
 ### Square the corners of the calendar
-**Target**: `Grid#CalendarCenterGrid` \
-**Style**: `CornerRadius=0`
+
+Target:
+```
+Grid#CalendarCenterGrid
+```
+Style:
+```
+CornerRadius=0
+```
+
+### Square the corners of the calendar buttons
+
+Targets:
+```
+CalendarViewDayItem
+```
+```
+Control
+```
+```
+CalendarViewDayItem > Border
+```
+```
+Control > Border
+```
+Style:
+```
+CornerRadius=0
+```
 
 ### Square the corners of the quick action center
-**Target**: `Grid#ControlCenterRegion` \
-**Style**: `CornerRadius=0`
+
+Target:
+```
+Grid#ControlCenterRegion
+```
+Style:
+```
+CornerRadius=0
+```
 
 ### Calendar and notification titlebars: titles on the right, buttons on the left
-**Target**: `Grid#RootContent` \
-**Style**: `FlowDirection=1`
+
+Target:
+```
+Grid#RootContent
+```
+Style:
+```
+FlowDirection=1
+```
 
 ### Add accelerator key (Alt+X) to clear all notifications
-**Target**: `Button#ClearAll` \
-**Style**: `AccessKey=x`
+
+Target:
+```
+Button#ClearAll
+```
+Style:
+```
+AccessKey=x
+```
 
 ### Add accelerator key (Alt+E) to expand/collapse the calendar
-**Target**: `Button#ExpandCollapseButton` \
-**Style**: `AccessKey=e`
+
+Target:
+```
+Button#ExpandCollapseButton
+```
+Style:
+```
+AccessKey=e
+```
 
 ## Transforms
 
@@ -189,7 +341,7 @@ RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
   - Sets the transform origin relative to its target's width and height. Format is `X,Y` and both numbers range from 0-1.
 
   Example:
-  
+
   ```
   RenderTransformOrigin=0.5,0.5
   ```
@@ -222,7 +374,7 @@ transparent background, use `Transparent` or `#00000000`.
 
 ### Accent colors
 
-A Color can also be a `ThemeResource` or `StaticResource`. There are many such
+A color can also be a `ThemeResource` or `StaticResource`. There are many such
 styles built into Windows.
 
 ```
@@ -231,8 +383,8 @@ Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="
 
 Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
 
-The word `Light` or `Dark` is appended at end with
-a number ranging from 1-3. See [the official Microsoft
+The word `Light` or `Dark` is appended at the end with a number ranging from 1
+to 3. See [the official Microsoft
 docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
 for more information.
 
@@ -268,7 +420,7 @@ Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
 
 `Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
 
-You can also set Acrylic to use an accent color for a more dynamic look, that fits current theme.
+You can also set Acrylic to use an accent color for a more dynamic look that fits the current theme.
 
 ```
 Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />

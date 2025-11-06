@@ -1,6 +1,6 @@
 # WindowGlass theme for Windows 11 Notification Center Styler
 
-A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windows 11's Notification and Action Center
+A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windows 11's Notification and Action Center.
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
@@ -8,8 +8,7 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
 ![Action Center](Action_Center.png)
 
 ## Notification Center
-![Notification Center](Notification_Center.png) 
-
+![Notification Center](Notification_Center.png)
 
 ## Notes
 - Works best on devices running windows 11 24H2 and above.
@@ -20,27 +19,27 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
     - Acrylic
   - In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
 
-## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
-- Windows 11 TaskBar Styler – for styling the Taskbar.
-- Windows 11 Start Menu Styler - for styling the Notification Center and Action Center
-- Windows 11 File Explorer Styler - for styling Windows Explorer windows
+## For a complete WindowGlass-themed UI, download the following mods and use the 'WindowGlass' theme:
+- Windows 11 TaskBar Styler - for styling the taskbar.
+- Windows 11 Start Menu Styler - for styling the Windows Start menu.
+- Windows 11 File Explorer Styler - for styling Windows Explorer windows.
 
 ---
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Settings" tab.
-* Select the 'WindowGlass' theme and save the settings.
+* Select the theme and save the settings.
 
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
@@ -48,7 +47,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```json
-
 {
   "controlStyles[0].target": "Grid#NotificationCenterGrid",
   "controlStyles[0].styles[0]": "Background:=$Glass",
@@ -175,7 +173,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[29].styles[2]": "BorderThickness=$BorderThickness",
   "controlStyles[29].styles[3]": "Background:=$Glass",
   "controlStyles[29].styles[4]": "Margin=0,10,0,10",
-  "controlStyles[29].styles[5]": "BorderBrush:=$BorderBrush", 
+  "controlStyles[29].styles[5]": "BorderBrush:=$BorderBrush",
   "controlStyles[29].styles[6]": "Grid.Row=1",
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer",
   "controlStyles[30].styles[0]": "Height=55",
@@ -341,8 +339,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[79].target": "ControlCenter.MediaTransportControls",
   "controlStyles[79].styles[0]": "VerticalAlignment=2",
   "controlStyles[79].styles[1]": "Grid.Row=1",
-  "controlStyles[79].styles[2]": "Canvas.ZIndex=1", 
-  "controlStyles[80].target": "Grid#RootGrid", 
+  "controlStyles[79].styles[2]": "Canvas.ZIndex=1",
+  "controlStyles[80].target": "Grid#RootGrid",
   "controlStyles[80].styles[0]": "VerticalAlignment=3",
   "controlStyles[80].styles[1]": "MinHeight=0",
   "styleConstants[0]": "Glass=<WindhawkBlur BlurAmount=\"3\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
@@ -370,17 +368,15 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ## Alternate Version
 
-This theme is also availabke with an alternate version that places the media controls on the top of the Action center, instead of the bottom.
+This theme is also available with an alternate version that places the media controls on the top of the Action Center, instead of the bottom.
 
 ## Action Center
 ![Action Center](Action_Center_2.png)
-
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
 ```json
-
 {
   "controlStyles[0].target": "Grid#NotificationCenterGrid",
   "controlStyles[0].styles[0]": "Background:=$Glass",

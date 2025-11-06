@@ -7,7 +7,7 @@
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
@@ -44,15 +44,15 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[5].target": "Windows.UI.Xaml.Controls.ScrollViewer#CalendarControlScrollViewer",
 	"controlStyles[5].styles[0]": "BorderThickness=0",
 	"controlStyles[6].target": "Windows.UI.Xaml.Controls.ContentPresenter",
-	"controlStyles[6].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.1\"/>",
+	"controlStyles[6].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.083\"/>",
 	"controlStyles[7].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Windows.UI.Xaml.Controls.Border",
-	"controlStyles[7].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.1\"/>",
+	"controlStyles[7].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.083\"/>",
 	"controlStyles[8].target": "Windows.UI.Xaml.Controls.ComboBox > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border",
-	"controlStyles[8].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.1\"/>",
+	"controlStyles[8].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.083\"/>",
 	"controlStyles[9].target": "Windows.UI.Xaml.Controls.CalendarViewDayItem > Windows.UI.Xaml.Controls.Border",
-	"controlStyles[9].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.1\"/>",
+	"controlStyles[9].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.083\"/>",
 	"controlStyles[10].target": "Windows.UI.Xaml.Controls.Control > Windows.UI.Xaml.Controls.Border",
-	"controlStyles[10].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.1\"/>"
+	"controlStyles[10].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.083\"/>"
 }
 ```
 </details>
