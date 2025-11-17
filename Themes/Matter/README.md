@@ -75,7 +75,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[9].target": "ContentPresenter#PageContent > Grid > Border",
   "controlStyles[9].styles[0]": "Background:=$overlay",
   "controlStyles[9].styles[1]": "CornerRadius=$r2",
-  "controlStyles[9].styles[2]": "Margin=8,0,8,2",
+  "controlStyles[9].styles[2]": "Margin=0",
   "controlStyles[10].target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot",
   "controlStyles[10].styles[0]": "Background:= $transparent",
   "controlStyles[11].target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot > ContentPresenter#PageHeader",
