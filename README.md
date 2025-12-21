@@ -10,6 +10,7 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 
 * [Introduction](#introduction)
 * [Themes](#themes)
+  * [Themes](#windows-10-action-center-themes)
 * [Style examples](#style-examples)
   * [Hide the focus assist section](#hide-the-focus-assist-section)
   * [Hide the notification center](#hide-the-notification-center)
@@ -88,6 +89,14 @@ Notification Center Styler mod. The following themes are available:
 | [10JumpLists](Themes/10JumpLists/README.md) | [![10JumpLists](Themes/10JumpLists/screenshot-small.png)](Themes/10JumpLists/screenshot.png)
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
+
+### Windows 10 Action Center themes
+
+The themes below are designed for customizing the Windows 10 Action Center.
+
+| Link | Screenshot
+| ---- | ----------
+| [SunValley](Themes/SunValley/README.md) | [![SunValley](Themes/SunValley/screenshot-small.png)](Themes/SunValley/screenshot.png)
 
 ## Style examples
 
