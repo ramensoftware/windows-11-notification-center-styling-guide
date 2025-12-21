@@ -10,7 +10,7 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 
 * [Introduction](#introduction)
 * [Themes](#themes)
-  * [Themes](#windows-10-action-center-themes)
+  * [Windows 10 Action Center themes](#windows-10-action-center-themes)
 * [Style examples](#style-examples)
   * [Hide the focus assist section](#hide-the-focus-assist-section)
   * [Hide the notification center](#hide-the-notification-center)
