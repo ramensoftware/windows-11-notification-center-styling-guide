@@ -7,6 +7,12 @@ This theme tries to recreate the design of the hidden 10 Action Center UI on Win
 * Dynamic sized notification panel regarding the amount of notifications
   
 **Author**: [Tails](https://github.com/milestprower92)
+
+## Windows 11 (leftover Windows 10 Action Center):
+![Screenshot](screenshot.png)
+## Windows 10
+![Screenshot](screenshot2.png)
+
 ## Theme selection
 
 The theme is integrated into the mod and can simply be selected from the mod's
