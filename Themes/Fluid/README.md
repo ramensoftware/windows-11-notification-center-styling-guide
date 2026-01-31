@@ -4,6 +4,12 @@
 
 ![Preview 1](preview-1.png) ![Preview 2](preview-2.png)
 
+> [!NOTE]
+> To use with Light mode, change the `BorderBrush` styleConstant to:
+> ```
+> BorderBrush=<LinearGradientBrush x:Key="ShellTaskbarItemGradientStrokeColorSecondaryBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3"><LinearGradientBrush.RelativeTransform><ScaleTransform ScaleY="-1" CenterY="0.5" /></LinearGradientBrush.RelativeTransform><LinearGradientBrush.GradientStops><GradientStop Offset="0.33" Color="#0F000000" /><GradientStop Offset="1" Color="#05000000" /></LinearGradientBrush.GradientStops></LinearGradientBrush>
+> ```
+
 <!--
 ## Theme selection
 
