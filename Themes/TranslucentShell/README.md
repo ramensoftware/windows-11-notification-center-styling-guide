@@ -4,6 +4,13 @@
 
 ![Video](video.gif)
 
+## Thumbnail image size
+
+The default media control thumbnail size is 300x300, which might be too large
+for small screens. You can change it by setting the value
+`thumbnailImageSize=200`, where `200` is the desired size, in the "Style
+constants" section of the mod's settings.
+
 ## Theme selection
 
 The theme is integrated into the mod and can simply be selected from the mod's
@@ -86,25 +93,25 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[20].target": "ActionCenter.FlexibleItemView",
   "controlStyles[20].styles[0]": "CornerRadius=15",
   "controlStyles[21].target": "ControlCenter.MediaTransportControls#MediaTransportControls > Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion",
-  "controlStyles[21].styles[0]": "Height=470",
-  "controlStyles[22].target": "Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer",
-  "controlStyles[22].styles[0]": "Height=350",
-  "controlStyles[23].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage",
-  "controlStyles[23].styles[0]": "Width=300",
-  "controlStyles[23].styles[1]": "Height=300",
-  "controlStyles[23].styles[2]": "HorizontalAlignment=Center",
-  "controlStyles[23].styles[3]": "VerticalAlignment=Top",
-  "controlStyles[23].styles[4]": "Grid.Column=1",
-  "controlStyles[24].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[24].styles[0]": "CornerRadius=10",
-  "controlStyles[25].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer",
-  "controlStyles[25].styles[0]": "VerticalAlignment=Bottom",
-  "controlStyles[25].styles[1]": "Grid.Column=0",
-  "controlStyles[26].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText",
+  "controlStyles[21].styles[0]": "Height=Auto",
+  "controlStyles[22].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage",
+  "controlStyles[22].styles[0]": "Width=$thumbnailImageSize",
+  "controlStyles[22].styles[1]": "Height=$thumbnailImageSize",
+  "controlStyles[22].styles[2]": "HorizontalAlignment=Center",
+  "controlStyles[22].styles[3]": "VerticalAlignment=Top",
+  "controlStyles[22].styles[4]": "Grid.Column=1",
+  "controlStyles[22].styles[5]": "Margin=0,2,0,45",
+  "controlStyles[23].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border",
+  "controlStyles[23].styles[0]": "CornerRadius=10",
+  "controlStyles[24].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer",
+  "controlStyles[24].styles[0]": "VerticalAlignment=Bottom",
+  "controlStyles[24].styles[1]": "Grid.Column=0",
+  "controlStyles[25].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText",
+  "controlStyles[25].styles[0]": "TextAlignment=Center",
+  "controlStyles[26].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
   "controlStyles[26].styles[0]": "TextAlignment=Center",
-  "controlStyles[27].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
-  "controlStyles[27].styles[0]": "TextAlignment=Center",
-  "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#25323232\"/>"
+  "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#25323232\"/>",
+  "styleConstants[1]": "thumbnailImageSize=300"
 }
 ```
 </details>
