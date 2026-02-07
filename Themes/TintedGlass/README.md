@@ -450,8 +450,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[26].styles[0]": "TextAlignment=Center",
   "controlStyles[27].target": "StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#SubtitleText",
   "controlStyles[27].styles[0]": "TextAlignment=Center",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "styleConstants[0]": "Base=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#80000000\"/>",
   "styleConstants[1]": "Radius=14",
   "styleConstants[2]": "Transparent=<SolidColorBrush Color=\"Transparent\"/>",

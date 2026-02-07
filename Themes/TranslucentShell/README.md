@@ -104,9 +104,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[26].styles[0]": "TextAlignment=Center",
   "controlStyles[27].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
   "controlStyles[27].styles[0]": "TextAlignment=Center",
-  "theme": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#25323232\"/>"
 }
 ```
