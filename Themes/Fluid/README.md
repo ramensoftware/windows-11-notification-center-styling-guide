@@ -10,7 +10,6 @@
 > BorderBrush=<LinearGradientBrush x:Key="ShellTaskbarItemGradientStrokeColorSecondaryBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3"><LinearGradientBrush.RelativeTransform><ScaleTransform ScaleY="-1" CenterY="0.5" /></LinearGradientBrush.RelativeTransform><LinearGradientBrush.GradientStops><GradientStop Offset="0.33" Color="#0F000000" /><GradientStop Offset="1" Color="#05000000" /></LinearGradientBrush.GradientStops></LinearGradientBrush>
 > ```
 
-<!--
 ## Theme selection
 
 The theme is integrated into the mod and can simply be selected from the mod's
@@ -19,11 +18,10 @@ settings:
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
--->
 
 ## Manual installation
 
-<!-- The theme styles can also be imported manually. To do that, follow these steps: -->
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Advanced" tab.
