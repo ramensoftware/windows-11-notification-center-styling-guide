@@ -2,7 +2,7 @@
 
 **Author**: [The Back Room](https://github.com/the-back-room)
 
-![Preview 1](preview-1.png) ![Preview 2](preview-2.png)
+![Preview 1](screenshot.png) ![Preview 2](screenshot-2.png)
 
 > [!NOTE]
 > To use with Light mode, change the `BorderBrush` styleConstant to:
@@ -34,7 +34,6 @@ settings:
 
 ```json
 {
-  "theme": "",
   "controlStyles[0].target": "MenuFlyoutPresenter",
   "controlStyles[0].styles[0]": "BorderBrush:=$BorderBrush",
   "controlStyles[0].styles[1]": "BorderThickness=1",
@@ -122,9 +121,7 @@ settings:
   "controlStyles[25].styles[2]": "CornerRadius=$CornerRadius",
   "styleConstants[0]": "BorderBrush=<LinearGradientBrush x:Key=\"ShellTaskbarItemGradientStrokeColorSecondaryBrush\" MappingMode=\"Absolute\" StartPoint=\"0,0\" EndPoint=\"0,3\"><LinearGradientBrush.GradientStops><GradientStop Offset=\"0.33\" Color=\"#1AFFFFFF\" /><GradientStop Offset=\"1\" Color=\"#0FFFFFFF\" /></LinearGradientBrush.GradientStops></LinearGradientBrush>",
   "styleConstants[1]": "BorderThickness=2",
-  "styleConstants[2]": "CornerRadius=4",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": ""
+  "styleConstants[2]": "CornerRadius=4"
 }
 ```
 </details>
