@@ -4,6 +4,13 @@
 
 ![Screenshot](screenshot.png)
 
+## Thumbnail image size
+
+The default media control thumbnail size is 300x300, which might be too large
+for small screens. You can change it by setting the value
+`thumbnailImageSize=200`, where `200` is the desired size, in the "Style
+constants" section of the mod's settings.
+
 ## Suggested Windhawk Mods for full theme continuity
 To achieve the full look, install and configure the following Windhawk mods in addition to Taskbar Styler:
 
@@ -432,24 +439,23 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[20].target": "ActionCenter.FlexibleItemView",
   "controlStyles[20].styles[0]": "CornerRadius=$Radius",
   "controlStyles[21].target": "Grid#MediaTransportControlsRegion",
-  "controlStyles[21].styles[0]": "Height=470",
-  "controlStyles[22].target": "Grid#AlbumTextAndArtContainer",
-  "controlStyles[22].styles[0]": "Height=350",
-  "controlStyles[23].target": "Grid#ThumbnailImage",
-  "controlStyles[23].styles[0]": "Width=300",
-  "controlStyles[23].styles[1]": "Height=300",
-  "controlStyles[23].styles[2]": "HorizontalAlignment=Center",
-  "controlStyles[23].styles[3]": "VerticalAlignment=Top",
-  "controlStyles[23].styles[4]": "Grid.Column=1",
-  "controlStyles[24].target": "Grid#ThumbnailImage > Border",
-  "controlStyles[24].styles[0]": "CornerRadius=$Radius",
-  "controlStyles[25].target": "StackPanel#PrimaryAndSecondaryTextContainer",
-  "controlStyles[25].styles[0]": "VerticalAlignment=Bottom",
-  "controlStyles[25].styles[1]": "Grid.Column=0",
-  "controlStyles[26].target": "StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#TitleText",
+  "controlStyles[21].styles[0]": "Height=Auto",
+  "controlStyles[22].target": "Grid#ThumbnailImage",
+  "controlStyles[22].styles[0]": "Width=$thumbnailImageSize",
+  "controlStyles[22].styles[1]": "Height=$thumbnailImageSize",
+  "controlStyles[22].styles[2]": "HorizontalAlignment=Center",
+  "controlStyles[22].styles[3]": "VerticalAlignment=Top",
+  "controlStyles[22].styles[4]": "Grid.Column=1",
+  "controlStyles[22].styles[5]": "Margin=0,2,0,45",
+  "controlStyles[23].target": "Grid#ThumbnailImage > Border",
+  "controlStyles[23].styles[0]": "CornerRadius=$Radius",
+  "controlStyles[24].target": "StackPanel#PrimaryAndSecondaryTextContainer",
+  "controlStyles[24].styles[0]": "VerticalAlignment=Bottom",
+  "controlStyles[24].styles[1]": "Grid.Column=0",
+  "controlStyles[25].target": "StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#TitleText",
+  "controlStyles[25].styles[0]": "TextAlignment=Center",
+  "controlStyles[26].target": "StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#SubtitleText",
   "controlStyles[26].styles[0]": "TextAlignment=Center",
-  "controlStyles[27].target": "StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#SubtitleText",
-  "controlStyles[27].styles[0]": "TextAlignment=Center",
   "styleConstants[0]": "Base=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#80000000\"/>",
   "styleConstants[1]": "Radius=14",
   "styleConstants[2]": "Transparent=<SolidColorBrush Color=\"Transparent\"/>",
@@ -457,15 +463,16 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[3].styles[1]": "BorderThickness=0,0,0,0",
   "controlStyles[4].styles[1]": "BorderThickness=0,0,0,0",
   "controlStyles[8].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[28].target": "ContentControl#TogglesGroup > ContentPresenter > ControlCenter.PaginatedGridView > Grid",
+  "controlStyles[27].target": "ContentControl#TogglesGroup > ContentPresenter > ControlCenter.PaginatedGridView > Grid",
+  "controlStyles[27].styles[0]": "BorderThickness=0,0,0,0",
+  "controlStyles[28].target": "Grid#FooterGrid",
   "controlStyles[28].styles[0]": "BorderThickness=0,0,0,0",
-  "controlStyles[29].target": "Grid#FooterGrid",
-  "controlStyles[29].styles[0]": "BorderThickness=0,0,0,0",
   "styleConstants[3]": "Accent=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight1}\" Opacity = \"1\" />",
   "styleConstants[4]": "Overlay=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#1AFFFFFF\"/>",
   "controlStyles[2].styles[1]": "Background:=$Transparent",
   "controlStyles[18].styles[0]": "Background:=$Transparent",
-  "controlStyles[18].styles[1]": "CornerRadius=$Radius"
+  "controlStyles[18].styles[1]": "CornerRadius=$Radius",
+  "styleConstants[5]": "thumbnailImageSize=300"
 }
 ```
 </details>
