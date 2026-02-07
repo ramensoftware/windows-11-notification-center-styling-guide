@@ -262,42 +262,7 @@ To achieve the full look, install and configure the following Windhawk mods in a
 
 - Windows 11 File Explorer Styler
 
-<details>
-<summary>Click to expand JSON content</summary>
-
-```json
-{
-  "controlStyles[0].target": "Grid#CommandBarControlRootGrid",
-  "controlStyles[0].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[0].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[0].styles[2]": "BorderBrush=$CommonBgBrush",
-  "controlStyles[1].target": "CommandBar#FileExplorerCommandBar",
-  "controlStyles[1].styles[0]": "Background=Transparent",
-  "controlStyles[2].target": "Grid#NavigationBarControlGrid",
-  "controlStyles[2].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[3].target": "TabViewItem > Grid#LayoutRoot > Canvas > Microsoft.UI.Xaml.Shapes.Path#SelectedBackgroundPath",
-  "controlStyles[4].target": "Grid#HomeViewRootGrid",
-  "controlStyles[4].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[5].target": "FileExplorerExtensions.GalleryViewControl#GalleryViewControl > Grid",
-  "controlStyles[5].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[6].target": "Microsoft.UI.Xaml.Controls.Grid#GalleryRootGrid",
-  "controlStyles[6].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[7].target": "ToolTip",
-  "controlStyles[7].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[8].target": "Grid#DetailsViewControlRootGrid",
-  "controlStyles[8].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[9].target": "StackPanel#DetailsViewThumbnail > Grid",
-  "controlStyles[9].styles[0]": "Background:=$CommonBgBrush",
-  "explorerFrameContainerHeight": 0,
-  "controlStyles[3].styles[0]": "Fill:=$CommonBgBrush",
-  "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#80000000\"/>",
-  "controlStyles[10].target": "TextBlock",
-  "controlStyles[10].styles[0]": "Fill=#FFFFFF",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": ""
-}
-```
-</details>
+[TintedGlass theme for Windows 11 File Explorer Styler](https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/blob/main/Themes/TintedGlass/README.md).
 
 ---
 
@@ -393,7 +358,7 @@ To achieve the full look, install and configure the following Windhawk mods in a
 The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
-* Open the Windows 11 Taskbar Styler mod in Windhawk.
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
@@ -401,7 +366,7 @@ settings:
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
-* Open the Windows 11 Taskbar Styler mod in Windhawk.
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
