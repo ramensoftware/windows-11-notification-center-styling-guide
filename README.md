@@ -90,7 +90,7 @@ Notification Center Styler mod. The following themes are available:
 | [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-sm.png)](Themes/Fluid/preview-1.png)
 | [TintedGlass](Themes/TintedGlass/README.md) | [![TintedGlass](Themes/TintedGlass/screenshot-small.png)](Themes/TintedGlass/screenshot.png)
-| [Liquid Glass](Themes/LiquidGlass/README.md) | [![Fluid](Themes/LiquidGlass/preview-small.png)](Themes/LiquidGlass/Preview.png)
+| [Liquid Glass](Themes/LiquidGlass/README.md)
 
 ## Style examples
 
