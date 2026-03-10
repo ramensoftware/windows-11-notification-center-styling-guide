@@ -1,4 +1,6 @@
-# Liquid Glass
+# LiquidGlass theme for Windows 11 Notification Center Styler
+
+**Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
 ## Installation
 Follow the instructions listed below to install and setup the Windows Glass Notification Center theme on your system.
@@ -15,7 +17,28 @@ Follow the instructions listed below to install and setup the Windows Glass Noti
 
 ### Notification Center
 
-<img src="Preview.png" width="100%" height="auto" />
+![Screenshot](screenshot.png)
+
+---
+
+### Shell Flyout Positions
+
+* Open the "Shell Flyout Positions" mod in Windhawk
+* Go to the "Advanced" tab and copy the code below into the "Mod settings" box and click "Save".
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+"notificationCenter.horizontalAlignment": "tray",
+"notificationCenter.horizontalShift": 0,
+"actionCenter.horizontalAlignment": "same",
+"actionCenter.horizontalShift": 0
+}
+```
+
+</details>
 
 ## Theme selection
 
@@ -39,7 +62,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-"theme": "",
 "controlStyles[0].target": "Grid#NotificationCenterGrid",
 "controlStyles[0].styles[0]": "// Visibility=1",
 "controlStyles[0].styles[1]": "Background:=$Background",
@@ -209,31 +231,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "styleConstants[5]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>",
 "styleConstants[6]": "CornerRadius=10",
 "styleConstants[7]": "ElementCornerRadius=6",
-"styleConstants[8]": "AccentBG=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemAccentColorLight}\" TintOpacity=\"0.2\" />",
-"resourceVariables[0].variableKey": "",
-"resourceVariables[0].value": ""
+"styleConstants[8]": "AccentBG=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemAccentColorLight}\" TintOpacity=\"0.2\" />"
 }
 ```
-
-</details>
-
----
-
-### Shell Fylout Positions
-
-* Open the `Shell Flyout Positions` mod in Windhawk
-* Go to the `Advanced` tab and copy the code below into the `Mod settings` box and click `save`.
-
-<details>
-<summary>Content to import (click to expand)</summary>
-
-```json
-{
-"notificationCenter.horizontalAlignment": "tray",
-"notificationCenter.horizontalShift": 0,
-"actionCenter.horizontalAlignment": "same",
-"actionCenter.horizontalShift": 0
-}
-```
-
 </details>

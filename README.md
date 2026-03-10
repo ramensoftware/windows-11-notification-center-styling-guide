@@ -88,9 +88,9 @@ Notification Center Styler mod. The following themes are available:
 | [10JumpLists](Themes/10JumpLists/README.md) | [![10JumpLists](Themes/10JumpLists/screenshot-small.png)](Themes/10JumpLists/screenshot.png)
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
-| [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-sm.png)](Themes/Fluid/preview-1.png)
 | [TintedGlass](Themes/TintedGlass/README.md) | [![TintedGlass](Themes/TintedGlass/screenshot-small.png)](Themes/TintedGlass/screenshot.png)
-| [Liquid Glass](Themes/LiquidGlass/README.md) | [![Liquid Glass](Themes/LiquidGlass/preview-small.png)](Themes/LiquidGlass/Preview.png)
+| [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
+| [LiquidGlass](Themes/LiquidGlass/README.md) | [![LiquidGlass](Themes/LiquidGlass/screenshot-small.png)](Themes/LiquidGlass/screenshot.png)
 
 ## Style examples
 
