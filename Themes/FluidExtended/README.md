@@ -1,4 +1,4 @@
-# FluidNC theme for Windows 11 Notification Center Styler
+# Fluid Extended theme for Windows 11 Notification Center Styler
 
 **Author**: [The Back Room](https://github.com/the-back-room)
 
