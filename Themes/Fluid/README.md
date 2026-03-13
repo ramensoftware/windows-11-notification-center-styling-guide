@@ -1,6 +1,6 @@
 # Fluid theme for Windows 11 Notification Center Styler
 
-Notification Center theme designed to match the Fluid Start Menu theme by [SandTechStuff](https://github.com/SandTechStuff).
+A notification center theme designed to match [the Fluid Start Menu theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/Themes/Fluid/README.md) by [SandTechStuff](https://github.com/SandTechStuff).
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
