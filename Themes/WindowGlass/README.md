@@ -22,7 +22,7 @@ A theme that adds a modern, glassy aesthetic with a semi-compact layout to Windo
   In order to switch between these backgrounds, set the value `Background=$Translucent`, `Background=$Glass`, `Background=$Frosted` or `Background=$Acrylic` in the "Style constants" section of the mod's settings.
 
 ## For a complete WindowGlass-themed UI, download the following mods and use the 'WindowGlass' theme:
-- Windows 11 TaskBar Styler - for styling the taskbar.
+- Windows 11 Taskbar Styler - for styling the taskbar.
 - Windows 11 Start Menu Styler - for styling the Windows Start menu.
 - Windows 11 File Explorer Styler - for styling Windows Explorer windows.
 
@@ -124,8 +124,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[15].styles[2]": "CornerRadius=16",
   "controlStyles[15].styles[3]": "BorderBrush:=$BorderBrush",
   "controlStyles[16].target": "JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
-  "controlStyles[16].styles[0]": "Background:=Trabsparent",
-  "controlStyles[16].styles[1]": "CornerRadius=8",
+  "controlStyles[16].styles[0]": "CornerRadius=8",
   "controlStyles[17].target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
   "controlStyles[17].styles[0]": "CornerRadius=6",
   "controlStyles[18].target": "ActionCenter.FlexibleItemView",
@@ -456,8 +455,7 @@ This theme is also available with an alternate version that places the media con
   "controlStyles[15].styles[2]": "CornerRadius=16",
   "controlStyles[15].styles[3]": "BorderBrush:=$BorderBrush",
   "controlStyles[16].target": "JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
-  "controlStyles[16].styles[0]": "Background:=Trabsparent",
-  "controlStyles[16].styles[1]": "CornerRadius=8",
+  "controlStyles[16].styles[0]": "CornerRadius=8",
   "controlStyles[17].target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
   "controlStyles[17].styles[0]": "CornerRadius=6",
   "controlStyles[18].target": "ActionCenter.FlexibleItemView",
