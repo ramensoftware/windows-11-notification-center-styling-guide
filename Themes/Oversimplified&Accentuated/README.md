@@ -56,7 +56,7 @@ A cleaner, more refined Windows Notification Center (& Control Center) theme - r
 
 ## Theme selection
 
-The theme is integrated into the mod and can simply be selected from the mod's
+The theme is integrated into the mod and can be selected directly from the mod's
 settings:
 
 * Open the Windows 11 Notification Center Styler mod in Windhawk.
