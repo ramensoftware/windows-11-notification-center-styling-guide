@@ -1,6 +1,10 @@
 # Borderless Theme for Notification Center/Quick Settings/Jump Lists
 Removes all Drop Shadows from aforementioned elemnts + added bonus of top-aligned non-collapsing Notification Center, so it doesn't look off with dock layouts, also Toasts Resized to 348 for consistency with the Notification Center.
 
+<img width="384" height="1020" alt="image" src="https://github.com/user-attachments/assets/4546aff3-0243-4a24-bfe5-48fe2bc29e05" />
+
+<img width="360" height="1020" alt="image" src="https://github.com/user-attachments/assets/47409743-eeaa-4fe0-b863-658097d0ee25" />
+
 <details>
 <summary>Content to import (click to expand)</summary>
 
