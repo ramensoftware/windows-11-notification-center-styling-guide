@@ -8,8 +8,15 @@ Removes all Drop Shadows from aforementioned elemnts + added bonus of top-aligne
 <details>
 <summary>Content to import (click to expand)</summary>
 
+# Manual Installation :
+The theme styles can be imported manually. To do that, follow these steps:
+- Open the Windows 11 Taskbar Styler mod in Windhawk.
+- Go to the "Advanced" tab.
+- Copy the content below to the text box under "Mod settings" and click "Save".
+
 ```json
-{"controlStyles[0].target":"ActionCenter.FocusSessionControl",
+{
+"controlStyles[0].target":"ActionCenter.FocusSessionControl",
   "controlStyles[0].styles[0]":"Visibility=Collapsed",
 "controlStyles[1].target":"Windows.UI.Xaml.Controls.Grid",
   "controlStyles[1].styles[0]":"Shadow:=",
