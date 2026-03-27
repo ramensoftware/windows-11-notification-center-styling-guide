@@ -96,7 +96,18 @@ RenderTransform:=<RotateTransform Angle="180" />
 RenderTransformOrigin=0.5,0.5
 ```
 
-## Manual installation
+**Hide the Focus Timer from Notification Center**
+
+Target:
+```
+ActionCenter.FocusSessionControl
+```
+Styles:
+```
+Visibility=1
+```
+
+## Manual installation (YAML)
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
@@ -135,28 +146,28 @@ controlStyles:
       - RenderTransform:=<TransformGroup><RotateTransform Angle="-90" /><TranslateTransform X="258" Y="34" /></TransformGroup>
       - RenderTransformOrigin=0.5,0.5
       - Margin=0,0,30,0
-  - target: //ControlCenter.ControlCenterPage
+  - target: ControlCenter.ControlCenterPage
     styles:
       - VerticalAlignment=Stretch
-      - // move action center top the top
-  - target: //ControlCenter.ControlCenterPage > Grid#RootGrid
+      -  move action center top the top
+  - target: ControlCenter.ControlCenterPage > Grid#RootGrid
     styles:
       - VerticalAlignment=Stretch
-      - // move action center top the top
-  - target: //ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent
+      -  move action center top the top
+  - target: ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent
     styles:
       - VerticalAlignment=Top
-      - // move action center top the top
-  - target: //ControlCenter.ControlCenterPage
+      -  move action center top the top
+  - target: ControlCenter.ControlCenterPage
     styles:
       - RenderTransform:=<RotateTransform Angle="180" />
       - RenderTransformOrigin=0.5,0.5
-      - // flip the action center animation
-  - target: //ControlCenter.ControlCenterPage > Grid#RootGrid
+      -  flip the action center animation
+  - target: ControlCenter.ControlCenterPage > Grid#RootGrid
     styles:
       - RenderTransform:=<RotateTransform Angle="180" />
       - RenderTransformOrigin=0.5,0.5
-      - // flip the action center animation
+      -  flip the action center animation
   - target: Windows.UI.Xaml.Controls.ContentControl#QuickActionContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Primitives.ToggleButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon
     styles:
       - RenderTransform:=<RotateTransform Angle="90"/>
@@ -363,7 +374,7 @@ controlStyles:
     styles:
       - Height=164
       - Margin=0,0,0,-12
-      - //Visibility=0
+      - Visibility=0
       - CornerRadius=8,8,0,0
       - BorderThickness=1,1,1,0
       - Padding=0,0,0,24
