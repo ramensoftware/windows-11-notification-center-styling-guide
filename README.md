@@ -91,6 +91,7 @@ Notification Center Styler mod. The following themes are available:
 | [TintedGlass](Themes/TintedGlass/README.md) | [![TintedGlass](Themes/TintedGlass/screenshot-small.png)](Themes/TintedGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 | [LiquidGlass](Themes/LiquidGlass/README.md) | [![LiquidGlass](Themes/LiquidGlass/screenshot-small.png)](Themes/LiquidGlass/screenshot.png)
+| [BetterControl11](Themes/BetterControl11/README.md) | [![BetterControl11](Themes/BetterControl11/screenshot5.png)](Themes/BetterControl11/screenshot5.png)
 
 ## Style examples
 

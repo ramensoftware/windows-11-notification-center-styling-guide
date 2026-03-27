@@ -1,13 +1,14 @@
-# Unified theme for Windows 11 Notification Center Styler
+# BetterControl11 theme for Windows 11 Notification Center Styler
 
 A theme that is inspired by MacOS Control Center and Windows 10 Action Center
 
 **Author**: [TheGamer1445891](https://github.com/TheGamer1445891)
 
-![Notification Center](screenshot1.png)
+
 ![Notification Center Minimal](screenshot2.png)
-![Control Center](screenshot3.png)
+![Notification Center](screenshot1.png)
 ![Control Center with Media Player](screenshot4.png)
+![Control Center](screenshot3.png)
 
 ## Theme selection
 
