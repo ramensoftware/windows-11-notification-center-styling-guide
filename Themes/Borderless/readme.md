@@ -5,8 +5,6 @@ Removes all borders drop shadows from notification center, quick settings and ta
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot.png)
-![Screenshot](screenshot-2.png)
-
 
 ## Manual Installation :
 The theme styles can be imported manually. To do that, follow these steps:
