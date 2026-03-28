@@ -22,7 +22,8 @@ settings:
 ### Notes
 
 > [!NOTE]
-> This Theme will move some of the Control Center Quick Actions Buttons offscreen so please reposition your Quick Actions Buttons like in the image i've showed.
+> This Theme will move some of the Control Center Quick Actions Buttons offscreen.
+> Please reposition your Quick Actions Buttons like in the image i've provided.
 
 
 There are some (optional) tweaks you need to add if youre using the "Theme Selection" method
