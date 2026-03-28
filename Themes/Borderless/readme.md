@@ -1,17 +1,21 @@
-# Borderless Theme for Notification Center/Quick Settings/Jump Lists
-Removes all Drop Shadows from aforementioned elemnts + added bonus of top-aligned non-collapsing Notification Center, so it doesn't look off with dock layouts, also Toasts Resized to 348 for consistency with the Notification Center.
+# Borderless theme for Windows 11 Notification Center styler
+
+Removes all borders drop shadows from notification center, quick settings and taskbar jump lists as well (thus the name), with added added bonus of top-aligned notification center, so it fits dock layouts, also desktop toasts resized to 348 for consistency with the notification center toasts.
+
+**Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot.png)
 ![Screenshot](screenshot-2.png)
 
-<details>
-<summary>Content to import (click to expand)</summary>
 
-# Manual Installation :
+## Manual Installation :
 The theme styles can be imported manually. To do that, follow these steps:
 - Open the Windows 11 Taskbar Styler mod in Windhawk.
 - Go to the "Advanced" tab.
 - Copy the content below to the text box under "Mod settings" and click "Save".
+
+<details>
+<summary>Content to import (click to expand)</summary>
 
 ```json
 {
