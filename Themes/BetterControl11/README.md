@@ -26,91 +26,100 @@ settings:
 > Please reposition your Quick Actions Buttons like in the image i've provided.
 
 
-There are some (optional) tweaks you need to add if youre using the "Theme Selection" method
+There are some (optional) tweaks you need to add if youre using the "Theme Selection" method:
 
-**Control Center like animations for Notification Center** (credit to [Lockframe](https://github.com/Lockframe))**:**
+<details>
+  <summary>**Control Center like animations for Notification Center** (credit to [Lockframe](https://github.com/Lockframe))**:**</summary>
 
-Target:
-```
-ActionCenter.NotificationCenterPage > Grid > Grid
-```
-Styles:
-```
-RenderTransform:=<RotateTransform Angle="-90"/>
-RenderTransformOrigin=0.5,1
-```
+- Target:
+- ```
+- ActionCenter.NotificationCenterPage > Grid > Grid
+- ```
+- Styles:
+- ```
+- RenderTransform:=<RotateTransform Angle="-90"/>
+- RenderTransformOrigin=0.5,1
+- ```
 
-Target:
-```
-ActionCenter.NotificationCenterPage
-```
-Styles:
-```
-RenderTransform:=<RotateTransform Angle="90"/>
-RenderTransformOrigin=0.5,1
-```
+- Target:
+- ```
+- ActionCenter.NotificationCenterPage
+- ```
+- Styles:
+- ```
+- RenderTransform:=<RotateTransform Angle="90"/>
+- RenderTransformOrigin=0.5,1
+- ```
 
-**Move Control Center to the top** (mainly for top taskbars)**:**
+</details>
 
-Target:
-```
-ControlCenter.ControlCenterPage
-```
-Styles:
-```
-VerticalAlignment=Stretch
-```
+<details>
+  <summary>**Move Control Center to the top** (mainly for top taskbars)**:**<summary>
 
-Target:
-```
-ControlCenter.ControlCenterPage > Grid#RootGrid
-```
-Styles:
-```
-VerticalAlignment=Stretch
-```
+- Target:
+- ```
+- ControlCenter.ControlCenterPage
+- ```
+- Styles:
+- ```
+- VerticalAlignment=Stretch
+- ```
 
-Target:
-```
-ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent
-```
-Styles:
-```
-VerticalAlignment=Top
-```
+- Target:
+- ```
+- ControlCenter.ControlCenterPage > Grid#RootGrid
+- ```
+- Styles:
+- ```
+- VerticalAlignment=Stretch
+- ```
 
-**Flip the Control Center animation** (important for top alignment control center)**:**
+- Target:
+- ```
+- ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent
+- ```
+- Styles:
+- ```
+- VerticalAlignment=Top
+- ```
+</details>
 
-Target:
-```
-ControlCenter.ControlCenterPage
-```
-Styles:
-```
-RenderTransform:=<RotateTransform Angle="180" />
-RenderTransformOrigin=0.5,0.5
-```
+<details>
+  <summary>**Flip the Control Center animation** (important for top alignment control center)**:**</summary>
 
-Target:
-```
-ControlCenter.ControlCenterPage > Grid#RootGrid
-```
-Styles:
-```
-RenderTransform:=<RotateTransform Angle="180" />
-RenderTransformOrigin=0.5,0.5
-```
+- Target:
+- ```
+- ControlCenter.ControlCenterPage
+- ```
+- Styles:
+- ```
+- RenderTransform:=<RotateTransform Angle="180" />
+- RenderTransformOrigin=0.5,0.5
+- ```
 
-**Hide the Focus Timer from Notification Center**
+- Target:
+- ```
+- ControlCenter.ControlCenterPage > Grid#RootGrid
+- ```
+- Styles:
+- ```
+- RenderTransform:=<RotateTransform Angle="180" />
+- RenderTransformOrigin=0.5,0.5
+- ```
+</details>
 
-Target:
-```
-ActionCenter.FocusSessionControl
-```
-Styles:
-```
-Visibility=1
-```
+<details>
+  <summary>**Hide the Focus Timer from Notification Center**</summary>
+
+- Target:
+- ```
+- ActionCenter.FocusSessionControl
+- ```
+- Styles:
+- ```
+- Visibility=1
+- ```
+</details>
 
 ## Manual installation
 
@@ -127,11 +136,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
 {
     "controlStyles[0].styles[0]": "RenderTransform:=<RotateTransform Angle=\"-90\"/>",
     "controlStyles[0].styles[1]": "RenderTransformOrigin=0.5,1",
-    "controlStyles[0].styles[2]": "// action center like animation for the notification center (credit to @Lockframe (github))",
+    "controlStyles[0].styles[2]": "// Action Center like animation for the notification center (credit to @Lockframe (github))",
     "controlStyles[0].target": "//ActionCenter.NotificationCenterPage > Grid > Grid",
     "controlStyles[1].styles[0]": "RenderTransform:=<RotateTransform Angle=\"90\"/>",
     "controlStyles[1].styles[1]": "RenderTransformOrigin=0.5,1",
-    "controlStyles[1].styles[2]": "// action center like animation for the notification center (credit to @Lockframe (github))",
+    "controlStyles[1].styles[2]": "// Action Center like animation for the notification center (credit to @Lockframe (github))",
     "controlStyles[1].target": "//ActionCenter.NotificationCenterPage",
     "controlStyles[10].styles[0]": "RenderTransform:=<RotateTransform Angle=\"180\" />",
     "controlStyles[10].styles[1]": "RenderTransformOrigin=0.5,0.5",
@@ -168,6 +177,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[20].styles[4]": "BorderThickness=1",
     "controlStyles[20].styles[5]": "Margin=228,0,10,-4",
     "controlStyles[20].styles[6]": "RenderTransform:=<TransformGroup><RotateTransform Angle=\"0\" /><TranslateTransform X=\"0\" Y=\"48\" /></TransformGroup>",
+    "controlStyles[20].styles[7]": "Visibility=1",
     "controlStyles[20].target": "Windows.UI.Xaml.Controls.Grid#L1Grid > Border",
     "controlStyles[21].styles[0]": "Background:=transparent",
     "controlStyles[21].target": "Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRoot",
@@ -256,17 +266,18 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[49].styles[0]": "Margin=0,-16,0,-2",
     "controlStyles[49].target": "Windows.UI.Xaml.Internal.RootScrollViewer > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.Border > ControlCenter.ControlCenterPage > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#L1Grid > Windows.UI.Xaml.Controls.Grid#FooterGrid > Windows.UI.Xaml.Controls.ItemsControl#LeftFooter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.ItemsControl > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter",
     "controlStyles[5].styles[0]": "Grid.Row=0",
-    "controlStyles[5].styles[1]": "RenderTransform:=<TransformGroup><RotateTransform Angle=\"-90\" /><TranslateTransform X=\"258\" Y=\"34\" /></TransformGroup>",
+    "controlStyles[5].styles[1]": "RenderTransform:=<TransformGroup><RotateTransform Angle=\"-90\" /><TranslateTransform X=\"123\" Y=\"-94\" /></TransformGroup>",
     "controlStyles[5].styles[2]": "RenderTransformOrigin=0.5,0.5",
     "controlStyles[5].styles[3]": "Margin=0,0,30,0",
+    "controlStyles[5].styles[4]": "VerticalAlignment=2",
     "controlStyles[5].target": "ContentControl#SlidersGroup",
-    "controlStyles[50].styles[0]": "Background:=#09FFFFFF",
+    "controlStyles[50].styles[0]": "Background:=$Overlay1",
     "controlStyles[50].styles[1]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\"0.8\" />",
     "controlStyles[50].styles[2]": "BorderThickness=1,0,1,1",
     "controlStyles[50].styles[3]": "CornerRadius=0,0,4,4",
     "controlStyles[50].styles[4]": "Margin=-1,0,-80,0",
     "controlStyles[50].target": "Windows.UI.Xaml.Controls.Grid#FooterGrid > Windows.UI.Xaml.Controls.ItemsControl#LeftFooter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.ItemsControl > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter",
-    "controlStyles[51].styles[0]": "Background:=#09FFFFFF",
+    "controlStyles[51].styles[0]": "Background:=$Overlay1",
     "controlStyles[51].styles[1]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\"0.8\" />",
     "controlStyles[51].styles[2]": "BorderThickness=1,1,1,0",
     "controlStyles[51].styles[3]": "CornerRadius=4,4,0,0",
@@ -306,11 +317,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[6].target": "//ControlCenter.ControlCenterPage",
     "controlStyles[60].styles[0]": "Height=164",
     "controlStyles[60].styles[1]": "Margin=0,0,0,-12",
-    "controlStyles[60].styles[2]": "//Visibility=0",
-    "controlStyles[60].styles[3]": "CornerRadius=8,8,0,0",
-    "controlStyles[60].styles[4]": "BorderThickness=1,1,1,0",
-    "controlStyles[60].styles[5]": "Padding=0,0,0,24",
-    "controlStyles[60].styles[6]": "Shadow:=",
+    "controlStyles[60].styles[2]": "CornerRadius=8,8,0,0",
+    "controlStyles[60].styles[3]": "BorderThickness=1,1,1,0",
+    "controlStyles[60].styles[4]": "Padding=0,0,0,24",
+    "controlStyles[60].styles[5]": "Shadow:=",
     "controlStyles[60].target": "Grid#MediaTransportControlsRegion",
     "controlStyles[61].styles[0]": "Padding=0,6,0,0",
     "controlStyles[61].target": "ControlCenter.ControlCenterPage > Windows.UI.Xaml.Controls.Grid#RootGrid",
@@ -346,8 +356,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[7].styles[1]": "// move action center top the top",
     "controlStyles[7].target": "//ControlCenter.ControlCenterPage > Grid#RootGrid",
     "controlStyles[70].styles[0]": "Margin=-40,8,46,5",
+    "controlStyles[70].styles[1]": "Opacity=0",
+    "controlStyles[70].styles[2]": "Width=0",
     "controlStyles[70].target": "ActionCenter.NotificationCenterPage > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#CalendarCenterGrid > ActionCenter.ClockCalendarView#ClockCalendarView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid#CalendarSection > Windows.UI.Xaml.Controls.ScrollViewer#CalendarControlScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.CalendarView#CalendarControl > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button#PreviousButton",
     "controlStyles[71].styles[0]": "Margin=-40,8,50,5",
+    "controlStyles[71].styles[1]": "Opacity=0",
+    "controlStyles[71].styles[2]": "Width=0",
     "controlStyles[71].target": "ActionCenter.NotificationCenterPage > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#CalendarCenterGrid > ActionCenter.ClockCalendarView#ClockCalendarView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid#CalendarSection > Windows.UI.Xaml.Controls.ScrollViewer#CalendarControlScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.CalendarView#CalendarControl > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button#NextButton",
     "controlStyles[72].styles[0]": "Margin=0",
     "controlStyles[72].target": "ActionCenter.NotificationCenterPage > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#CalendarCenterGrid > ActionCenter.ClockCalendarView#ClockCalendarView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid#CalendarSection > Windows.UI.Xaml.Controls.ScrollViewer#CalendarControlScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.CalendarView#CalendarControl > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid",
@@ -375,16 +389,42 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[78].styles[1]": "Margin=0",
     "controlStyles[78].styles[2]": "Padding=0",
     "controlStyles[78].target": "ActionCenter.FlexibleItemView > Windows.UI.Xaml.Controls.Grid#MainGrid > Windows.UI.Xaml.Controls.Grid#ItemGrid > Windows.UI.Xaml.Controls.Grid#StandardHeroContainer",
+    "controlStyles[79].styles[0]": "Height=80",
+    "controlStyles[79].target": "ControlCenter.PaginatedToggleButton#ToggleButton",
     "controlStyles[8].styles[0]": "VerticalAlignment=Top",
     "controlStyles[8].styles[1]": "// move action center top the top",
     "controlStyles[8].target": "//ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent",
+    "controlStyles[80].styles[0]": "Margin=0,-36,0,36",
+    "controlStyles[80].styles[1]": "Visibility=0",
+    "controlStyles[80].target": "ControlCenter.PaginatedGridView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.ContentPresenter#Content > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock#TitleText",
+    "controlStyles[81].styles[0]": "Margin=0,-36,0,36",
+    "controlStyles[81].styles[1]": "Visibility=1",
+    "controlStyles[81].target": "ControlCenter.PaginatedGridView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.ContentPresenter#Content > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock#StatusText",
+    "controlStyles[82].styles[0]": "IsHitTestVisible=False",
+    "controlStyles[82].target": "ControlCenter.PaginatedGridView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.ContentPresenter#Content > Windows.UI.Xaml.Controls.StackPanel",
+    "controlStyles[83].styles[0]": "Margin=0,-10,0,10",
+    "controlStyles[83].target": "ControlCenter.PaginatedGridView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.ContentControl > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid > ControlCenter.PaginatedToggleButton#ToggleButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.Grid#ToggleButtonContent > Microsoft.UI.Xaml.Controls.AnimatedIcon",
+    "controlStyles[84].styles[0]": "Background:=$Overlay1",
+    "controlStyles[84].styles[1]": "BorderBrush:=$OverlayBorder1",
+    "controlStyles[84].styles[2]": "BorderThickness=1",
+    "controlStyles[84].styles[3]": "CornerRadius=4",
+    "controlStyles[84].styles[4]": "Height=120",
+    "controlStyles[84].styles[5]": "Margin=7,0,20,10",
+    "controlStyles[84].styles[6]": "RenderTransform:=<TranslateTransform X=\"-9\" Y=\"-2\" />",
+    "controlStyles[84].target": "ContentControl#SlidersGroup > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid",
+    "controlStyles[85].styles[0]": "Padding=0,9,-20,0",
+    "controlStyles[85].target": "ContentControl#SlidersGroup > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter",
     "controlStyles[9].styles[0]": "RenderTransform:=<RotateTransform Angle=\"180\" />",
     "controlStyles[9].styles[1]": "RenderTransformOrigin=0.5,0.5",
     "controlStyles[9].styles[2]": "// flip the action center animation",
     "controlStyles[9].target": "//ControlCenter.ControlCenterPage",
-    "styleConstants[0]": "",
+    "styleConstants[0]": "Overlay1=<SolidColorBrush Color=\"{ThemeResource NativeOverlay}\" />",
+    "styleConstants[1]": "OverlayBorder1=<SolidColorBrush Color=\"{ThemeResource NativeOverlayBorder}\" />",
     "theme": "",
-    "themeResourceVariables[0]": ""
+    "themeResourceVariables[0]": "NativeOverlay@Dark=#09FFFFFF",
+    "themeResourceVariables[1]": "NativeOverlay@Light=#89FFFFFF",
+    "themeResourceVariables[2]": "NativeOverlayBorder@Dark={ThemeResource SurfaceStrokeColorDefault}",
+    "themeResourceVariables[3]": "NativeOverlayBorder@Light=#14000000"
 }
 ```
 </details>
