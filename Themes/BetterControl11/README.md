@@ -23,7 +23,9 @@ settings:
 
 > [!NOTE]
 > This Theme will move some of the Control Center Quick Actions Buttons offscreen.
+
 > Please reposition your Quick Actions Buttons like in the image i've provided.
+
 > This Theme works best on Dark Mode
 
 
