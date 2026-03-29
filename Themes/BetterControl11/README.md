@@ -10,6 +10,10 @@ A theme that is inspired by MacOS Control Center and Windows 10 Action Center
 ![Control Center with Media Player](screenshot4.png)
 ![Control Center](screenshot3.png)
 
+> [!NOTE]
+> Please turn on this option in the settings:
+> ![image](how-to.png)
+
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
