@@ -29,17 +29,17 @@ settings:
 There are some (optional) tweaks you need to add if youre using the "Theme Selection" method:
 
 <details>
-  <summary>Control Center like animations for Notification Center (credit to [Lockframe](https://github.com/Lockframe)):</summary>
+  <summary>Control Center like animations for Notification Center (credit to https://github.com/Lockframe):</summary>
 
 - Target:
-  ```ActionCenter.NotificationCenterPage > Grid > Grid```
+    ```ActionCenter.NotificationCenterPage > Grid > Grid```
 - Styles:
-  ```RenderTransform:=<RotateTransform Angle="-90"/>  RenderTransformOrigin=0.5,1```
+    ```RenderTransform:=<RotateTransform Angle="-90"/>  RenderTransformOrigin=0.5,1```
 
 - Target:
-  ```ActionCenter.NotificationCenterPage```
+    ```ActionCenter.NotificationCenterPage```
 - Styles:
-  ```RenderTransform:=<RotateTransform Angle="90"/>  RenderTransformOrigin=0.5,1```
+    ```RenderTransform:=<RotateTransform Angle="90"/>  RenderTransformOrigin=0.5,1```
 
 </details>
 
@@ -47,19 +47,19 @@ There are some (optional) tweaks you need to add if youre using the "Theme Selec
   <summary>Move Control Center to the top (Mainly for top taskbars):</summary>
 
 - Target:
-  ```ControlCenter.ControlCenterPage```
+    ```ControlCenter.ControlCenterPage```
 - Styles:
-  ```VerticalAlignment=Stretch```
+    ```VerticalAlignment=Stretch```
 
 - Target:
-  ```ControlCenter.ControlCenterPage > Grid#RootGrid```
+    ```ControlCenter.ControlCenterPage > Grid#RootGrid```
 - Styles:
-  ```VerticalAlignment=Stretch```
+    ```VerticalAlignment=Stretch```
 
 - Target:
-  ```ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent```
+    ```ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent```
 - Styles:
-  ```VerticalAlignment=Top```
+    ```VerticalAlignment=Top```
 
 </details>
 
@@ -67,14 +67,14 @@ There are some (optional) tweaks you need to add if youre using the "Theme Selec
   <summary>Flip the Control Center animation (important for top alignment Control Center)</summary>
 
 - Target:
-  ```ControlCenter.ControlCenterPage```
+    ```ControlCenter.ControlCenterPage```
 - Styles:
-  ```RenderTransform:=<RotateTransform Angle="180" />  RenderTransformOrigin=0.5,0.5```
+    ```RenderTransform:=<RotateTransform Angle="180" />  RenderTransformOrigin=0.5,0.5```
 
 - Target:
-  ```ControlCenter.ControlCenterPage > Grid#RootGrid```
+    ```ControlCenter.ControlCenterPage > Grid#RootGrid```
 - Styles:
-  ```RenderTransform:=<RotateTransform Angle="180" />  RenderTransformOrigin=0.5,0.5```
+    ```RenderTransform:=<RotateTransform Angle="180" />  RenderTransformOrigin=0.5,0.5```
 
 </details>
 
@@ -82,9 +82,9 @@ There are some (optional) tweaks you need to add if youre using the "Theme Selec
   <summary>Hide the Focus Timer from Notification Center</summary>
 
 - Target:
-  ```ActionCenter.FocusSessionControl```
+    ```ActionCenter.FocusSessionControl```
 - Styles:
-  ```Visibility=1```
+    ```Visibility=1```
 
 </details>
 
