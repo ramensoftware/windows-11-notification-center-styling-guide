@@ -1,9 +1,8 @@
 # BetterControl11 theme for Windows 11 Notification Center Styler
 
-A theme that is inspired by MacOS Control Center and Windows 10 Action Center
+A theme that is inspired by macOS Control Center and Windows 10 Action Center.
 
 **Author**: [TheGamer1445891](https://github.com/TheGamer1445891)
-
 
 ![Notification Center Minimal](screenshot2.png)
 ![Notification Center](screenshot1.png)
@@ -11,31 +10,21 @@ A theme that is inspired by MacOS Control Center and Windows 10 Action Center
 ![Control Center](screenshot3.png)
 
 > [!NOTE]
-> Please turn on this option in the settings:
+> Please turn on this option in the settings: \
 > ![image](how-to.png)
-
-## Theme selection
-
-The theme is integrated into the mod and can be selected directly from the mod's
-settings:
-
-* Open the Windows 11 Notification Center Styler mod in Windhawk.
-* Go to the "Settings" tab.
-* Select the theme and save the settings.
 
 ### Notes
 
 > [!NOTE]
-> This Theme moves some of the Control Center Quick Actions Buttons offscreen.
-> Please reposition your Quick Actions Buttons like in the image.
+> This theme moves some of the Control Center Quick Actions buttons offscreen.
+> Please reposition your Quick Actions buttons like in the image.
 
-> (This Theme works best on Dark Mode)
+> (This theme works best in dark mode)
 
-
-There are some (optional) tweaks you need to add if youre using the "Theme Selection" method:
+There are some (optional) tweaks you need to add if you're using the "Theme Selection" method:
 
 <details>
-  <summary>Control Center like animations for Notification Center (credit to https://github.com/Lockframe):</summary>
+  <summary>Control Center-like animations for Notification Center (credit to https://github.com/Lockframe):</summary>
 
 - Target:
     ```ActionCenter.NotificationCenterPage > Grid > Grid```
@@ -50,7 +39,7 @@ There are some (optional) tweaks you need to add if youre using the "Theme Selec
 </details>
 
 <details>
-  <summary>Move Control Center to the top (Mainly for top taskbars):</summary>
+  <summary>Move Control Center to the top (mainly for top taskbars):</summary>
 
 - Target:
     ```ControlCenter.ControlCenterPage```
@@ -70,7 +59,7 @@ There are some (optional) tweaks you need to add if youre using the "Theme Selec
 </details>
 
 <details>
-  <summary>Flip the Control Center animation (important for top alignment Control Center)</summary>
+  <summary>Flip the Control Center animation (important for top-aligned Control Center)</summary>
 
 - Target:
     ```ControlCenter.ControlCenterPage```
@@ -94,11 +83,20 @@ There are some (optional) tweaks you need to add if youre using the "Theme Selec
 
 </details>
 
+## Theme selection
+
+The theme is integrated into the mod and can be selected directly from the mod's
+settings:
+
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
-* Open the Windows 11 Taskbar Styler mod in Windhawk.
+* Open the Windows 11 Notification Center Styler mod in Windhawk.
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
