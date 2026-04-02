@@ -309,18 +309,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[69].target": "Button#ExpandCollapseButton",
   "controlStyles[69].styles[0]": "AccessKey=e",
   "styleConstants[0]": "transparent = Transparent",
-  "styleConstants[1]": "Background = <WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.2\"  />",
-  "styleConstants[2]": "ElementBackground = <WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.4\"  />",
-  "styleConstants[3]": "AccentBackground =<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAccentColorLight1}\" TintOpacity=\"0.2\"  />",
+  "styleConstants[1]": "Background = <WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.4\"  />",
+  "styleConstants[2]": "ElementBackground = <WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.4\"  />",
+  "styleConstants[3]": "AccentBackground =<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemAccentColorLight1}\" TintOpacity=\"0.2\"  />",
   "styleConstants[4]": "ElementBackground2 = <WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.2\"  />",
-  "styleConstants[5]": "CornerRadius = 12",
-  "styleConstants[6]": "ElementCornerRadius = 8",
   "controlStyles[33].styles[0]": "Grid.Column = 1",
   "controlStyles[25].styles[2]": "Background := $Background",
-  "styleConstants[7]": "BorderThickness=0.3,1,0.3,0.3",
-  "styleConstants[8]": "ElementBorderThickness=0.3,0.3,0.3,1",
-  "styleConstants[9]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>",
-  "styleConstants[10]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
+  "styleConstants[5]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>",
+  "styleConstants[6]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
   "controlStyles[67].styles[1]": "BorderBrush := $ElementBorderBrush",
   "controlStyles[66].styles[1]": "BorderThickness = $ElementBorderThickness",
   "controlStyles[66].styles[2]": "BorderBrush := $ElementBorderBrush",
@@ -352,7 +348,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[5].styles[5]": "BorderThickness = $BorderThickness",
   "controlStyles[5].styles[6]": "BorderBrush := $BorderBrush",
   "controlStyles[6].styles[5]": "BorderThickness = $BorderThickness",
-  "controlStyles[6].styles[6]": "BorderBrush := $BorderBrush"
+  "controlStyles[6].styles[6]": "BorderBrush := $BorderBrush",
+  "styleConstants[7]": "BorderThickness=0.3,1,0.3,0.3",
+  "styleConstants[8]": "ElementBorderThickness=0.3,0.3,0.3,1",
+  "styleConstants[9]": "CornerRadius = 12",
+  "styleConstants[10]": "ElementCornerRadius = 8"
 }
 ```
 
