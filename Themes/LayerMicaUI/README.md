@@ -446,7 +446,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[60].styles[0]": "Margin=5,-3,5,0",
     "controlStyles[60].styles[1]": "Padding=8,0,8,0",
     "controlStyles[60].styles[2]": "MaxHeight=160",
-    "controlStyles[60].styles[3]": "//Notification in Notification grid > screenshot or attatched image container",
+    "controlStyles[60].styles[3]": "//Notification in Notification grid > screenshot or attached image container",
 
   "controlStyles[61].target": "ActionCenter.GroupView > Grid#GroupGrid",
     "controlStyles[61].styles[0]": "Margin=5,5,5,-3",
@@ -460,7 +460,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[62].styles[0]": "Height=46",
     "controlStyles[62].styles[1]": "Margin=-4,-5,-4,0",
     "controlStyles[62].styles[2]": "Padding=0,-2,0,-2",
-    "controlStyles[62].styles[3]": "//Calendar Grid > Calendar Month Name Contrainer Grid",
+    "controlStyles[62].styles[3]": "//Calendar Grid > Calendar Month Name Container Grid",
 
   "controlStyles[63].target": "Grid#MediaTransportControlsRoot > Grid > Image#IconImage",
     "controlStyles[63].styles[0]": "Opacity=0.8",
@@ -612,7 +612,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[90].styles[0]": "FontFamily=$ThFnt",
     "controlStyles[90].styles[1]": "FontWeight=$ThHdnWt",
     "controlStyles[90].styles[2]": "FontSize=15",
-    "controlStyles[90].styles[3]": "//not sure which header buttom this is",
+    "controlStyles[90].styles[3]": "//not sure which header button this is",
 
   "controlStyles[91].target": "TextBlock#ClockWithMeridian",
     "controlStyles[91].styles[0]": "FontFamily=$ThFnt",
@@ -814,7 +814,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[128].target": "StackPanel > StackPanel > Button > ContentPresenter#ContentPresenter > TextBlock",
     "controlStyles[128].styles[0]": "FontFamily=$ThFnt",
     "controlStyles[128].styles[1]": "FontWeight=$ThFntWt",
-    "controlStyles[128].styles[2]": "//An attemp to apply Text styles to more buttons of similar structure",
+    "controlStyles[128].styles[2]": "//An attempt to apply Text styles to more buttons of similar structure",
 
   "controlStyles[129].target": "TextBlock#ProjectInterfaceDeviceTileTextDeviceStatus",
     "controlStyles[129].styles[0]": "FontFamily=$ThFnt",
@@ -965,7 +965,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
   "controlStyles[159].target": "StackPanel > Button",
     "controlStyles[159].styles[0]": "CornerRadius=$InnerRadius",
-    "controlStyles[159].styles[1]": "//An attempt to apply corner radius to more buttons with similar stucture"
+    "controlStyles[159].styles[1]": "//An attempt to apply corner radius to more buttons with similar structure"
 }
 ```
 </details>
