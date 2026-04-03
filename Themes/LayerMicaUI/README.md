@@ -1,4 +1,5 @@
 # LayerMicaUI theme for Windows 11 Notification Center Styler
+
 **Author**: [Nimai-HK](https://github.com/Nimai-HK)
 
 ![Preview](screenshot.png)
@@ -16,7 +17,7 @@
 ## Notes
 - Optimized for Windows 11 **25H2**.
 - Fully compatible with both light and dark modes.
-- Recommended to enable "Show time in notification center" Setting.
+- Recommended to enable "Show time in notification center" setting.
 
 ---
 
@@ -25,7 +26,7 @@
   <summary>Font Customization (Click to expand)</summary>
 
 - Font to be installed: [Nunito](https://fonts.google.com/specimen/Nunito)
-- Add these items to the "Style constants" section of the settings page of the Windows 11 Notification Center Styler Mod
+- Add these items to the "Style constants" section of the settings page of the Windows 11 Notification Center Styler mod.
 
   ```
   ThFntWt=Semibold
@@ -36,10 +37,10 @@
 <details>
   <summary>Control Center Island Layer Size (Click to expand)</summary>
 
-- This is the layer that is present in the control center, volume and brightness sliders region.
-![Guiding Image](control-center-layer.png)
-- Some users have a different number of sliders here. To make the theme fit your current setup, choose the appropriate phrase.
-- Add these items to the "Style constants" section of the settings page of the Windows 11 Notification Center Styler Mod.\
+- This is the layer that is present in the control center, volume and brightness sliders region. \
+  ![Guiding Image](control-center-layer.png)
+- Some users have a different number of sliders here. To make the theme fit your current setup, choose the appropriate option.
+- Add these items to the "Style constants" section of the settings page of the Windows 11 Notification Center Styler mod.
 - To be added:
   ```
   ControlCenterLayer=$<Option>
@@ -67,6 +68,9 @@
 - [LayerMicaUI Taskbar Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI)
 
 - [LayerMicaUI Start Menu Theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/LayerMicaUI)
+
+## Credits
+- Thanks [Lockframe](https://github.com/Lockframe) and [OsamaHJT](https://github.com/OsamaHJT) for helping me find the targets.
 
 ## Theme selection
 
@@ -969,6 +973,3 @@ The theme styles can also be imported manually. To do that, follow these steps:
 }
 ```
 </details>
-
-## Credits
- - Thanks [Lockframe](https://github.com/Lockframe) and [OsamaHJT](https://github.com/OsamaHJT) for helping me find the targets
