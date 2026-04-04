@@ -7,7 +7,6 @@
 ### Requirements
 
 * [Windows 11 Notification Center Styler](https://windhawk.net/mods/windows-11-notification-center-styler)
-* [Shell Flyout Positions](https://windhawk.net/mods/shell-flyout-positions)
 
 ---
 
