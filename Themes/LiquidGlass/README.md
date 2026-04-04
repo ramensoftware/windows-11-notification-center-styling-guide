@@ -16,25 +16,6 @@
 
 ---
 
-### Shell Flyout Positions
-
-* Open the "Shell Flyout Positions" mod in Windhawk
-* Go to the "Advanced" tab and copy the code below into the "Mod settings" box and click "Save".
-
-<details>
-<summary>Content to import (click to expand)</summary>
-
-```json
-{
-"notificationCenter.horizontalAlignment": "tray",
-"notificationCenter.horizontalShift": 0,
-"actionCenter.horizontalAlignment": "same",
-"actionCenter.horizontalShift": 0
-}
-```
-
-</details>
-
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
