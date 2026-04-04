@@ -1,6 +1,6 @@
 # Borderless theme for Windows 11 Notification Center Styler
 
-Removes all borders drop shadows from notification center, quick settings and taskbar jump lists as well (thus the name), with added added bonus of top-aligned notification center, so it fits dock layouts, also desktop toasts resized to 348 for consistency with the notification center toasts.
+Removes all borders and drop shadows from notification center, quick settings and taskbar jump lists as well (thus the name), with the added bonus of a top-aligned notification center, so it fits dock layouts. Also, desktop toasts are resized to 348 for consistency with the notification center toasts.
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
