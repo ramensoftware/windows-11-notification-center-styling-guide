@@ -6,12 +6,6 @@ A notification center theme designed to match [the Fluid Start Menu theme](https
 
 ![Preview 1](screenshot.png) ![Preview 2](screenshot-2.png)
 
-> [!NOTE]
-> To use with Light mode, change the `BorderBrush` styleConstant to:
-> ```ini
-> BorderBrush=<LinearGradientBrush x:Key="ShellTaskbarItemGradientStrokeColorSecondaryBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3"><LinearGradientBrush.RelativeTransform><ScaleTransform ScaleY="-1" CenterY="0.5" /></LinearGradientBrush.RelativeTransform><LinearGradientBrush.GradientStops><GradientStop Offset="0.33" Color="#0F000000" /><GradientStop Offset="1" Color="#05000000" /></LinearGradientBrush.GradientStops></LinearGradientBrush>
-> ```
-
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
@@ -119,8 +113,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[25].styles[0]": "BorderBrush:=$BorderBrush",
   "controlStyles[25].styles[1]": "BorderThickness=1",
   "controlStyles[25].styles[2]": "CornerRadius=$CornerRadius",
-  "styleConstants[0]": "BorderBrush=<LinearGradientBrush x:Key=\"ShellTaskbarItemGradientStrokeColorSecondaryBrush\" MappingMode=\"Absolute\" StartPoint=\"0,0\" EndPoint=\"0,3\"><LinearGradientBrush.GradientStops><GradientStop Offset=\"0.33\" Color=\"#1AFFFFFF\" /><GradientStop Offset=\"1\" Color=\"#0FFFFFFF\" /></LinearGradientBrush.GradientStops></LinearGradientBrush>",
-  "styleConstants[1]": "BorderThickness=2",
+  "styleConstants[0]": "BorderBrush=<LinearGradientBrush x:Key=\"ShellTaskbarItemGradientStrokeColorSecondaryBrush\" MappingMode=\"Absolute\" StartPoint=\"0,0\" EndPoint=\"0,3\"><LinearGradientBrush.GradientStops><GradientStop Offset=\"0.33\" Color=\"{ThemeResource ControlFillColorSecondary}\" /><GradientStop Offset=\"1\" Color=\"{ThemeResource ControlFillColorTertiary}\" /></LinearGradientBrush.GradientStops></LinearGradientBrush>",
+  "styleConstants[1]": "BorderThickness=1",
   "styleConstants[2]": "CornerRadius=4"
 }
 ```
