@@ -553,7 +553,7 @@ controlStyles:
       - HorizontalAlignment=Center
       - FontFamily=$ThFnt
       - FontWeight=$ThFntWt
-      - '//Do Not Disturb Subtext > Main ''Do not Disturb is on'' TextBlock '
+      - //Do Not Disturb Subtext > Main 'Do not Disturb is on' TextBlock
   - target: Grid#DoNotDisturbSubtext > TextBlock[1]
     styles:
       - Visibility=1
@@ -631,7 +631,7 @@ controlStyles:
       - FontFamily=$ThFnt
       - FontWeight=$ThFntWt
       - FontSize=13
-      - '//Notification Center > No new Notifications text '
+      - //Notification Center > No new Notifications text
   - target: TextBlock[AutomationProperties.AutomationId=TextTopologyTileDescription]
     styles:
       - FontFamily=$ThFnt

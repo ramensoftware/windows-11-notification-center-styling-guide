@@ -270,7 +270,7 @@ controlStyles:
     styles:
       - Background=Transparent
       - BorderBrush=Transparent
-      - '//Target= Calendar > Focus Grid > Focus Button '
+      - //Target= Calendar > Focus Grid > Focus Button
   - target: Grid#ControlCenterRegion
     styles:
       - Background=Transparent
