@@ -31,87 +31,114 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Grid#NotificationCenterGrid",
-  "controlStyles[0].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[0].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[0].styles[2]": "CornerRadius=15",
-  "controlStyles[1].target": "Grid#CalendarCenterGrid",
-  "controlStyles[1].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[1].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[1].styles[2]": "CornerRadius=15",
-  "controlStyles[2].target": "ScrollViewer#CalendarControlScrollViewer",
-  "controlStyles[2].styles[0]": "Background=Transparent",
-  "controlStyles[3].target": "Border#CalendarHeaderMinimizedOverlay",
-  "controlStyles[3].styles[0]": "Background=Transparent",
-  "controlStyles[4].target": "ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid",
-  "controlStyles[4].styles[0]": "Background=Transparent",
-  "controlStyles[5].target": "MenuFlyoutPresenter > Border",
-  "controlStyles[5].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#00000000\"/>",
-  "controlStyles[5].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[5].styles[2]": "CornerRadius=15",
-  "controlStyles[5].styles[3]": "Padding=2,4,2,4",
-  "controlStyles[6].target": "Border#JumpListRestyledAcrylic",
-  "controlStyles[6].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[6].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[6].styles[2]": "CornerRadius=15",
-  "controlStyles[6].styles[3]": "Margin=-2,-2,-2,-2",
-  "controlStyles[7].target": "Grid#ControlCenterRegion",
-  "controlStyles[7].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[7].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[7].styles[2]": "CornerRadius=15",
-  "controlStyles[8].target": "Windows.UI.Xaml.Controls.Grid#L1Grid > Border",
-  "controlStyles[8].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[9].target": "Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion",
-  "controlStyles[9].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[9].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[9].styles[2]": "CornerRadius=15",
-  "controlStyles[10].target": "Grid#MediaTransportControlsRoot",
-  "controlStyles[10].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[11].target": "ContentPresenter#PageContent",
-  "controlStyles[11].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[12].target": "ContentPresenter#PageContent > Grid > Border",
-  "controlStyles[12].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[13].target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot",
-  "controlStyles[13].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[14].target": "QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot > ContentPresenter#PageHeader",
-  "controlStyles[14].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[15].target": "ScrollViewer#ListContent",
-  "controlStyles[15].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[16].target": "ActionCenter.FlexibleToastView#FlexibleNormalToastView",
-  "controlStyles[16].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-  "controlStyles[17].target": "Border#ToastBackgroundBorder2",
-  "controlStyles[17].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[17].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[17].styles[2]": "CornerRadius=15",
-  "controlStyles[18].target": "JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
-  "controlStyles[18].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0",
-  "controlStyles[18].styles[1]": "FocusVisualSecondaryThickness=0,0,0,0",
-  "controlStyles[19].target": "JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder",
-  "controlStyles[19].styles[0]": "FocusVisualPrimaryThickness=0,0,0,0",
-  "controlStyles[20].target": "ActionCenter.FlexibleItemView",
-  "controlStyles[20].styles[0]": "CornerRadius=15",
-  "controlStyles[21].target": "ControlCenter.MediaTransportControls#MediaTransportControls > Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion",
-  "controlStyles[21].styles[0]": "Height=Auto",
-  "controlStyles[22].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage",
-  "controlStyles[22].styles[0]": "Width=$thumbnailImageSize",
-  "controlStyles[22].styles[1]": "Height=$thumbnailImageSize",
-  "controlStyles[22].styles[2]": "HorizontalAlignment=Center",
-  "controlStyles[22].styles[3]": "VerticalAlignment=Top",
-  "controlStyles[22].styles[4]": "Grid.Column=1",
-  "controlStyles[22].styles[5]": "Margin=0,2,0,45",
-  "controlStyles[23].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[23].styles[0]": "CornerRadius=10",
-  "controlStyles[24].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer",
-  "controlStyles[24].styles[0]": "VerticalAlignment=Bottom",
-  "controlStyles[24].styles[1]": "Grid.Column=0",
-  "controlStyles[25].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText",
-  "controlStyles[25].styles[0]": "TextAlignment=Center",
-  "controlStyles[26].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
-  "controlStyles[26].styles[0]": "TextAlignment=Center",
-  "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#25323232\"/>",
-  "styleConstants[1]": "thumbnailImageSize=300"
-}
+```yaml
+styleConstants:
+  - CommonBgBrush=<WindhawkBlur BlurAmount="25" TintColor="#25323232"/>
+  - thumbnailImageSize=300
+controlStyles:
+  - target: Grid#NotificationCenterGrid
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+  - target: Grid#CalendarCenterGrid
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+  - target: ScrollViewer#CalendarControlScrollViewer
+    styles:
+      - Background=Transparent
+  - target: Border#CalendarHeaderMinimizedOverlay
+    styles:
+      - Background=Transparent
+  - target: ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid
+    styles:
+      - Background=Transparent
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#00000000"/>
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+      - Padding=2,4,2,4
+  - target: Border#JumpListRestyledAcrylic
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+      - Margin=-2,-2,-2,-2
+  - target: Grid#ControlCenterRegion
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+  - target: Windows.UI.Xaml.Controls.Grid#L1Grid > Border
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+  - target: Grid#MediaTransportControlsRoot
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: ContentPresenter#PageContent
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: ContentPresenter#PageContent > Grid > Border
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot > ContentPresenter#PageHeader
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: ScrollViewer#ListContent
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: ActionCenter.FlexibleToastView#FlexibleNormalToastView
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: Border#ToastBackgroundBorder2
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
+  - target: JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
+    styles:
+      - FocusVisualPrimaryThickness=0,0,0,0
+      - FocusVisualSecondaryThickness=0,0,0,0
+  - target: JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
+    styles:
+      - FocusVisualPrimaryThickness=0,0,0,0
+  - target: ActionCenter.FlexibleItemView
+    styles:
+      - CornerRadius=15
+  - target: ControlCenter.MediaTransportControls#MediaTransportControls > Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion
+    styles:
+      - Height=Auto
+  - target: Windows.UI.Xaml.Controls.Grid#ThumbnailImage
+    styles:
+      - Width=$thumbnailImageSize
+      - Height=$thumbnailImageSize
+      - HorizontalAlignment=Center
+      - VerticalAlignment=Top
+      - Grid.Column=1
+      - Margin=0,2,0,45
+  - target: Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=10
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer
+    styles:
+      - VerticalAlignment=Bottom
+      - Grid.Column=0
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText
+    styles:
+      - TextAlignment=Center
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText
+    styles:
+      - TextAlignment=Center
 ```
 </details>
