@@ -237,10 +237,8 @@ controlStyles:
     styles:
       - BorderBrush:=$ThemeBorder
       - Height=2
-      - ''
+      - //Margin=0,-3,0,6
       - //Calendar > Border Between Month Labels - Day scroll
-    style:
-      - Margin=0,-3,0,6
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Border[1]
     styles:
       - CornerRadius=$InnerRadius
