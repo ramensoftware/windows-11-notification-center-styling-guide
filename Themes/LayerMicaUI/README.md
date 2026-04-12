@@ -224,7 +224,7 @@ controlStyles:
       - BorderThickness=1
       - CornerRadius=$InnerRadius
       - Background=Transparent
-      - ////Calendar Grid > Calendar Background Layer Border
+      - //Calendar Grid > Calendar Background Layer Border
   - target: ActionCenter.FlexibleItemView > Grid#MainGrid > Grid#ItemGrid > Grid > Border#ItemOpaquePlating
     styles:
       - Margin=5,-41,5,6
@@ -237,7 +237,6 @@ controlStyles:
     styles:
       - BorderBrush:=$ThemeBorder
       - Height=2
-      - //Margin=0,-3,0,6
       - //Calendar > Border Between Month Labels - Day scroll
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Border[1]
     styles:
