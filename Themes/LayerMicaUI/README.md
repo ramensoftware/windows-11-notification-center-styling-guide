@@ -101,15 +101,15 @@ styleConstants:
   - ThemeControlBorder=<SolidColorBrush Color="{ThemeResource ControlBorder}" />
   - ThemeOverlay=<SolidColorBrush Color="{ThemeResource Overlay}" />
   - ThFnt=Nunito
-  - ThFntWt=Normal
-  - ThHdnWt=Semibold
+  - ThFntWt=Semibold
+  - ThHdnWt=Bold
   - ThemeOutBorder=<SolidColorBrush Color="#66757575"/>
   - ThemeBtn=<SolidColorBrush Color="{ThemeResource Btn}" />
   - ControlCenterLayer=120
   - ThemeHover=<SolidColorBrush Color="{ThemeResource Hover}" />
-  - OneSlider=60
+  - OneSlider=67
   - TwoSlider=120
-  - ThreeSlider=180
+  - ThreeSlider=177
 controlStyles:
   - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#BrightnessPlayer
     styles:
@@ -140,13 +140,6 @@ controlStyles:
     styles:
       - CornerRadius=$InnerRadius
       - //Page Content Border, not sure which one
-  - target: Border#ItemOpaquePlating
-    styles:
-      - CornerRadius=$InnerRadius
-      - Margin=6,3,6,3
-      - BorderBrush:=$ThemeBorder
-      - BorderThickness=1
-      - //not sure
   - target: Border#ToastBackgroundBorder2
     styles:
       - BorderThickness=1
@@ -227,8 +220,8 @@ controlStyles:
       - //Calendar Grid > Calendar Background Layer Border
   - target: ActionCenter.FlexibleItemView > Grid#MainGrid > Grid#ItemGrid > Grid > Border#ItemOpaquePlating
     styles:
-      - Margin=5,-41,5,6
-      - CornerRadius=$InnerRadius
+      - Margin=6,-3,6,6
+      - CornerRadius=3,3,$InnerRadius,$InnerRadius
       - BorderThickness=1
       - BorderBrush:=$ThemeBorder
       - Background:=$ThemeOverlay
@@ -437,21 +430,22 @@ controlStyles:
       - Margin=5,-3,5,0
       - Padding=8,0,8,0
       - MaxHeight=160
-      - //Notification in Notification grid > screenshot or attached image container
+      - //Notification in Notification grid > screenshot or attatched image container
   - target: ActionCenter.GroupView > Grid#GroupGrid
     styles:
-      - Margin=5,5,5,-3
-      - Background=Transparent
-      - Padding=0
-      - BorderThickness=0,0,0,2
+      - Margin=6,5,6,-1
+      - Background:=$ThemeOverlay
+      - Padding=0,2,0,0
+      - BorderThickness=1,1,1,2
       - BorderBrush:=$ThemeBorder
-      - //Notification in Notification grid > App Name Group Header
+      - CornerRadius=$InnerRadius,$InnerRadius,3,3
+      - //Notification in Notification grid > App Name Main Header
   - target: CalendarView#CalendarControl > Border > Grid > Grid[1]
     styles:
       - Height=46
       - Margin=-4,-5,-4,0
       - Padding=0,-2,0,-2
-      - //Calendar Grid > Calendar Month Name Container Grid
+      - //Calendar Grid > Calendar Month Name Contrainer Grid
   - target: Grid#MediaTransportControlsRoot > Grid > Image#IconImage
     styles:
       - Opacity=0.8
@@ -603,7 +597,7 @@ controlStyles:
       - FontFamily=$ThFnt
       - FontWeight=$ThHdnWt
       - FontSize=15
-      - //not sure which header button this is
+      - //not sure which header buttom this is
   - target: TextBlock#ClockWithMeridian
     styles:
       - FontFamily=$ThFnt
@@ -628,7 +622,7 @@ controlStyles:
       - FontFamily=$ThFnt
       - FontWeight=$ThFntWt
       - FontSize=13
-      - //Notification Center > No new Notifications text
+      - '//Notification Center > No new Notifications text '
   - target: TextBlock[AutomationProperties.AutomationId=TextTopologyTileDescription]
     styles:
       - FontFamily=$ThFnt
@@ -805,7 +799,7 @@ controlStyles:
     styles:
       - FontFamily=$ThFnt
       - FontWeight=$ThFntWt
-      - //An attempt to apply Text styles to more buttons of similar structure
+      - //An attemp to apply Text styles to more buttons of similar structure
   - target: TextBlock#ProjectInterfaceDeviceTileTextDeviceStatus
     styles:
       - FontFamily=$ThFnt
@@ -956,7 +950,12 @@ controlStyles:
   - target: StackPanel > Button
     styles:
       - CornerRadius=$InnerRadius
-      - //An attempt to apply corner radius to more buttons with similar structure
+      - //An attempt to apply corner radius to more buttons with similar stucture
+  - target: TextBlock[AutomationProperties.AutomationId=NewDevices]
+    styles:
+      - FontFamily=$ThFnt
+      - FontWeight=$ThFntWt
+      - //New Devices TextBlock in Bluetooth SubPage
 themeResourceVariables:
   - Overlay@Light=#55FFFFFF
   - Overlay@Dark=#09FFFFFF
