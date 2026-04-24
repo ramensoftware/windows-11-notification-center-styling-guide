@@ -430,7 +430,7 @@ controlStyles:
       - Margin=5,-3,5,0
       - Padding=8,0,8,0
       - MaxHeight=160
-      - //Notification in Notification grid > screenshot or attatched image container
+      - //Notification in Notification grid > screenshot or attached image container
   - target: ActionCenter.GroupView > Grid#GroupGrid
     styles:
       - Margin=6,5,6,-1
@@ -597,7 +597,7 @@ controlStyles:
       - FontFamily=$ThFnt
       - FontWeight=$ThHdnWt
       - FontSize=15
-      - //not sure which header buttom this is
+      - //not sure which header button this is
   - target: TextBlock#ClockWithMeridian
     styles:
       - FontFamily=$ThFnt
@@ -622,7 +622,7 @@ controlStyles:
       - FontFamily=$ThFnt
       - FontWeight=$ThFntWt
       - FontSize=13
-      - '//Notification Center > No new Notifications text '
+      - //Notification Center > No new Notifications text
   - target: TextBlock[AutomationProperties.AutomationId=TextTopologyTileDescription]
     styles:
       - FontFamily=$ThFnt
@@ -799,7 +799,7 @@ controlStyles:
     styles:
       - FontFamily=$ThFnt
       - FontWeight=$ThFntWt
-      - //An attemp to apply Text styles to more buttons of similar structure
+      - //An attempt to apply Text styles to more buttons of similar structure
   - target: TextBlock#ProjectInterfaceDeviceTileTextDeviceStatus
     styles:
       - FontFamily=$ThFnt
@@ -950,7 +950,7 @@ controlStyles:
   - target: StackPanel > Button
     styles:
       - CornerRadius=$InnerRadius
-      - //An attempt to apply corner radius to more buttons with similar stucture
+      - //An attempt to apply corner radius to more buttons with similar structure
   - target: TextBlock[AutomationProperties.AutomationId=NewDevices]
     styles:
       - FontFamily=$ThFnt
