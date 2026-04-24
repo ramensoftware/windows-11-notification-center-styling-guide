@@ -101,8 +101,8 @@ styleConstants:
   - ThemeControlBorder=<SolidColorBrush Color="{ThemeResource ControlBorder}" />
   - ThemeOverlay=<SolidColorBrush Color="{ThemeResource Overlay}" />
   - ThFnt=Nunito
-  - ThFntWt=Semibold
-  - ThHdnWt=Bold
+  - ThFntWt=Normal
+  - ThHdnWt=Semibold
   - ThemeOutBorder=<SolidColorBrush Color="#66757575"/>
   - ThemeBtn=<SolidColorBrush Color="{ThemeResource Btn}" />
   - ControlCenterLayer=120
