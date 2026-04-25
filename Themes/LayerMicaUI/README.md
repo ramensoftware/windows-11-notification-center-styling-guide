@@ -93,6 +93,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: ''
 styleConstants:
   - ThemeLayer=<AcrylicBrush BackgroundSource="Backdrop" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.1" TintLuminosityOpacity="0.8" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
   - OuterRadius=10
@@ -220,9 +221,9 @@ controlStyles:
       - //Calendar Grid > Calendar Background Layer Border
   - target: ActionCenter.FlexibleItemView > Grid#MainGrid > Grid#ItemGrid > Grid > Border#ItemOpaquePlating
     styles:
-      - Margin=6,-3,6,6
+      - Margin=6,-1,6,6
       - CornerRadius=3,3,$InnerRadius,$InnerRadius
-      - BorderThickness=1
+      - BorderThickness=1,0,1,1
       - BorderBrush:=$ThemeBorder
       - Background:=$ThemeOverlay
       - //Notification (Main item) Background
@@ -436,7 +437,7 @@ controlStyles:
       - Margin=6,5,6,-1
       - Background:=$ThemeOverlay
       - Padding=0,2,0,0
-      - BorderThickness=1,1,1,2
+      - BorderThickness=1
       - BorderBrush:=$ThemeBorder
       - CornerRadius=$InnerRadius,$InnerRadius,3,3
       - //Notification in Notification grid > App Name Main Header
