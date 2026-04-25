@@ -445,7 +445,7 @@ controlStyles:
       - Height=46
       - Margin=-4,-5,-4,0
       - Padding=0,-2,0,-2
-      - //Calendar Grid > Calendar Month Name Contrainer Grid
+      - //Calendar Grid > Calendar Month Name Container Grid
   - target: Grid#MediaTransportControlsRoot > Grid > Image#IconImage
     styles:
       - Opacity=0.8
