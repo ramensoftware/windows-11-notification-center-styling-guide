@@ -107,9 +107,9 @@ styleConstants:
   - ThemeBtn=<SolidColorBrush Color="{ThemeResource Btn}" />
   - ControlCenterLayer=120
   - ThemeHover=<SolidColorBrush Color="{ThemeResource Hover}" />
-  - OneSlider=60
+  - OneSlider=67
   - TwoSlider=120
-  - ThreeSlider=180
+  - ThreeSlider=177
 controlStyles:
   - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#BrightnessPlayer
     styles:
@@ -140,13 +140,6 @@ controlStyles:
     styles:
       - CornerRadius=$InnerRadius
       - //Page Content Border, not sure which one
-  - target: Border#ItemOpaquePlating
-    styles:
-      - CornerRadius=$InnerRadius
-      - Margin=6,3,6,3
-      - BorderBrush:=$ThemeBorder
-      - BorderThickness=1
-      - //not sure
   - target: Border#ToastBackgroundBorder2
     styles:
       - BorderThickness=1
@@ -227,9 +220,9 @@ controlStyles:
       - //Calendar Grid > Calendar Background Layer Border
   - target: ActionCenter.FlexibleItemView > Grid#MainGrid > Grid#ItemGrid > Grid > Border#ItemOpaquePlating
     styles:
-      - Margin=5,-41,5,6
-      - CornerRadius=$InnerRadius
-      - BorderThickness=1
+      - Margin=6,-1,6,6
+      - CornerRadius=3,3,$InnerRadius,$InnerRadius
+      - BorderThickness=1,0,1,1
       - BorderBrush:=$ThemeBorder
       - Background:=$ThemeOverlay
       - //Notification (Main item) Background
@@ -440,12 +433,13 @@ controlStyles:
       - //Notification in Notification grid > screenshot or attached image container
   - target: ActionCenter.GroupView > Grid#GroupGrid
     styles:
-      - Margin=5,5,5,-3
-      - Background=Transparent
-      - Padding=0
-      - BorderThickness=0,0,0,2
+      - Margin=6,5,6,-1
+      - Background:=$ThemeOverlay
+      - Padding=0,2,0,0
+      - BorderThickness=1
       - BorderBrush:=$ThemeBorder
-      - //Notification in Notification grid > App Name Group Header
+      - CornerRadius=$InnerRadius,$InnerRadius,3,3
+      - //Notification in Notification grid > App Name Main Header
   - target: CalendarView#CalendarControl > Border > Grid > Grid[1]
     styles:
       - Height=46
@@ -957,6 +951,11 @@ controlStyles:
     styles:
       - CornerRadius=$InnerRadius
       - //An attempt to apply corner radius to more buttons with similar structure
+  - target: TextBlock[AutomationProperties.AutomationId=NewDevices]
+    styles:
+      - FontFamily=$ThFnt
+      - FontWeight=$ThFntWt
+      - //New Devices TextBlock in Bluetooth SubPage
 themeResourceVariables:
   - Overlay@Light=#55FFFFFF
   - Overlay@Dark=#09FFFFFF
