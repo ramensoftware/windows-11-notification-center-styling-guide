@@ -51,10 +51,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```yaml
 styleConstants:
   - Translucent=<WindhawkBlur BlurAmount="15" TintColor="#10808080"/>
-  - Glass=<WindhawkBlur BlurAmount="3" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
+  - Glass=<WindhawkBlur BlurAmount="5" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
   - Frosted=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
-  - Acrylic=<AcrylicBrush TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.3" FallbackColor="{ThemeResource SystemChromeAltHighColor}" />
-  - Background=$Translucent
+  - Acrylic=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.8" />
+  - Background=$Glass
   - BorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="0.0" /><GradientStop Color="#50404040" Offset="0.25" /><GradientStop Color="#50808080" Offset="1" /></LinearGradientBrush>
   - BorderBrush2=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="0.0" /><GradientStop Color="{ThemeResource SystemChromeLowColor}" Offset="0.15" /><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="0.95" /></LinearGradientBrush>
   - overlay=<SolidColorBrush Color="{ThemeResource SystemChromeAltHighColor}" Opacity="0.1" />
@@ -450,11 +450,10 @@ controlStyles:
 ```
 </details>
 
-## Alternate Version
+## Alternate version
 
 This theme is also available with an alternate version that places the media controls on the top of the Action Center, instead of the bottom.
 
-## Action Center
 ![Action Center](Action_Center_2.png)
 
 <details>
