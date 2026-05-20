@@ -10,6 +10,9 @@
 
 ---
 
+> [!NOTE]
+> Support for the LiquidGlas themes is being dropped in favor of a new Fluid Glass theme being released by another author. Their theme is going in the direction this one was aimed and does a lot better than this one does. So, there won't be any future updates to the LiquidGlass themes going forward and they will eventually be removed.
+
 ### Notification Center
 
 ![Screenshot](screenshot.png)
