@@ -1,6 +1,6 @@
 # Unified theme for Windows 11 Notification Center Styler
 
-**Author**: [SandTechStuff](https://github.com/SandTechStuff)
+**Author**: [Sand216](https://github.com/Sand216)
 
 ![Calendar](screenshot.png) \
 ![Quick actions](screenshot-quick-actions.png)
