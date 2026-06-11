@@ -9,7 +9,7 @@
 A dense theme eliminating some of the excessive/useless Notification UI elements:
   - Removed a lot of extra whitespace and gaps: Notifications
     - Before: ![screenshot_Notification_0pre](./screenshot_Notification_0pre.png)
-    - After: ![screenshot_Notification_1pos](./screenshot_Notification_1pos.png)</br>
+    - After: ![screenshot_Notification_1pos](./screenshot_Notification_1pos.png)\
       (also: no "No new notifications", emptiness is a better indicator of nothingness)
   - Removed a lot of extra whitespace and gaps: Calendar
     - Before: ![screenshot_Calendar_0pre](./screenshot_Calendar_0pre.png)
