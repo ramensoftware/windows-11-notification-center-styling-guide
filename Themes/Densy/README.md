@@ -97,7 +97,7 @@ controlStyles:
       - Margin=0,0,0,0 #≝4,2,4,2
   - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.NotificationCenterPage > Grid#RootGrid > Grid#RootContent > Grid#NotificationCenterGrid > Grid#NotificationCenterTopBanner > ActionCenter.ClearAllButton#ClearAllButtonControl > Button#ClearAll > ContentPresenter#ContentPresenter
     styles:
-      - Paddign=0,0,0,0 #≝-16,0,0,-16
+      - Padding=0,0,0,0 #≝-16,0,0,-16
   - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.NotificationCenterPage > Grid#RootGrid > Grid#RootContent > Grid#NotificationCenterGrid > ActionCenter.NotificationCenterView#NotificationCenterView > Grid#MainGrid > ActionCenter.NotificationListView#MainListView
     styles:
       - Margin=0,0,0,0 #≝-16,0,0,-16
