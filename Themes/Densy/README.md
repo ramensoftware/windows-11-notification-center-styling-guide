@@ -1,4 +1,4 @@
-# Dense theme for Windows 11 Notification Center Styler
+# Densy theme for Windows 11 Notification Center Styler
 
 **Author**: [es](https://github.com/eugenesvk)
 
