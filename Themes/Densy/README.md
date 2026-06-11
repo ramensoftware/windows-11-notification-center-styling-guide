@@ -284,7 +284,7 @@ controlStyles:
     styles:
       - Margin=2,0,0,2
 
-  - target: xScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.NotificationCenterPage > Grid#RootGrid
+  - target: //ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.NotificationCenterPage > Grid#RootGrid
     styles:
       - Margin=0,0,0,0
       - Padding=0,0,0,-10
