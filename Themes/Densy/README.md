@@ -99,6 +99,7 @@ controlStyles:
   - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.NotificationCenterPage > Grid#RootGrid > Grid#RootContent > Grid#NotificationCenterGrid > Grid#NotificationCenterTopBanner > ActionCenter.ClearAllButton#ClearAllButtonControl > Button#ClearAll > ContentPresenter#ContentPresenter
     styles:
       - Padding=0,0,0,0 #≝-16,0,0,-16
+      - CornerRadius=0 #≝? button should activate on ∞dimensions to ↗corner
   - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.NotificationCenterPage > Grid#RootGrid > Grid#RootContent > Grid#NotificationCenterGrid > ActionCenter.NotificationCenterView#NotificationCenterView > Grid#MainGrid > ActionCenter.NotificationListView#MainListView
     styles:
       - Margin=0,0,0,0 #≝-16,0,0,-16
