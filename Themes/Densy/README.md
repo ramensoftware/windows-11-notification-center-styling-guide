@@ -369,7 +369,38 @@ controlStyles:
       - Margin=0,0,0,1 #≝0,-4,-1,12
       - Padding=0,0,0,0 #≝?
 
+  # Smaller button
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.ToastCenterPage > Grid#ToastCenterMainGrid > ActionCenter.ToastCenterView#ToastCenterView > ScrollViewer#ToastCenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#ToastCenterGrid > ActionCenter.FlexibleToastView#FlexibleNormalToastView > Grid#MainGrid > Grid#RevealGrid2 > Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2 > ActionCenter.InteractiveView#InteractiveView2 > Grid#InteractiveRootGrid > ActionCenter.RowView > Grid > StackPanel#VerbPanel > ActionCenter.VerbRowView > Grid#VerbRowGrid > ActionCenter.VerbView > Grid > Button#VerbButton > ContentPresenter#ContentPresenter
+    styles:
+      - Padding=2,1,1,2 #≝null
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.ToastCenterPage > Grid#ToastCenterMainGrid > ActionCenter.ToastCenterView#ToastCenterView > ScrollViewer#ToastCenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#ToastCenterGrid > ActionCenter.FlexibleToastView#FlexibleNormalToastView > Grid#MainGrid > Grid#RevealGrid2 > Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2
+    styles:
+      - Height=24 #≝?
 
+  # Smaller button: Type: scenario=incoming call (FlexiblePriorityToastView)
+  # - target: //ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.ToastCenterPage > Grid#ToastCenterMainGrid > ActionCenter.ToastCenterView#ToastCenterView > ScrollViewer#ToastCenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#ToastCenterGrid > ActionCenter.FlexibleToastView#FlexiblePriorityToastView > Grid#MainGrid > Grid#RevealGrid2 > Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2 > ActionCenter.InteractiveView#InteractiveView2 > Grid#InteractiveRootGrid > ActionCenter.RowView > Grid > StackPanel#VerbPanel > ActionCenter.VerbRowView > Grid#VerbRowGrid > ActionCenter.VerbView > Grid > Button#VerbButton > ContentPresenter#ContentPresenter
+  #   styles:
+  #     - Padding=2,1,1,2 #≝?
+  #     - '// TODO: for some reason gets half-covered by a black bar'
+  #     - '// ? how to remove it in Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2'
+  - target: //ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.ToastCenterPage > Grid#ToastCenterMainGrid > ActionCenter.ToastCenterView#ToastCenterView > ScrollViewer#ToastCenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#ToastCenterGrid > ActionCenter.FlexibleToastView#FlexiblePriorityToastView > Grid#MainGrid > Grid#RevealGrid2 > Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2 > ActionCenter.InteractiveView#InteractiveView2 > Grid#InteractiveRootGrid > ActionCenter.RowView > Grid > StackPanel#VerbPanel > ActionCenter.VerbRowView > Grid#VerbRowGrid > ActionCenter.VerbView > Grid > Button#VerbButton > ContentPresenter#ContentPresenter
+    styles:
+      - Height=24 #≝?
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.ToastCenterPage > Grid#ToastCenterMainGrid > ActionCenter.ToastCenterView#ToastCenterView > ScrollViewer#ToastCenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#ToastCenterGrid > ActionCenter.FlexibleToastView#FlexiblePriorityToastView > Grid#MainGrid > Grid#RevealGrid2 > Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2 > ActionCenter.InteractiveView#InteractiveView2 > Grid#InteractiveRootGrid > ActionCenter.RowView > Grid > StackPanel#VerbPanel
+    styles:
+      - BorderThickness=0,0,0,0 #≝3
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > ActionCenter.ToastCenterPage > Grid#ToastCenterMainGrid > ActionCenter.ToastCenterView#ToastCenterView > ScrollViewer#ToastCenterScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#ToastCenterGrid > ActionCenter.FlexibleToastView#FlexiblePriorityToastView > Grid#MainGrid > Grid#RevealGrid2 > Grid#ToastContentExpandedGrid > Grid#InteractiveGrid2 > ActionCenter.InteractiveView#InteractiveView2 > Grid#InteractiveRootGrid > ActionCenter.RowView > Grid > StackPanel#VerbPanel > ActionCenter.VerbRowView > Grid#VerbRowGrid > ActionCenter.VerbView > Grid > Button#VerbButton > ContentPresenter#ContentPresenter
+    styles:
+      - CornerRadius=1 #≝?
+  #  Other button types in ActionCenter.RowView > Grid
+  # + VerbPanel
+  # - EditPanel
+  # - TreePanel
+  # - PickerPanel
+  # - ImagePanel
+  # - RatingPanel
+  # - ProgressPanel
+  # - CardPanel
 
   # Action Center (network/volume buttons to the left of the notification center)
   # Main window
