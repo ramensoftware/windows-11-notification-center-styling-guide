@@ -27,7 +27,7 @@ A dense theme eliminating some of the excessive/useless Notification UI elements
 
 ### Known issues
 
-  - "Quick settings" windows isn't restyled
+  - "Action center"/"Quick settings" flyout window isn't fully restyled, especially nested views
 
 ## Theme selection
 
