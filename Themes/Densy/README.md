@@ -553,10 +553,24 @@ controlStyles:
     styles:
       - Padding=0,2,0,2 #≝11,5,11,6
       - MinHeight=24 #≝40
-  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#LeftFooter
+  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#RightFooter
     styles:
       - Height=26 #≝40
-  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#RightFooter
+  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#LeftFooter > ItemsPresenter > StackPanel > ContentPresenter > ItemsControl > ItemsPresenter > StackPanel > ContentPresenter > ContentControl > ContentPresenter > Button#FooterButton > ContentPresenter#ContentPresenter
+    styles:
+      - Margin=0,0,0,0 #≝2,2,2,2
+  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#LeftFooter > ItemsPresenter > StackPanel > ContentPresenter > ItemsControl
+    styles:
+      - Margin=0,0,0,0 #≝2,3,6,3
+  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#LeftFooter > ItemsPresenter > StackPanel > ContentPresenter > ItemsControl > ItemsPresenter > StackPanel > ContentPresenter > ContentControl > ContentPresenter > Button#FooterButton > ContentPresenter#ContentPresenter > Microsoft.UI.Xaml.Controls.AnimatedIcon#FooterButtonIcon
+    styles:
+      - Width=24 #≝some XAML binding
+      - Height=24 #≝some XAML binding
+  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#LeftFooter > ItemsPresenter > StackPanel > ContentPresenter > ItemsControl > ItemsPresenter > StackPanel > ContentPresenter > ContentControl > ContentPresenter > Button#FooterButton
+    styles:
+      - Padding=0,2,0,2 #≝11,5,11,6
+      - MinHeight=24 #≝40
+  - target: ScrollViewer > ScrollContentPresenter > Border > ControlCenter.ControlCenterPage > Grid#RootGrid > Grid#RootContent > Grid#ControlCenterRegion > ControlCenter.ControlCenterView#ControlCenterView > Grid#RootGrid > Grid#L1Grid > Grid#FooterGrid > ItemsControl#LeftFooter
     styles:
       - Height=26 #≝40
 
