@@ -140,5 +140,20 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText
     styles:
       - TextAlignment=Center
+  - target: GridViewItem[1] > * > Rectangle#HorizontalDecreaseRect
+    styles:
+      - Width=>horizontalDecreaseRectWidth1
+      - MinWidth={{horizontalDecreaseRectWidth1 + 8}}
+  - target: GridViewItem[2] > * > Rectangle#HorizontalDecreaseRect
+    styles:
+      - Width=>horizontalDecreaseRectWidth2
+      - MinWidth={{horizontalDecreaseRectWidth2 + 8}}
+  - target: GridViewItem[3] > * > Rectangle#HorizontalDecreaseRect
+    styles:
+      - Width=>horizontalDecreaseRectWidth3
+      - MinWidth={{horizontalDecreaseRectWidth3 + 8}}
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb
+    styles:
+      - Margin=-8,0,0,0
 ```
 </details>
