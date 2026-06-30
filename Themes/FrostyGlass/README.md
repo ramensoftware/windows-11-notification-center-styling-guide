@@ -254,8 +254,8 @@ controlStyles:
 ## 🔗 Related Projects
 
 Complete the look across your entire UI! Check out my other Frosty Glass styling repositories:
-* [❄️ Frosty Glass Taskbar Styler](https://github.com/guidolamanna/win11-taskbar-styler-frostyglass-windhawk) to apply this exact same aesthetic to your Taskbar, Alt+Tab menu, volume sliders, and more!
-* [❄️ Frosty Glass Start Menu Styler](https://github.com/guidolamanna/win11-startmenu-styler-frostyglass-windhawk) to apply this exact same aesthetic to your Start Menu and Lock Screen!
+* [❄️ Frosty Glass Taskbar Styler](https://github.com/guidolamanna/windows-11-taskbar-styling-guide/blob/main/Themes/FrostyGlass/README.md) to apply this exact same aesthetic to your Taskbar, Alt+Tab menu, volume sliders, and more!
+* [❄️ Frosty Glass Start Menu Styler](https://github.com/guidolamanna/windows-11-start-menu-styling-guide/blob/main/Themes/FrostyGlass/README.md) to apply this exact same aesthetic to your Start Menu and Lock Screen!
 
 ---
 
