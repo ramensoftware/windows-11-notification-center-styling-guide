@@ -27,32 +27,37 @@ The theme styles can be imported manually by following these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: ''
 styleConstants:
-  - Background=<WindhawkBlur BlurAmount="15" TintColor="{ThemeResource SystemAltLowColor}" TintOpacity="0.4"/>
-  - ElementBackground=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemAltLowColor}" TintOpacity="0.3"/>
-  - BorderBrush=<LinearGradientBrush EndPoint="0,1" StartPoint="0,0"><GradientStop Color="#50808080" Offset="0.0"/><GradientStop Color="#50404040" Offset="0.25"/><GradientStop Color="#50808080" Offset="1"/></LinearGradientBrush>
-  - ElementBorderBrush=<LinearGradientBrush EndPoint="0,1" StartPoint="0,0"><GradientStop Color="#50808080" Offset="1"/><GradientStop Color="#50606060" Offset="0.15"/></LinearGradientBrush>
+  - Background=<AcrylicBrush TintColor="#10000020"/>
+  - BorderBrush2=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="0.0" /><GradientStop Color="{ThemeResource SystemChromeLowColor}" Offset="0.25" /><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="1" /></LinearGradientBrush>
   - BorderThickness=1
-  - CornerRadius=12
-  - ElementCornerRadius=8
+  - CornerRadius=10
+  - BorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="0.0" /><GradientStop Color="#50404040" Offset="0.25" /><GradientStop Color="#50808080" Offset="1" /></LinearGradientBrush>
+  - Background2=<AcrylicBrush TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.3" FallbackColor="{ThemeResource SystemChromeAltHighColor}" />
+  - TrayPadding=2
+  - ElementBG=<SolidColorBrush Color="{ThemeResource SystemChromeAltHighColor}" Opacity="0.3" />
+  - ElementBorderThickness=1
+  - ElementBorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="1" /><GradientStop Color="#50606060" Offset="0.15" /></LinearGradientBrush>
+  - ElementCornerRadius=10
   - thumbnailImageSize=300
 controlStyles:
   - target: Grid#NotificationCenterGrid
     styles:
-      - CornerRadius:=$CornerRadius
-      - BorderThickness:=$BorderThickness
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
       - Background:=$Background
       - BorderBrush:=$BorderBrush
   - target: Grid#CalendarCenterGrid
     styles:
-      - CornerRadius:=$CornerRadius
-      - BorderThickness:=$BorderThickness
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
       - Background:=$Background
   - target: Grid#ControlCenterRegion
     styles:
-      - CornerRadius:=$CornerRadius
-      - BorderThickness:=$BorderThickness
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
       - Background:=$Background
       - BorderBrush:=$BorderBrush
   - target: Grid#MediaTransportControlsRegion
@@ -170,7 +175,7 @@ controlStyles:
       - Background:=Transparent
   - target: ActionCenter.FlexibleItemView
     styles:
-      - CornerRadius:=$CornerRadius
+      - CornerRadius=$CornerRadius
   - target: ContentControl#TogglesGroup > ContentPresenter > ControlCenter.PaginatedGridView > Grid
     styles:
       - BorderThickness=0,0,0,0
@@ -196,7 +201,6 @@ controlStyles:
       - Visibility=0
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
-      - Background:=$Background
   - target: Windows.UI.Xaml.Controls.ListViewItem
     styles:
       - Margin=0,0,0,3
@@ -226,6 +230,11 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Grid#SystemItemsContainer > Windows.UI.Xaml.Controls.Border > JumpViewUI.SystemItemListView#SystemItemList
     styles:
       - Margin:=0,3,0,0
+themeResourceVariables:
+  - ''
+resourceVariables:
+  - variableKey: ''
+    value: ''
 
 ```
 
