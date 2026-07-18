@@ -171,6 +171,12 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius:=$CornerRadius
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness:=$BorderThickness
+      - CornerRadius:=$CornerRadius
   - target: ScrollViewer#CalendarControlScrollViewer
     styles:
       - Background:=Transparent
@@ -217,12 +223,6 @@ controlStyles:
   - target: ContentPresenter#PageContent
     styles:
       - Background:=Transparent
-  - target: Windows.UI.Xaml.Controls.Border#ToastBackgroundBorder
-    styles:
-      - Background:=$Background
-      - BorderBrush:=$BorderBrush
-      - BorderThickness:=$BorderThickness
-      - CornerRadius:=$CornerRadius
   - target: Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#ItemOpaquePlating
     styles:
       - CornerRadius:=7

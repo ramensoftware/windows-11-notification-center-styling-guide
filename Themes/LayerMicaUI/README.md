@@ -144,6 +144,11 @@ controlStyles:
     styles:
       - BorderThickness=1
       - BorderBrush:=$ThemeOutBorder
+      - //Notification Toast > Border (older name)
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - BorderThickness=1
+      - BorderBrush:=$ThemeOutBorder
       - //Notification Toast > Border
   - target: Border#CalendarHeaderMinimizedOverlay
     styles:

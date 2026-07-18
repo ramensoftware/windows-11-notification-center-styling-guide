@@ -106,6 +106,11 @@ controlStyles:
       - Background:=$CommonBgBrush
       - BorderThickness=0,0,0,0
       - CornerRadius=15
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0,0,0,0
+      - CornerRadius=15
   - target: JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
     styles:
       - FocusVisualPrimaryThickness=0,0,0,0

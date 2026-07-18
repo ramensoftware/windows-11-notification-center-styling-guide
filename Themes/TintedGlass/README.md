@@ -379,6 +379,11 @@ controlStyles:
       - Background:=$Base
       - BorderThickness=0,0,0,0
       - CornerRadius=$Radius
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - Background:=$Base
+      - BorderThickness=0,0,0,0
+      - CornerRadius=$Radius
   - target: JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
     styles:
       - Background:=$Transparent

@@ -161,6 +161,12 @@ controlStyles:
       - BorderThickness=$BorderThickness
       - CornerRadius=16
       - BorderBrush:=$BorderBrush
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - Background:=$Background
+      - BorderThickness=$BorderThickness
+      - CornerRadius=16
+      - BorderBrush:=$BorderBrush
   - target: JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
     styles:
       - CornerRadius=8
@@ -568,6 +574,12 @@ controlStyles:
     styles:
       - Background=Transparent
   - target: Border#ToastBackgroundBorder2
+    styles:
+      - Background:=$Background
+      - BorderThickness=$BorderThickness
+      - CornerRadius=16
+      - BorderBrush:=$BorderBrush
+  - target: Border#ToastBackgroundBorder
     styles:
       - Background:=$Background
       - BorderThickness=$BorderThickness

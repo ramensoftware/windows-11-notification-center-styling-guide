@@ -75,6 +75,11 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=1
       - CornerRadius=$CornerRadius
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=1
+      - CornerRadius=$CornerRadius
   - target: Grid#CalendarCenterGrid
     styles:
       - BorderBrush:=$BorderBrush

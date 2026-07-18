@@ -180,6 +180,13 @@ controlStyles:
       - BorderBrush=Transparent
       - CornerRadius=15
       - Shadow:=
+      - //Target= Active Notification > Notification Plate (older name)
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - Background:=$Alt
+      - BorderBrush=Transparent
+      - CornerRadius=15
+      - Shadow:=
       - //Target= Active Notification > Notification Plate
   - target: Border#AppLogoBorder2
     styles:

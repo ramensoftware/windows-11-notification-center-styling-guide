@@ -141,6 +141,12 @@ controlStyles:
       - BorderThickness=0,0,0,0
       - CornerRadius=16
       - Shadow :=
+  - target: Border#ToastBackgroundBorder
+    styles:
+      - Background:=$base
+      - BorderThickness=0,0,0,0
+      - CornerRadius=16
+      - Shadow :=
   - target: JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
     styles:
       - Background:=$overlay
