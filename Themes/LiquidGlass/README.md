@@ -1,4 +1,4 @@
-# LiquidGlass (Legacy) theme for Windows 11 Notification Center Styler
+# LiquidGlass  theme for Windows 11 Notification Center Styler
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
