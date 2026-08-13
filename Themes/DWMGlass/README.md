@@ -1,4 +1,4 @@
-# LiquidGlass (Legacy) theme for Windows 11 Notification Center Styler
+# DWM Glass theme for Windows 11 Notification Center Styler
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
@@ -9,9 +9,6 @@
 * [Windows 11 Notification Center Styler](https://windhawk.net/mods/windows-11-notification-center-styler)
 
 ---
-
-> [!NOTE]
-> This theme will be getting moved to [DWM Glass](../DWMGlass/README.md) in the future due to the new Liquid Glass theme being made by another author. Their theme is going in the direction this one was originally aimed and does a lot better than this one does. So it will be the future of the Liquid Glass theme going forward.
 
 ### Notification Center
 
