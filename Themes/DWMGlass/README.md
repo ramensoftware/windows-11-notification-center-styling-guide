@@ -4,19 +4,17 @@
 
 ---
 
-### Requirements
+## Requirements
 
 * [Windows 11 Notification Center Styler](https://windhawk.net/mods/windows-11-notification-center-styler)
 
 ---
 
-### Notification Center
-
 ![Screenshot](screenshot.png)
 
 ---
 
-## Theme selection
+### Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
 settings:
@@ -25,7 +23,7 @@ settings:
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
-## Manual installation
+### Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
