@@ -90,7 +90,7 @@ Notification Center Styler mod. The following themes are available:
 | [TintedGlass](Themes/TintedGlass/README.md) | [![TintedGlass](Themes/TintedGlass/screenshot-small.png)](Themes/TintedGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 | [LiquidGlass (Legacy)](Themes/LiquidGlass/README.md) | [![LiquidGlass (Legacy)](Themes/LiquidGlass/screenshot-small.png)](Themes/LiquidGlass/screenshot.png)
-| [DWM Glass)](Themes/DWMGlass/README.md) | [![DWM Glass)](Themes/DWMGlass/screenshot-small.png)](Themes/DWMGlass/screenshot.png)
+| [DWM Glass](Themes/DWMGlass/README.md) | [![DWM Glass](Themes/DWMGlass/screenshot-small.png)](Themes/DWMGlass/screenshot.png)
 | [BetterControl11](Themes/BetterControl11/README.md) | [![BetterControl11](Themes/BetterControl11/screenshot-small.png)](Themes/BetterControl11/screenshot.png)
 | [LayerMicaUI](Themes/LayerMicaUI/README.md) | [![LayerMicaUI](Themes/LayerMicaUI/screenshot-small.png)](Themes/LayerMicaUI/screenshot.png)
 | [Borderless](Themes/Borderless/README.md) | [![Borderless](Themes/Borderless/screenshot-small.png)](Themes/Borderless/screenshot.png)
