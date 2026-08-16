@@ -1,25 +1,20 @@
-# LiquidGlass  theme for Windows 11 Notification Center Styler
+# DWM Glass theme for Windows 11 Notification Center Styler
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
 ---
 
-### Requirements
+## Requirements
 
 * [Windows 11 Notification Center Styler](https://windhawk.net/mods/windows-11-notification-center-styler)
 
 ---
 
-> [!NOTE]
-> This theme will be getting moved to [DWM Glass](../DWMGlass/README.md) in the future due to the new Liquid Glass theme being made by another author. Their theme is going in the direction this one was originally aimed and does a lot better than this one does. So it will be the future of the Liquid Glass theme going forward.
-
-### Notification Center
-
 ![Screenshot](screenshot.png)
 
 ---
 
-## Theme selection
+### Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
 settings:
@@ -28,7 +23,7 @@ settings:
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
-## Manual installation
+### Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
@@ -40,6 +35,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: DWM Glass
 styleConstants:
   - transparent = Transparent
   - Background = <WindhawkBlur BlurAmount="15" TintColor="{ThemeResource SystemAltLowColor}" TintOpacity="0.4"  />
