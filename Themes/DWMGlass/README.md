@@ -35,7 +35,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: DWM Glass
 styleConstants:
   - transparent = Transparent
   - Background = <WindhawkBlur BlurAmount="15" TintColor="{ThemeResource SystemAltLowColor}" TintOpacity="0.4"  />
