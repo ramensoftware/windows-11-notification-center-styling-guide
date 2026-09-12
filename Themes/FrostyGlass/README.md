@@ -138,12 +138,6 @@ controlStyles:
   - target: ContentControl > ContentPresenter > Grid > Grid
     styles:
       - BorderBrush:=Transparent
-  - target: ContentPresenter#ContentPresenter
-    styles:
-      - BorderBrush:=$BorderBrush
-      - BorderThinkness:=$BorderThickness
-      - Background:=$Background
-      - CornerRadius:=$CornerRadius
   - target: Border#WADFeatureFooter
     styles:
       - BorderBrush:=Transparent
@@ -168,7 +162,7 @@ controlStyles:
   - target: Grid#NotificationCenterGrid
     styles:
       - VerticalAlignment:=2
-  - target: Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2
+  - target: Border#ToastBackgroundBorder2
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
@@ -220,13 +214,19 @@ controlStyles:
   - target: ContentPresenter#PageContent
     styles:
       - Background:=Transparent
+  - target: Windows.UI.Xaml.Controls.Border#ToastBackgroundBorder
+    styles:
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness:=$BorderThickness
+      - CornerRadius:=$CornerRadius
   - target: Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#ItemOpaquePlating
     styles:
       - CornerRadius:=7
       - Visibility=0
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
-      - Margin=4,0,4,1
+      - Margin=4,4,4,1
   - target: Windows.UI.Xaml.Controls.ListViewItem
     styles:
       - Margin=0,0,0,3
