@@ -56,15 +56,12 @@ controlStyles:
       - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.Button#ClearAll > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
     styles:
-      - Text=
+      - Text=
       - FontFamily=Segoe Fluent Icons
-      - FontSize=8
+      - FontSize=12
   - target: Windows.UI.Xaml.Controls.TextBlock
     styles:
       - FontWeight=Normal
-  - target: Windows.UI.Xaml.Controls.Grid#CalendarSection
-    styles:
-      - Height=300
   - target: Windows.UI.Xaml.Controls.Button#PreviousButton
     styles:
       - Visibility=Collapsed
@@ -91,10 +88,12 @@ controlStyles:
     styles:
       - Width=24
       - Height=24
+      - Padding=0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton
     styles:
       - Height=24
       - Width=24
+      - Padding=0
   - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#DoNotDisturbButtonIcon
     styles:
       - Height=12
