@@ -230,6 +230,10 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.ContentPresenter#PageHeader
     styles:
       - Background:=transparent
+  - target: ContentControl#PageHeaderContentControl
+    styles:
+      - Width=64
+      - // Prevents Wi-Fi/Bluetooth subpage switches from being displaced from the right edge
   - target: Windows.UI.Xaml.Controls.Button#PlayPauseButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter
     styles:
       - Margin=-22,0
