@@ -144,5 +144,8 @@ controlStyles:
   - target: ScrollViewer#ShareTargets > Border > Grid
     styles:
       - Background:=
+  - target: ControlCenter.FrameWithContentChanged#L2Frame
+    styles:
+      - Background:=
 ```
 </details>
