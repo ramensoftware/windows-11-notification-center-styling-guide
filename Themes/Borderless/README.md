@@ -1,6 +1,8 @@
 # Borderless theme for Windows 11 Notification Center Styler
 
-Removes all borders and drop shadows from notification center, quick settings and taskbar jump lists as well (thus the name), with the added bonus of a top-aligned notification center, so it fits dock layouts. Also, desktop toasts are resized to 348 for consistency with the notification center toasts.
+Removes all borders and drop shadows from notification center, quick settings and taskbar jump lists as well (thus the name), with the added bonus of a top-aligned notification center, so it fits dock layouts. Also, desktop toasts are resized to 348 pixels for consistency with the notification center toasts.
+
+To re-enable shadows just change the style constant ``Shadows`` to ``<ThemeShadow />``.
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
@@ -27,17 +29,19 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+styleConstants:
+  - Shadows=
 controlStyles:
   - target: ActionCenter.FocusSessionControl
     styles:
       - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.Grid
     styles:
-      - Shadow:=
+      - Shadow:=$Shadows
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.Border
     styles:
-      - Shadow:=
+      - Shadow:=$Shadows
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.Grid#NotificationCenterGrid
     styles:
@@ -137,5 +141,8 @@ controlStyles:
   - target: ActionCenter.ToastCenterView
     styles:
       - MaxWidth=348
+  - target: ScrollViewer#ShareTargets > Border > Grid
+    styles:
+      - Background:=
 ```
 </details>
