@@ -14,11 +14,11 @@
   In order to switch between these backgrounds, set the value `Background=$Translucent`, `Background=$Glass`, `Background=$Frosted` or `Background=$Acrylic` in the "Style constants" section of the mod's settings.
 
 - This theme can style your lock screen as well. 
-
+<!--
 ## Additional Extras
 
 - This theme goes great with various other Windhawk Mods. To see some pre-made configurations, check out my [`GitHub Pages`](https://helix-origin.github.io/Windhawk-Themes/catalogue/command-center/) site.
-
+-->
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
