@@ -170,39 +170,21 @@ controlStyles:
       - CornerRadius=$CardRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@Normal:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
-      - BorderBrush@Checked:=$BorderBrush
-      - BorderBrush@CheckedPointerOver:=$BorderBrush
-      - BorderBrush@CheckedPressed:=$BorderBrush
       - BackgroundSizing=InnerBorderEdge
       - Background:=Transparent
-  - target: QuickActions.AccessibleToggleButton#SplitL2Button, ControlCenter.PaginatedToggleButton#SplitL2Button, Button#SplitL2Button, Windows.UI.Xaml.Controls.Button#SplitL2Button
+  - target: QuickActions.AccessibleToggleButton#SplitL2Button, ControlCenter.PaginatedToggleButton#SplitL2Button, Button#SplitL2Button
     styles:
       - CornerRadius=$CardRadius
       - Margin=4,0,-4,0
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@Normal:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
-      - BorderBrush@Checked:=$BorderBrush
-      - BorderBrush@CheckedPointerOver:=$BorderBrush
-      - BorderBrush@CheckedPressed:=$BorderBrush
       - BackgroundSizing=InnerBorderEdge
       - Background:=Transparent
-  - target: ControlCenter.PaginatedToggleButton > ContentPresenter#ContentPresenter@CommonStates, ControlCenter.PaginatedToggleButton > ContentPresenter@CommonStates, QuickActions.AccessibleToggleButton > ContentPresenter#ContentPresenter@CommonStates, QuickActions.AccessibleToggleButton > ContentPresenter@CommonStates, Button#SplitL2Button > ContentPresenter#ContentPresenter@CommonStates, Button#SplitL2Button > ContentPresenter@CommonStates, Windows.UI.Xaml.Controls.Button#SplitL2Button > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+  - target: ControlCenter.PaginatedToggleButton > ContentPresenter#ContentPresenter@CommonStates, ControlCenter.PaginatedToggleButton > ContentPresenter@CommonStates, QuickActions.AccessibleToggleButton > ContentPresenter#ContentPresenter@CommonStates, QuickActions.AccessibleToggleButton > ContentPresenter@CommonStates, Button#SplitL2Button > ContentPresenter#ContentPresenter@CommonStates, Button#SplitL2Button > ContentPresenter@CommonStates
     styles:
       - CornerRadius=$CardRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@Normal:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
-      - BorderBrush@Checked:=$BorderBrush
-      - BorderBrush@CheckedPointerOver:=$BorderBrush
-      - BorderBrush@CheckedPressed:=$BorderBrush
       - BackgroundSizing=InnerBorderEdge
       - Background@Normal:=$ElementBackground
       - Background@PointerOver:=$OverlayColor2
@@ -212,13 +194,11 @@ controlStyles:
       - Background@CheckedPressed:=$OverlayColor
       - Background@Disabled:=$ElementBackground
       - Background@CheckedDisabled:=$ElementBackground
-  - target: QuickActions.AccessibleToggleButton#ToggleButton > ContentPresenter, ControlCenter.PaginatedToggleButton#ToggleButton > ContentPresenter, QuickActions.AccessibleToggleButton#SplitL2Button > ContentPresenter, ControlCenter.PaginatedToggleButton#SplitL2Button > ContentPresenter, Button#SplitL2Button > ContentPresenter, Windows.UI.Xaml.Controls.Button#SplitL2Button > Windows.UI.Xaml.Controls.ContentPresenter
+  - target: QuickActions.AccessibleToggleButton#ToggleButton > ContentPresenter, ControlCenter.PaginatedToggleButton#ToggleButton > ContentPresenter, QuickActions.AccessibleToggleButton#SplitL2Button > ContentPresenter, ControlCenter.PaginatedToggleButton#SplitL2Button > ContentPresenter, Button#SplitL2Button > ContentPresenter
     styles:
       - CornerRadius=$CardRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
       - BackgroundSizing=InnerBorderEdge
   - target: Grid#NotificationCenterTopBanner
     styles:
@@ -234,38 +214,28 @@ controlStyles:
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.Button[AutomationProperties.AutomationId = Microsoft.QuickAction.Battery]
     styles:
       - Margin=2,0,0,0
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.Button#FooterButton[AutomationProperties.Name = All settings]
     styles:
       - Margin=0,0,-1,0
       - CornerRadius=$PanelRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.Button[AutomationProperties.AutomationId = Microsoft.QuickAction.Volume]
     styles:
       - CornerRadius=$CardRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.Button#VolumeL2Button[AutomationProperties.Name = Select a sound output]
     styles:
       - CornerRadius=$CardRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect
     styles:
       - Height=10
@@ -318,8 +288,6 @@ controlStyles:
       - Background@Pressed:=$OverlayColor
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
       - Width=36
       - Height=28
       - CornerRadius=$ChipRadius
@@ -331,8 +299,6 @@ controlStyles:
       - Background@Pressed:=$OverlayColor
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
       - Width=36
       - Height=36
       - CornerRadius=$ChipRadius
@@ -344,8 +310,6 @@ controlStyles:
       - Background@Pressed:=$OverlayColor
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
       - Width=36
       - Height=28
       - CornerRadius=$ChipRadius
@@ -359,33 +323,25 @@ controlStyles:
       - RenderTransform:=<TranslateTransform Y="-495" X="395" />
       - Grid.Column=0
       - Grid.Row=2
-  - target: CalendarViewDayItem, Windows.UI.Xaml.Controls.CalendarViewDayItem
+  - target: CalendarViewDayItem
     styles:
       - CornerRadius=4
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
       - Background:=$ElementBackground
-      - Background@PointerOver:=$OverlayColor2
-      - Background@Pressed:=$OverlayColor
-  - target: CalendarViewDayItem > Border, Windows.UI.Xaml.Controls.CalendarViewDayItem > Windows.UI.Xaml.Controls.Border
+  - target: CalendarViewDayItem > Border
     styles:
       - CornerRadius=4
       - Margin=1,2,1,2
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-  - target: CalendarViewItem, Windows.UI.Xaml.Controls.Primitives.CalendarViewItem
+  - target: Windows.UI.Xaml.Controls.Primitives.CalendarViewItem
     styles:
       - CornerRadius=4
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
       - Background:=$ElementBackground
-      - Background@PointerOver:=$OverlayColor2
-      - Background@Pressed:=$OverlayColor
-  - target: Control > Border, Windows.UI.Xaml.Controls.Control > Windows.UI.Xaml.Controls.Border
+  - target: Control > Border
     styles:
       - CornerRadius=4
       - BorderThickness=$BorderThickness
@@ -400,15 +356,11 @@ controlStyles:
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.Button#DismissButton
     styles:
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.StackPanel#CalendarHeader
     styles:
       - Margin=6,0,0,0
@@ -450,8 +402,6 @@ controlStyles:
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Shapes.Rectangle#OuterBorder
     styles:
       - RadiusX=6
@@ -474,8 +424,6 @@ controlStyles:
       - Margin=5,2,5,3
       - CornerRadius=$CardRadius
       - BorderThickness=$BorderThickness
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
   - target: Windows.UI.Xaml.Controls.Grid[AutomationProperties.LocalizedLandmarkType = Footer]
     styles:
       - BorderThickness=0
@@ -488,20 +436,12 @@ controlStyles:
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
-      - Background@PointerOver:=$OverlayColor2
-      - Background@Pressed:=$OverlayColor
   - target: Button#ExpandCollapseButton
     styles:
       - AccessKey=e
       - CornerRadius=$ChipRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-      - BorderBrush@PointerOver:=$BorderBrush
-      - BorderBrush@Pressed:=$BorderBrush
-      - Background@PointerOver:=$OverlayColor2
-      - Background@Pressed:=$OverlayColor
   - target: Button > Grid@CommonStates > Border#BackgroundBorder
     styles:
       - BorderThickness=$BorderThickness
