@@ -1,6 +1,5 @@
 # The Windows 11 notification center styling guide
 
-*This document is a work in progress, contributions are welcome.* \
 ***See also**: [The Windows 11 taskbar styling
 guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
 [The Windows 11 start menu styling
@@ -11,21 +10,41 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
 * [Introduction](#introduction)
 * [Themes](#themes)
 * [Style examples](#style-examples)
-  * [Hide the focus assist section](#hide-the-focus-assist-section)
-  * [Hide the notification center](#hide-the-notification-center)
-  * [Hide control center PipsPager (navigation dots)](#hide-control-center-pipspager-navigation-dots)
-  * [Hide control center footer](#hide-control-center-footer)
-  * [Shrink the notification center height](#shrink-the-notification-center-height)
-  * [Variable volume mixer height](#variable-volume-mixer-height)
-  * [Remove shadows](#remove-shadows)
-  * [Square the corners of the notification center](#square-the-corners-of-the-notification-center)
-  * [Square the corners of the calendar](#square-the-corners-of-the-calendar)
-  * [Square the corners of the calendar buttons](#square-the-corners-of-the-calendar-buttons)
-  * [Square the corners of the quick action center](#square-the-corners-of-the-quick-action-center)
-  * [Calendar and notification titlebars: titles on the right, buttons on the left](#calendar-and-notification-titlebars-titles-on-the-right-buttons-on-the-left)
-  * [Add accelerator key (Alt+X) to clear all notifications](#add-accelerator-key-altx-to-clear-all-notifications)
-  * [Add accelerator key (Alt+E) to expand/collapse the calendar](#add-accelerator-key-alte-to-expandcollapse-the-calendar)
-  * [Hide media control section](#hide-media-control-section)
+  * [All panels](#all-panels)
+    * [Remove shadows](#remove-shadows)
+    * [Square the corners](#square-the-corners)
+    * [Make the panels transparent](#make-the-panels-transparent)
+    * [Hide the scrollbars](#hide-the-scrollbars)
+    * [Move the panels](#move-the-panels)
+  * [Notification center](#notification-center)
+    * [Hide the notification center](#hide-the-notification-center)
+    * [Shrink the notification center height](#shrink-the-notification-center-height)
+    * [Move the notification center header to the bottom](#move-the-notification-center-header-to-the-bottom)
+    * [Add accelerator key (Alt+X) to clear all notifications](#add-accelerator-key-altx-to-clear-all-notifications)
+  * [Calendar](#calendar)
+    * [Hide the focus section](#hide-the-focus-section)
+    * [Add accelerator key (Alt+E) to expand/collapse the calendar](#add-accelerator-key-alte-to-expandcollapse-the-calendar)
+  * [Toast notifications](#toast-notifications)
+    * [Change the toast notification background](#change-the-toast-notification-background)
+  * [Quick settings](#quick-settings)
+    * [Hide control center PipsPager (navigation dots)](#hide-control-center-pipspager-navigation-dots)
+    * [Hide control center footer](#hide-control-center-footer)
+    * [Hide the quick settings tiles](#hide-the-quick-settings-tiles)
+    * [Show more rows of quick settings tiles](#show-more-rows-of-quick-settings-tiles)
+    * [Style a specific quick settings tile](#style-a-specific-quick-settings-tile)
+    * [Variable volume mixer height](#variable-volume-mixer-height)
+  * [Media controls](#media-controls)
+    * [Hide media control section](#hide-media-control-section)
+  * [Jump lists](#jump-lists)
+    * [Change the jump list background](#change-the-jump-list-background)
+    * [Change the jump list item highlight colors](#change-the-jump-list-item-highlight-colors)
+* [Common targets](#common-targets)
+  * [Notification center targets](#notification-center-targets)
+  * [Calendar targets](#calendar-targets)
+  * [Toast notification targets](#toast-notification-targets)
+  * [Quick settings targets](#quick-settings-targets)
+  * [Media control targets](#media-control-targets)
+  * [Jump list targets](#jump-list-targets)
 * [Transforms](#transforms)
   * [Translate](#translate)
   * [Rotate](#rotate)
@@ -42,7 +61,6 @@ guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob
   * [Gradient as color](#gradient-as-color)
   * [Image as color](#image-as-color)
   * [Reveal as color](#reveal-as-color)
-* [Work in progress](#work-in-progress)
 
 ## Introduction
 
@@ -100,79 +118,9 @@ Notification Center Styler mod. The following themes are available:
 
 ## Style examples
 
-### Hide the focus assist section
+### All panels
 
-Target:
-```
-ActionCenter.FocusSessionControl
-```
-Style:
-```
-Height=0
-```
-
-### Hide the notification center
-
-Target:
-```
-Grid#NotificationCenterGrid
-```
-Style:
-```
-Visibility=Collapsed
-```
-
-### Hide control center PipsPager (navigation dots)
-
-Target:
-```
-Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager
-```
-Style:
-```
-Visibility=Collapsed
-```
-
-### Hide control center footer
-
-Target:
-```
-Grid#FooterGrid
-```
-Style:
-```
-Visibility=Collapsed
-```
-
-### Shrink the notification center height
-Makes the panel non-full-height when there are fewer notifications (fit to size).
-
-Target:
-```
-Grid#NotificationCenterGrid
-```
-Style:
-```
-VerticalAlignment=2
-```
-
-### Variable volume mixer height
-Makes the volume mixer grow or shrink depending on how many volume sliders are visible.
-
-Target for newer Windows 11 versions:
-```
-ControlCenter.FrameWithContentChanged#L2Frame
-```
-Target for older Windows 11 versions:
-```
-QuickActions.ControlCenter.FrameWithContentChanged#L2Frame
-```
-Style:
-```
-Height=Auto
-```
-
-### Remove shadows
+#### Remove shadows
 
 Targets:
 ```
@@ -182,38 +130,48 @@ Grid#NotificationCenterGrid
 Grid#CalendarCenterGrid
 ```
 ```
+Grid#ControlCenterRegion
+```
+```
 Grid#MediaTransportControlsRegion
+```
+```
+Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2
+```
+```
+Border#JumpListRestyledAcrylic
 ```
 Style:
 ```
 Shadow:=
 ```
 
-### Square the corners of the notification center
+#### Square the corners
 
-Target:
+Targets for the panels:
 ```
 Grid#NotificationCenterGrid
 ```
-Style:
-```
-CornerRadius=0
-```
-
-### Square the corners of the calendar
-
-Target:
 ```
 Grid#CalendarCenterGrid
 ```
-Style:
 ```
-CornerRadius=0
+Grid#ControlCenterRegion
 ```
-
-### Square the corners of the calendar buttons
-
-Targets:
+```
+Grid#MediaTransportControlsRegion
+```
+```
+Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2
+```
+```
+Border#JumpListRestyledAcrylic
+```
+Targets for the notifications:
+```
+ActionCenter.FlexibleItemView, Border#ItemOpaquePlating
+```
+Targets for the calendar buttons:
 ```
 CalendarViewDayItem
 ```
@@ -226,34 +184,107 @@ CalendarViewDayItem > Border
 ```
 Control > Border
 ```
-Style:
+Target for the jump list items:
 ```
-CornerRadius=0
-```
-
-### Square the corners of the quick action center
-
-Target:
-```
-Grid#ControlCenterRegion
+JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder, JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
 ```
 Style:
 ```
 CornerRadius=0
 ```
 
-### Calendar and notification titlebars: titles on the right, buttons on the left
+`CalendarViewDayItem` is a day in the calendar. `Control` is a month or a year in the views that open when clicking the title above the days.
 
-Target:
+#### Make the panels transparent
+Most panels are made of several layers with their own background, and all of them need to be cleared. Use the targets of the panels you want to change, in order: notification center, calendar, quick settings, media controls, jump lists.
+
+Targets:
 ```
-Grid#RootContent
+Grid#NotificationCenterGrid
+```
+```
+Grid#CalendarCenterGrid, Border#CalendarHeaderMinimizedOverlay, ScrollViewer#CalendarControlScrollViewer, Grid#FocusGrid
+```
+```
+Grid#ControlCenterRegion, Grid#L1Grid > Border
+```
+```
+Grid#MediaTransportControlsRegion, Grid#MediaTransportControlsRoot
+```
+```
+Border#JumpListRestyledAcrylic
 ```
 Style:
 ```
-FlowDirection=1
+Background=Transparent
 ```
 
-### Add accelerator key (Alt+X) to clear all notifications
+To keep notifications readable on a transparent notification center, give them a background of their own:
+
+Target:
+```
+Border#ItemOpaquePlating
+```
+Style:
+```
+Background=<color>
+```
+
+#### Hide the scrollbars
+
+Target:
+```
+Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+#### Move the panels
+Styles can't move a panel to another part of the screen. They only apply to the content inside the panel's container, so content moved with `Margin` or `RenderTransform` gets cut off. Use the [Shell Flyout Positions](https://windhawk.net/mods/shell-flyout-positions) mod instead.
+
+### Notification center
+
+#### Hide the notification center
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+#### Shrink the notification center height
+Makes the panel non-full-height when there are fewer notifications (fit to size).
+
+Target:
+```
+Grid#NotificationCenterGrid
+```
+Style:
+```
+VerticalAlignment=2
+```
+
+#### Move the notification center header to the bottom
+Moves the row with the title, the do not disturb button and the Clear all button below the notifications.
+
+Target:
+```
+Grid#NotificationCenterTopBanner
+```
+Styles:
+```
+Grid.Row=2
+```
+```
+VerticalAlignment=2
+```
+
+#### Add accelerator key (Alt+X) to clear all notifications
 
 Target:
 ```
@@ -264,7 +295,21 @@ Style:
 AccessKey=x
 ```
 
-### Add accelerator key (Alt+E) to expand/collapse the calendar
+### Calendar
+
+#### Hide the focus section
+Hides the focus session timer below the calendar.
+
+Target:
+```
+ActionCenter.FocusSessionControl
+```
+Style:
+```
+Height=0
+```
+
+#### Add accelerator key (Alt+E) to expand/collapse the calendar
 
 Target:
 ```
@@ -275,7 +320,157 @@ Style:
 AccessKey=e
 ```
 
-### Hide media control section
+### Toast notifications
+
+Toast notifications are the popups that appear before a notification moves to the notification center.
+
+#### Change the toast notification background
+
+Target:
+```
+Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2
+```
+Style:
+```
+Background=<color>
+```
+
+`Border#ToastBackgroundBorder2` is the name of this element on older Windows 11 versions.
+
+To use an image, set it on the parent element and make the toast background transparent:
+
+Target:
+```
+Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2
+```
+Style:
+```
+Background=Transparent
+```
+Target:
+```
+Grid#RevealGrid, Grid#RevealGrid2
+```
+Styles:
+```
+Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
+```
+```
+CornerRadius=8
+```
+
+### Quick settings
+
+The quick settings panel is also known as the control center or the quick action center.
+
+#### Hide control center PipsPager (navigation dots)
+
+Target:
+```
+Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+#### Hide control center footer
+
+Target:
+```
+Grid#FooterGrid
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+#### Hide the quick settings tiles
+Keeps the sliders and the footer.
+
+Target:
+```
+ContentControl#TogglesGroup
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+#### Show more rows of quick settings tiles
+Makes more rows of tiles visible at once, without paging. Increase the height to fit more rows.
+
+Target:
+```
+ControlCenter.PaginatedGridView > Grid > GridView#RootGridView
+```
+Style:
+```
+Height=280
+```
+Target:
+```
+Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager
+```
+Style:
+```
+Visibility=Collapsed
+```
+Target:
+```
+ControlCenter.PaginatedGridView > Grid > GridView#RootGridView > Border > ScrollViewer
+```
+Style:
+```
+ScrollViewer.VerticalScrollBarVisibility=0
+```
+
+#### Style a specific quick settings tile
+
+Target:
+```
+ControlCenter.PaginatedToggleButton#ToggleButton[AutomationProperties.AutomationId=Microsoft.QuickAction.WiFi]
+```
+Style:
+```
+CornerRadius=0
+```
+
+Replace `WiFi` with the ID of the tile:
+
+| Tile | ID
+| ---- | --
+| Wi-Fi | `WiFi`
+| Bluetooth | `Bluetooth`
+| Airplane mode | `AirplaneMode`
+| Energy saver | `BatterySaver`
+| Night light | `BlueLightReduction`
+| Accessibility | `Accessibility`
+| Live captions | `LiveCaptions`
+| Mobile hotspot | `MobileHotspot`
+| Nearby sharing | `NearShare`
+| Cast | `Cast`
+| Project | `ProjectL2`
+
+Hiding a tile this way leaves an empty space in the grid.
+
+#### Variable volume mixer height
+Makes the volume mixer grow or shrink depending on how many volume sliders are visible.
+
+Target:
+```
+ControlCenter.FrameWithContentChanged#L2Frame, QuickActions.ControlCenter.FrameWithContentChanged#L2Frame
+```
+Style:
+```
+Height=Auto
+```
+
+`QuickActions.ControlCenter.FrameWithContentChanged#L2Frame` is the name of this element on older Windows 11 versions.
+
+### Media controls
+
+#### Hide media control section
 Useful for having separate Media Control UIs.
 
 Target:
@@ -286,6 +481,140 @@ Style:
 ```
 Visibility=Collapsed
 ```
+
+### Jump lists
+
+Jump lists are the menus that open when right-clicking a taskbar button. Windows shows them in the same process as the notification center, so they're styled with this mod and not with the taskbar styler.
+
+#### Change the jump list background
+
+Target:
+```
+Border#JumpListRestyledAcrylic
+```
+Style:
+```
+Background=<color>
+```
+
+#### Change the jump list item highlight colors
+Changes the colors of an item while it's hovered over and while it's pressed.
+
+Target:
+```
+JumpViewUI.JumpListListViewItem > Grid#LayoutRoot@CommonStates > Border#BackgroundBorder, JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot@CommonStates > Border#BackgroundBorder
+```
+Styles:
+```
+Background@PointerOver=<color>
+```
+```
+Background@Pressed=<color>
+```
+
+## Common targets
+
+These are the main elements of each part of the UI, including the ones that the existing themes style most often, which makes them a good starting point for your own styles. Element names can change between Windows versions.
+
+To apply the same styles to several targets, separate them with commas. This also covers elements with different names on different Windows versions. The full target syntax is described on the [mod's page](https://windhawk.net/mods/windows-11-notification-center-styler).
+
+### Notification center targets
+
+| Target | Element
+| ------ | -------
+| `Grid#NotificationCenterGrid` | Notification center panel
+| `Grid#NotificationCenterTopBanner` | Row with the title and the buttons
+| `Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton` | Do not disturb button
+| `Button#ClearAll` | Clear all button
+| `Grid#DoNotDisturbSubtext` | "Do not disturb is on" message
+| `TextBlock#NoNotificationsTextBlock` | "No new notifications" text
+| `ActionCenter.FlexibleItemView` | Notification
+| `Border#ItemOpaquePlating` | Notification background
+| `TextBlock#SenderName` | App name on a notification or a toast
+| `Button#DismissButton` | Dismiss button on a notification or a toast
+| `Button#SettingsButton` | Settings button on a notification or a toast
+
+### Calendar targets
+
+| Target | Element
+| ------ | -------
+| `Grid#CalendarCenterGrid` | Calendar panel
+| `StackPanel#CalendarHeader` | Date at the top of the panel
+| `Border#CalendarHeaderMinimizedOverlay` | Date row background while the calendar is collapsed
+| `Button#ExpandCollapseButton` | Expand/collapse button
+| `ScrollViewer#CalendarControlScrollViewer` | Calendar background
+| `Button#HeaderButton` | Title above the days, which opens the year and decade views
+| `Button#PreviousButton` | Previous button above the days
+| `Button#NextButton` | Next button above the days
+| `Grid#WeekDayNames` | Row with the names of the days
+| `CalendarViewDayItem` | Day
+| `Windows.UI.Xaml.Controls.Primitives.CalendarPanel#YearViewPanel > Control` | Month in the year view
+| `Windows.UI.Xaml.Controls.Primitives.CalendarPanel#DecadeViewPanel > Control` | Year in the decade view
+| `ActionCenter.FocusSessionControl` | Focus section
+| `Grid#FocusGrid` | Focus section background
+
+### Toast notification targets
+
+| Target | Element
+| ------ | -------
+| `Border#ToastBackgroundBorder, Border#ToastBackgroundBorder2` | Toast background
+| `Grid#RevealGrid, Grid#RevealGrid2` | Parent of the toast background
+| `Grid#ToastTitleBar > TextBlock#SenderName` | App name on a toast
+
+### Quick settings targets
+
+| Target | Element
+| ------ | -------
+| `Grid#ControlCenterRegion` | Quick settings panel
+| `Grid#L1Grid > Border` | Background behind the tiles and the sliders
+| `ContentControl#TogglesGroup` | Section with the tiles
+| `ControlCenter.PaginatedGridView > Grid > GridView#RootGridView` | Grid of tiles
+| `ControlCenter.PaginatedToggleButton#ToggleButton` | Tile
+| `ControlCenter.PaginatedToggleButton#SplitL2Button` | Arrow on the Wi-Fi and Bluetooth tiles
+| `Microsoft.UI.Xaml.Controls.PipsPager#QuickActionsPager` | Navigation dots
+| `ContentControl#SlidersGroup` | Section with the sliders
+| `Grid#HorizontalTemplate > Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb` | Slider knob
+| `Grid#HorizontalTemplate > Rectangle#HorizontalDecreaseRect` | Filled part of a slider
+| `Grid#HorizontalTemplate > Rectangle#HorizontalTrackRect` | Slider track
+| `Button#VolumeL2Button` | Sound output button next to the volume slider
+| `Grid#FooterGrid` | Footer
+| `Button[AutomationProperties.AutomationId=Microsoft.QuickAction.Battery]` | Battery button in the footer
+| `Button#FooterButton` | All settings button in the footer
+| `ControlCenter.FrameWithContentChanged#L2Frame` | Frame of the pages opened from the tiles and the volume slider
+
+### Media control targets
+
+| Target | Element
+| ------ | -------
+| `ControlCenter.MediaTransportControls#MediaTransportControls` | Media controls section
+| `Grid#MediaTransportControlsRegion` | Media controls panel
+| `Grid#MediaTransportControlsRoot` | Media controls background
+| `Grid#ThumbnailImage` | Album art
+| `StackPanel#PrimaryAndSecondaryTextContainer` | Title and artist
+| `StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#TitleText` | Title
+| `StackPanel#PrimaryAndSecondaryTextContainer > TextBlock#SubtitleText` | Artist
+| `ListView#MediaButtonsListView` | Playback buttons
+| `TextBlock#AppNameText` | App name
+| `Image#IconImage` | App icon
+
+### Jump list targets
+
+| Target | Element
+| ------ | -------
+| `Grid#JumpListGrid` | Jump list content
+| `Border#JumpListRestyledAcrylic` | Jump list background
+| `ScrollViewer#JumpListScroller` | Upper section, with the recent, pinned and task items
+| `JumpViewUI.JumpListCategoryHeaderControl` | Category header, such as "Recent"
+| `TextBlock#HeadingTextBlock` | Category header text
+| `JumpViewUI.JumpListListViewItem` | Item in the upper section
+| `JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder` | Background of an item in the upper section
+| `Button#PinButton` | Pin button on an item in the upper section
+| `Grid#SystemItemsContainer` | Lower section, with the app name and the pin and close items
+| `Grid#SystemItemsContainer > Rectangle` | Line above the lower section
+| `JumpViewUI.SystemItemListViewItem` | Item in the lower section
+| `JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder` | Background of an item in the lower section
+| `JumpViewUI.SystemItemControl > Grid > Grid > TextBlock` | Icon of the pin and close items
+| `TextBlock#DisplayNameTextBlock` | Item text in both sections
 
 ## Transforms
 
@@ -542,11 +871,3 @@ BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" 
 **Only** `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
 
 `Opacity` can be changed to increase or decrease the intensity of the effect.
-
-## Work in progress
-
-*This document is a work in progress, contributions are welcome.* \
-***See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
-[The Windows 11 start menu styling
-guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/README.md).*
