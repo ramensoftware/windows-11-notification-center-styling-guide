@@ -2,7 +2,7 @@
 
 By [Deepak Balaraman](https://github.com/DeepakBalaraman) · [dpakb.com](https://dpakb.com)
 
-![Droid theme preview](preview.jpg)
+![Droid theme preview screenshot](screenshot.png)
 
 Droid is a theme for the Windows 11 Notification Center Styler mod. It is inspired by
 the language of Android quick settings and applies it to the
