@@ -147,5 +147,6 @@ controlStyles:
   - target: ControlCenter.FrameWithContentChanged#L2Frame
     styles:
       - Background:=
+      - MinHeight=384
 ```
 </details>
