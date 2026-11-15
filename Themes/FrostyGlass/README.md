@@ -35,7 +35,14 @@ Complete the look across your entire UI! Check out my other Frosty Glass styling
 
 A huge thank you to [Ramen Software](https://github.com/ramensoftware) for creating Windhawk. This configuration was heavily inspired by the official [Windows 11 Notification Center Styling Guide](https://github.com/ramensoftware/windows-11-notification-center-styling-guide) and the Windhawk modding community.
 
-## 🎚️ Theme selection
+## Thumbnail image size
+
+The default media control thumbnail size is 300x300, which might be too large
+for small screens. You can change it by setting the value
+`thumbnailImageSize=200`, where `200` is the desired size, in the "Style
+constants" section of the mod's settings.
+
+## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
 settings:
@@ -44,7 +51,7 @@ settings:
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
-## 📦 Manual installation
+## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
