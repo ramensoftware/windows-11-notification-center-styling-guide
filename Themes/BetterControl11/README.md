@@ -130,6 +130,7 @@ controlStyles:
   - target: ContentControl#SlidersGroup
     styles:
       - Grid.Row=0
+      - Grid.RowSpan=2
       - RenderTransform:=<TransformGroup><RotateTransform Angle="-90" /><TranslateTransform X="123" Y="-94" /></TransformGroup>
       - RenderTransformOrigin=0.5,0.5
       - Margin=0,0,30,0
