@@ -2,6 +2,8 @@
 
 **Author**: [babamohammed2022](https://github.com/babamohammed2022)
 
+![Windows 8.1-inspired toast notification on Windows 11](screenshot.png)
+
 A Windows 8.1-inspired toast notification skin for Windows 11 Notification Center Styler.
 
 ## Notes
@@ -9,7 +11,7 @@ A Windows 8.1-inspired toast notification skin for Windows 11 Notification Cente
 - Uses system accent colors, square corners and approximately 385 × 90 logical units. Actual dimensions depend on DPI and notification content.
 - The dismiss button is hidden by default. To try the native button, change `Visibility=Collapsed` to `Visibility=Visible` on `ActionCenter.ToastCenterPage > * > Button#DismissButton`. Its visibility and behavior depend on the Windows template.
 - To place toast windows at the top right, separately install [Customize Windows notifications placement](https://windhawk.net/mods/notifications-placement) and set vertical placement to top and horizontal placement to right. This theme does not reposition the notification window.
-- The latest configuration has not yet been runtime-tested on Windows. Results can vary by Windows build, DPI, and notification template. Despite the theme name, Windows 10 compatibility has not been verified.
+- Tested on Windows 11 24H2. Results can vary by Windows build, DPI, and notification template. Despite the theme name, Windows 10 compatibility has not been verified.
 
 ## Manual installation
 
