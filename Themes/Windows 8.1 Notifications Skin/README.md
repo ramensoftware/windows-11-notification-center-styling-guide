@@ -9,9 +9,10 @@ A Windows 8.1-inspired toast notification skin for Windows 11 Notification Cente
 ## Notes
 
 - Uses system accent colors, square corners and approximately 385 × 90 logical units. Actual dimensions depend on DPI and notification content.
+- The text is vertically centered with and without a standard notification image. The image is displayed at 90 × 90 logical units.
 - The dismiss button is hidden by default. To try the native button, change `Visibility=Collapsed` to `Visibility=Visible` on `ActionCenter.ToastCenterPage > * > Button#DismissButton`. Its visibility and behavior depend on the Windows template.
 - To place toast windows at the top right, separately install [Customize Windows notifications placement](https://windhawk.net/mods/notifications-placement) and set vertical placement to top and horizontal placement to right. This theme does not reposition the notification window.
-- Tested on Windows 11 24H2. Results can vary by Windows build, DPI, and notification template. Windows 10 compatibility has not been verified.
+- It has been tested on Windows 11 24H2. Results can vary by Windows build, DPI, and notification template. Windows 10 compatibility has not been verified.
 
 ## Manual installation
 
@@ -109,17 +110,21 @@ controlStyles:
   - target: 'Grid#ToastTitleBar > TextBlock#SenderName'
     styles:
       - Visibility=Collapsed
+  # Track the image container's visibility for text alignment.
   - target: Grid#ImageGrid
     styles:
+      - Visibility=>Win81ImageGridVisibility
       - Margin=0
       - Padding=0
       - VerticalAlignment=Stretch
       - HorizontalAlignment=Left
       - Background=Transparent
       - BorderThickness=0
+  # Keep the image 90 x 90 logical units and shift its border upward.
+  # Layout and clipping depend on the Windows toast template.
   - target: Border#StandardImageBorder
     styles:
-      - Margin=0
+      - Margin=0,-24,0,0
       - Padding=0
       - CornerRadius=0
       - Width=90
@@ -136,7 +141,9 @@ controlStyles:
   - target: StackPanel#MainContent
     styles:
       - VerticalAlignment=Center
-      - Margin=19,0,19,0
+      # Visible=0: shift text upward when the image grid is visible.
+      # Collapsed=1 or unavailable: preserve the no-image layout.
+      - 'Margin=19,{{Win81ImageGridVisibility == 0 ? -24 : 0}},19,0'
   - target: 'StackPanel#MainContent > TextBlock#TitleText, StackPanel#MainContent > TextBlock#Title2'
     styles:
       - Foreground=White
