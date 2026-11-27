@@ -462,7 +462,7 @@ controlStyles:
 # Action Center Main Page Button thingies Or Button Toggles
   - target: ControlCenter.PaginatedToggleButton#ToggleButton > ContentPresenter#ContentPresenter@CommonStates
     styles:
-      - CornerRadius=$bcr
+      - CornerRadius=$mcr
       - BorderThickness=$bbt
       - BackgroundSizing=InnerBorderEdge
       - BackgroundTransition:=<BrushTransition Duration="$FadeSpeed" />
@@ -1488,7 +1488,7 @@ controlStyles:
 # Action Center Main Page Button thingies Or Button Toggles
   - target: ControlCenter.PaginatedToggleButton#ToggleButton > ContentPresenter#ContentPresenter@CommonStates
     styles:
-      - CornerRadius=$bcr
+      - CornerRadius=$mcr
       - BorderThickness=$bbt
       - BackgroundSizing=InnerBorderEdge
       - BackgroundTransition:=<BrushTransition Duration="$FadeSpeed" />
@@ -2510,7 +2510,7 @@ controlStyles:
 # Action Center Main Page Button thingies Or Button Toggles
   - target: ControlCenter.PaginatedToggleButton#ToggleButton > ContentPresenter#ContentPresenter@CommonStates
     styles:
-      - CornerRadius=$bcr
+      - CornerRadius=$mcr
       - BorderThickness=$bbt
       - BackgroundSizing=InnerBorderEdge
       - BackgroundTransition:=<BrushTransition Duration="$FadeSpeed" />
@@ -3495,7 +3495,7 @@ controlStyles:
 # Action Center Main Page Button thingies Or Button Toggles
   - target: ControlCenter.PaginatedToggleButton#ToggleButton > ContentPresenter#ContentPresenter@CommonStates
     styles:
-      - CornerRadius=$bcr
+      - CornerRadius=$mcr
       - BorderThickness=$bbt
       - BackgroundSizing=InnerBorderEdge
       - BackgroundTransition:=<BrushTransition Duration="$FadeSpeed" />
