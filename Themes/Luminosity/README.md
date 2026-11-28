@@ -48,6 +48,72 @@ The theme changes the following things:
 
 **Visual Mode** and **Textual Mode** refer to which mode your **Settings** tab is set to. These guides are mostly for **theme selection through the Styler mod**. If you're using a **manual installation**, you may need to adapt the instructions: search for the referenced target in your installation, then edit or remove things as needed.
 
+### Custom Background
+
+<details>
+<summary>(Click to expand guide)</summary>
+
+<br>
+
+Edit these Style constants:
+
+- `lumiBackground` -- Main Background
+- `lumiBackground2` -- Scroll bars and Notification Drop Down Pop-ups / Notification Drop Down Flyouts Background
+
+**Default values:**
+
+`lumiBackground`
+
+```yaml
+<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
+```
+
+`lumiBackground2`
+
+```yaml
+<WindhawkBlur BlurAmount="15" TintColor="#00000000" />
+```
+
+<br>
+
+#### Visual Mode
+
+In **Style Constants**, paste:
+
+```txt
+lumiBackground=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
+```
+
+And / or:
+
+```txt
+lumiBackground2=<WindhawkBlur BlurAmount="15" TintColor="#00000000" />
+```
+
+And edit it.
+
+---
+
+#### Textual Mode
+
+Anywhere under `styleConstants:`, paste:
+
+```yaml
+  - lumiBackground=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
+```
+
+And / or:
+
+```yaml
+  - lumiBackground2=<WindhawkBlur BlurAmount="15" TintColor="#00000000" />
+```
+
+And... edit it.
+
+</details>
+
+<br>
+
 ### Faster Right-Click Menu Animation
 
 <details>
